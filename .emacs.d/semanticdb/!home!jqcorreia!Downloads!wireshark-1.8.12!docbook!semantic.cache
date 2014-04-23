@@ -1,0 +1,67 @@
+;; Object docbook/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "docbook/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("FOP_OPTS" variable (:default-value ("-Xmx256m")) nil [355 373])
+            ("A2X_HTML_OPTS" variable (:default-value ("\"--stylesheet=ws.css\"")) nil [395 431])
+            ("A2X_TEXT_OPTS" variable nil nil [431 446])
+            ("A2X_TEXT_OPTS" variable (:default-value ("\"--lynx\"")) nil [461 485])
+            ("HTML2TXT" variable (:default-value ("$(ELINKS)" "-dump" "-dump-width" "72" "-no-numbering" "-no-references")) nil [776 845])
+            ("HTML2TXT" variable (:default-value ("$(LYNX)" "-dump" "-width=72" "-nolist" "-stdin" "-force-html")) nil [1060 1120])
+            ("HTML2TXT" variable (:default-value ("\"true\"")) nil [1125 1141])
+            ("Makefile.common" include nil nil [1249 1273])
+            (".fo.pdf" function nil nil [1371 1380])
+            ("ALL_TARGETS" variable (:default-value ("svn_version_check" "wsug" "wsdg" "release_notes")) nil [1486 1540])
+            ("ALL_TARGETS" variable (:default-value ("svn_version_check")) nil [1599 1629])
+            ("all" function (:arguments ("$(ALL_TARGETS)")) nil [1636 1656])
+            ("FORCE" function nil nil [1761 1768])
+            ("svn_version_check" function (:arguments ("FORCE")) nil [1769 1857])
+            ("svn_version.xml" function (:arguments ("svn_version_check")) nil [1858 1893])
+            ("WSUG_TARGETS" variable (:default-value ("wsug.validated" "wsug_html_chunked" "user-guide.html" "user-guide-a4.pdf" "user-guide-us.pdf")) nil [1929 2027])
+            ("WSUG_TARGETS" variable (:default-value ("wsug.validated" "wsug_html_chunked" "user-guide.html")) nil [2032 2094])
+            ("wsug" function (:arguments ("$(WSUG_TARGETS)")) nil [2101 2123])
+            ("wsug.validated" function (:arguments ("$(WSUG_SOURCE)" "wsluarm")) nil [2147 2186])
+            ("user-guide.html" function (:arguments ("wsug_html/user-guide.html")) nil [2363 2406])
+            ("wsug_html/user-guide.html" function (:arguments ("$(WSUG_SOURCE)" "wsluarm")) nil [2407 3129])
+            ("wsug_html_chunked" function (:arguments ("wsug_html_chunked/index.html")) nil [3163 3211])
+            ("wsug_html_chunked/index.html" function (:arguments ("$(WSUG_SOURCE)" "wsluarm")) nil [3212 3974])
+            ("user-guide-us.fo" function (:arguments ("$(WSUG_SOURCE)" "custom_layer_pdf.xsl" "wsluarm")) nil [4091 4271])
+            ("user-guide-a4.fo" function (:arguments ("$(WSUG_SOURCE)" "custom_layer_pdf.xsl" "wsluarm")) nil [4381 4557])
+            ("wsluarm" function (:arguments ("make-wsluarm.pl" "$(WSLUA_MODULES)")) nil [4558 4689])
+            ("WSDG_TARGETS" variable (:default-value ("wsdg.validated" "wsdg_html_chunked" "developer-guide.html" "developer-guide-a4.pdf" "developer-guide-us.pdf")) nil [4731 4844])
+            ("WSDG_TARGETS" variable (:default-value ("wsdg.validated" "wsdg_html_chunked" "developer-guide.html")) nil [4849 4916])
+            ("wsdg" function (:arguments ("$(WSDG_TARGETS)")) nil [4923 4945])
+            ("wsdg.validated" function (:arguments ("$(WSDG_SOURCE)")) nil [4969 5000])
+            ("developer-guide.html" function (:arguments ("wsdg_html/developer-guide.html")) nil [5177 5230])
+            ("wsdg_html/developer-guide.html" function (:arguments ("$(WSDG_SOURCE)")) nil [5231 5941])
+            ("wsdg_html_chunked" function (:arguments ("wsdg_html_chunked/index.html")) nil [5975 6023])
+            ("wsdg_html_chunked/index.html" function (:arguments ("$(WSDG_SOURCE)")) nil [6024 6770])
+            ("developer-guide-us.fo" function (:arguments ("$(WSDG_SOURCE)" "custom_layer_pdf.xsl")) nil [6887 7064])
+            ("developer-guide-a4.fo" function (:arguments ("$(WSDG_SOURCE)" "custom_layer_pdf.xsl")) nil [7174 7347])
+            ("RELEASE_NOTES_TARGETS" variable (:default-value ("release-notes.html" "release-notes.txt" "release-notes-a4.pdf" "release-notes-us.pdf")) nil [7361 7462])
+            ("RELEASE_NOTES_TARGETS" variable (:default-value ("release-notes.html" "release-notes.txt")) nil [7467 7526])
+            ("release_notes" function (:arguments ("$(RELEASE_NOTES_TARGETS)")) nil [7533 7573])
+            ("release-notes.html" function (:arguments ("$(RELEASE_NOTES_SOURCE)")) nil [7605 7749])
+            ("release-notes.txt" function (:arguments ("$(RELEASE_NOTES_SOURCE)")) nil [7795 8031])
+            ("news" function (:arguments ("release-notes.txt")) nil [8032 8086])
+            ("release-notes-us.pdf" function (:arguments ("$(RELEASE_NOTES_SOURCE)" "custom_layer_pdf.xsl")) nil [8140 8453])
+            ("release-notes-a4.pdf" function (:arguments ("$(RELEASE_NOTES_SOURCE)" "custom_layer_pdf.xsl")) nil [8500 8802])
+            ("clean-local" function nil nil [8803 8838])
+            ("EXTRA_DIST" variable (:default-value ("$(WSUG_SOURCE)" "$(WSDG_SOURCE)" "$(RELEASE_NOTES_SOURCE)" "check_svn_version.sh" "docbook.vcproj" "dfilter2xml.pl" "make-wsluarm.pl" "README.txt" "Makefile.nmake" "CMakeLists.txt")) nil [8839 9051])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in")) nil [9052 9090]))          
+      :file "Makefile.am"
+      :pointmax 9090
+      :fsize 9089
+      :lastmodtime '(21106 43389 0 0)
+      :unmatched-syntax '((shell-command 5101 . 5138) (bol 5100 . 5100) (shell-command 5086 . 5094) (bol 5085 . 5085) (shell-command 5055 . 5084) (bol 5054 . 5054) (shell-command 5017 . 5053) (bol 5016 . 5016) (shell-command 2287 . 2324) (bol 2286 . 2286) (shell-command 2272 . 2280) (bol 2271 . 2271) (shell-command 2241 . 2270) (bol 2240 . 2240) (shell-command 2203 . 2239) (bol 2202 . 2202) (shell-command 1455 . 1460) (bol 1454 . 1454) (shell-command 1393 . 1448) (bol 1392 . 1392)))
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 8530
+      :lastmodtime '(21106 43389 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!docbook!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,41 @@
+;; Object py-bips-viewer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "py-bips-viewer/"
+  :tables
+  (list
+    (semanticdb-table "main.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("ujson" include nil nil [1 26])
+            ("random" include nil nil [1 26])
+            ("sys" include nil nil [1 26])
+            ("PyQt5.QtWidgets" include nil nil [27 135])
+            ("AntennaGUI" include nil nil [136 170])
+            ("libz" include nil nil [171 200])
+            ("app" variable nil nil [202 230])
+            ("w" variable nil nil [231 244])
+            ("tree" variable nil nil [245 265])
+            ("tabs" variable nil nil [266 285])
+            ("toolbox" variable nil nil [286 306])
+            ("global" code nil nil [308 324])
+            ("handle" function nil nil [326 369])
+            ("on_message" function (:arguments 
+              ( ("msg" variable nil (reparse-symbol function_parameters) [385 388]))              ) nil [370 425])
+            ("main" function nil nil [426 1045])
+            ("if" code nil nil [1051 1089]))          
+      :file "main.py"
+      :pointmax 1094
+      :fsize 1093
+      :lastmodtime '(21279 16641 748785 303000)
+      :unmatched-syntax nil)
+    (semanticdb-table "config.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "config.json"
+      :pointmax 339
+      :fsize 338
+      :lastmodtime '(21279 10856 955231 642000)
+      :unmatched-syntax '((BRACK_BLOCK 1 . 338) (BRACK_BLOCK 1 . 339) (BRACK_BLOCK 1 . 337) (BRACK_BLOCK 1 . 338))))
+  :file "!home!jqcorreia!code!py-bips-viewer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1672 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "procpcap.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("procpcap.h" include nil nil [138 159])
+            ("malformed_count" variable
+               (:default-value "0"
+                :type "int")
+                nil [161 185])
+            ("packet_count" variable
+               (:default-value "0"
+                :type "int")
+                nil [186 207])
+            ("open_dev_for_capture" function
+               (:arguments 
+                  ( ("handle" variable
+                       (:pointer 2
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [234 250])
+                    ("device_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [251 275])
+                    ("errbuf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [276 289]))                  
+                :type "int")
+                nil [209 1906])
+            ("dispatch" function
+               (:arguments 
+                  ( ("handle" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1922 1937])
+                    ("cnt" variable (:type "int") (reparse-symbol arg-sub-list) [1938 1946])
+                    ("packet_buffer" variable
+                       (:pointer 1
+                        :type ("packet_buffer_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1947 1978]))                  
+                :type "int")
+                nil [1909 2323])
+            ("dispatchCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("user" variable
+                       (:pointer 1
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2354 2367])
+                    ("h" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("pcap_pkthdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2368 2396])
+                    ("packet" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2397 2418]))                  
+                :type "void")
+                nil [2325 2896])
+            ("dissectPacket" function
+               (:arguments 
+                  ( ("sp" variable
+                       (:pointer 1
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2917 2928])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2929 2937])
+                    ("devices" variable
+                       (:pointer 1
+                        :type ("detections_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2938 2960]))                  
+                :type "void")
+                nil [2898 16203])
+            ("compare_ether_addr" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("addr1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [16600 16627])
+                    ("addr2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [16628 16655]))                  
+                :type "unsigned int")
+                nil [16558 16853])
+            ("add_mac" function
+               (:arguments 
+                  ( ("devs" variable
+                       (:pointer 1
+                        :type ("detections_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16868 16887])
+                    ("addr" variable
+                       (:pointer 1
+                        :type ("ether_addr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16888 16913])
+                    ("rssi" variable (:type "int") (reparse-symbol arg-sub-list) [16914 16923])
+                    ("noise" variable (:type "int") (reparse-symbol arg-sub-list) [16924 16934])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [16935 16944]))                  
+                :type "void")
+                nil [16855 18151]))          
+      :file "procpcap.c"
+      :pointmax 18152
+      :fsize 18151
+      :lastmodtime '(21259 25690 883172 478000)
+      :unmatched-syntax nil)
+    (semanticdb-table "procpcap.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_procpcap_h_" variable (:constant-flag t) nil [167 179])
+            ("stdbool.h" include (:system-flag t) nil [181 201])
+            ("stdlib.h" include (:system-flag t) nil [202 221])
+            ("string.h" include (:system-flag t) nil [222 241])
+            ("stdio.h" include (:system-flag t) nil [242 260])
+            ("pcap.h" include (:system-flag t) nil [261 278])
+            ("unistd.h" include (:system-flag t) nil [279 298])
+            ("global.h" include nil nil [300 319])
+            ("cfgparser.h" include nil nil [320 342])
+            ("crc.h" include nil nil [343 359])
+            ("util.h" include nil nil [360 377])
+            ("PCAP_ERR_BUF" variable (:constant-flag t) nil [387 399])
+            ("MAX_RSSI_BUF" variable (:constant-flag t) nil [413 425])
+            ("MAX_DETECTIONS" variable (:constant-flag t) nil [438 452])
+            ("handle" variable
+               (:pointer 1
+                :type ("pcap_t" type (:type "class") nil nil))
+                nil [459 474])
+            ("_wifi_dev_t" type
+               (:members 
+                  ( ("count" variable (:type "unsigned int") (reparse-symbol classsubparts) [509 524])
+                    ("rssi" variable
+                       (:dereference 1
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [529 557])
+                    ("noise" variable
+                       (:dereference 1
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [562 591])
+                    ("pkt_type" variable
+                       (:dereference 1
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [596 628])
+                    ("addr" variable (:type ("ether_addr" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [633 656]))                  
+                :type "struct")
+                nil [476 670])
+            ("wifi_dev_t" type
+               (:typedef ("_wifi_dev_t" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [476 670])
+            ("_packet_buffer_t" type
+               (:members 
+                  ( ("packets" variable
+                       (:pointer 2
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [710 727])
+                    ("lens" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [732 742])
+                    ("num_packets" variable (:type "unsigned int") (reparse-symbol classsubparts) [747 772]))                  
+                :type "struct")
+                nil [672 791])
+            ("packet_buffer_t" type
+               (:typedef ("_packet_buffer_t" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [672 791])
+            ("_detections_t" type
+               (:members 
+                  ( ("devices" variable
+                       (:pointer 1
+                        :type ("wifi_dev_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [828 848])
+                    ("num_devs" variable (:type "unsigned int") (reparse-symbol classsubparts) [853 875]))                  
+                :type "struct")
+                nil [793 891])
+            ("detections_t" type
+               (:typedef ("_detections_t" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [793 891])
+            ("errbuf" variable
+               (:dereference 1
+                :type "char")
+                nil [893 911])
+            ("debug_pcap" variable (:type "int") nil [912 927])
+            ("scan_duration" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type "int")
+                nil [928 959])
+            ("ieee80211_radiotap_header" type
+               (:members 
+                  ( ("it_version" variable (:type ("u_int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1000 1020])
+                    ("it_pad" variable (:type ("u_int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1044 1060])
+                    ("it_len" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1065 1082])
+                    ("it_present" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1115 1136]))                  
+                :type "struct")
+                nil [961 1192])
+            ("control" type
+               (:members 
+                  ( ("subtype" variable
+                       (:suffix ":4"
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1214 1233])
+                    ("type" variable
+                       (:suffix ":2"
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1238 1254])
+                    ("version" variable
+                       (:suffix ":2"
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1259 1278])
+                    ("order" variable
+                       (:suffix ":1"
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1284 1301])
+                    ("wep" variable
+                       (:suffix ":1"
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1306 1321])
+                    ("more_data" variable
+                       (:suffix ":1"
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1326 1347])
+                    ("pwrmgmt" variable
+                       (:suffix ":1"
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1352 1371])
+                    ("retry" variable
+                       (:suffix ":1"
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1376 1393])
+                    ("more_frag" variable
+                       (:suffix ":1"
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1398 1419])
+                    ("from_ds" variable
+                       (:suffix ":1"
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1424 1443])
+                    ("to_ds" variable
+                       (:suffix ":1"
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1448 1465]))                  
+                :type "struct")
+                nil [1194 1493])
+            ("common_header_t" type
+               (:members 
+                  ( ("fc" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [1525 1545])
+                    ("dura_id" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [1550 1575])
+                    ("add1" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [1580 1602])
+                    ("add2" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [1607 1629])
+                    ("add3" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [1634 1656])
+                    ("sc" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [1661 1681]))                  
+                :type "struct")
+                nil [1496 1709])
+            ("ctrl_rts_t" type
+               (:members 
+                  ( ("fc" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1735 1750])
+                    ("duration" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1755 1776])
+                    ("ra" variable
+                       (:dereference 1
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1781 1799])
+                    ("ta" variable
+                       (:dereference 1
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1804 1822])
+                    ("fcs" variable
+                       (:dereference 1
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1827 1846]))                  
+                :type "struct")
+                nil [1711 1874])
+            ("ctrl_ps_poll_t" type
+               (:members 
+                  ( ("fc" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1904 1919])
+                    ("aid" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1924 1940])
+                    ("bssid" variable
+                       (:dereference 1
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1945 1966])
+                    ("ta" variable
+                       (:dereference 1
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1971 1989])
+                    ("fcs" variable
+                       (:dereference 1
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1994 2013]))                  
+                :type "struct")
+                nil [1876 2041])
+            ("ctrl_bar_t" type
+               (:members 
+                  ( ("fc" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2067 2082])
+                    ("dur" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2087 2103])
+                    ("ra" variable
+                       (:dereference 1
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2108 2126])
+                    ("ta" variable
+                       (:dereference 1
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2131 2149])
+                    ("ctl" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2154 2170])
+                    ("seq" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2175 2191])
+                    ("fcs" variable
+                       (:dereference 1
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2196 2215]))                  
+                :type "struct")
+                nil [2043 2243])
+            ("ctrl_ba_t" type
+               (:members 
+                  ( ("fc" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2268 2283])
+                    ("dur" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2288 2304])
+                    ("ra" variable
+                       (:dereference 1
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2309 2327])
+                    ("ta" variable
+                       (:dereference 1
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2332 2350])
+                    ("ctl" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2355 2371])
+                    ("seq" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2376 2392])
+                    ("bitmap" variable
+                       (:dereference 1
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2397 2419])
+                    ("fcs" variable
+                       (:dereference 1
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2424 2443]))                  
+                :type "struct")
+                nil [2245 2471])
+            ("WLAN_FC_TYPE_MGMT" variable (:constant-flag t) nil [2482 2499])
+            ("WLAN_FC_TYPE_CTRL" variable (:constant-flag t) nil [2510 2527])
+            ("WLAN_FC_TYPE_DATA" variable (:constant-flag t) nil [2538 2555])
+            ("WLAN_FC_SUBTYPE_ASSOCREQ" variable (:constant-flag t) nil [2590 2614])
+            ("WLAN_FC_SUBTYPE_ASSOCRESP" variable (:constant-flag t) nil [2628 2653])
+            ("WLAN_FC_SUBTYPE_REASSOCREQ" variable (:constant-flag t) nil [2666 2692])
+            ("WLAN_FC_SUBTYPE_REASSOCRESP" variable (:constant-flag t) nil [2704 2731])
+            ("WLAN_FC_SUBTYPE_PROBEREQ" variable (:constant-flag t) nil [2742 2766])
+            ("WLAN_FC_SUBTYPE_PROBERESP" variable (:constant-flag t) nil [2780 2805])
+            ("WLAN_FC_SUBTYPE_BEACON" variable (:constant-flag t) nil [2818 2840])
+            ("WLAN_FC_SUBTYPE_ATIM" variable (:constant-flag t) nil [2856 2876])
+            ("WLAN_FC_SUBTYPE_DISASSOC" variable (:constant-flag t) nil [2894 2918])
+            ("WLAN_FC_SUBTYPE_AUTH" variable (:constant-flag t) nil [2933 2953])
+            ("WLAN_FC_SUBTYPE_DEAUTH" variable (:constant-flag t) nil [2972 2994])
+            ("WLAN_FC_SUBTYPE_ACTION" variable (:constant-flag t) nil [3011 3033])
+            ("WLAN_FC_SUBTYPE_BLOCKACKREQ" variable (:constant-flag t) nil [3071 3098])
+            ("WLAN_FC_SUBTYPE_BLOCKACK" variable (:constant-flag t) nil [3109 3133])
+            ("WLAN_FC_SUBTYPE_PSPOLL" variable (:constant-flag t) nil [3147 3169])
+            ("WLAN_FC_SUBTYPE_RTS" variable (:constant-flag t) nil [3186 3205])
+            ("WLAN_FC_SUBTYPE_CTS" variable (:constant-flag t) nil [3225 3244])
+            ("WLAN_FC_SUBTYPE_ACK" variable (:constant-flag t) nil [3264 3283])
+            ("WLAN_FC_SUBTYPE_CFEND" variable (:constant-flag t) nil [3303 3324])
+            ("WLAN_FC_SUBTYPE_CFENDACK" variable (:constant-flag t) nil [3342 3366])
+            ("WLAN_FC_SUBTYPE_DATA" variable (:constant-flag t) nil [3399 3419])
+            ("WLAN_FC_SUBTYPE_DATACFACK" variable (:constant-flag t) nil [3442 3467])
+            ("WLAN_FC_SUBTYPE_DATACFPOLL" variable (:constant-flag t) nil [3485 3511])
+            ("WLAN_FC_SUBTYPE_DATACFACKPOLL" variable (:constant-flag t) nil [3528 3557])
+            ("WLAN_FC_SUBTYPE_DATANULL" variable (:constant-flag t) nil [3571 3595])
+            ("WLAN_FC_SUBTYPE_CFACK" variable (:constant-flag t) nil [3614 3635])
+            ("WLAN_FC_SUBTYPE_CFACKPOLL" variable (:constant-flag t) nil [3657 3682])
+            ("WLAN_FC_SUBTYPE_CFACKPOLLNODATA" variable (:constant-flag t) nil [3700 3731])
+            ("WLAN_FC_SUBTYPE_QOSDATA" variable (:constant-flag t) nil [3743 3766])
+            ("WLAN_FC_SUBTYPE_QOSDATACFACK" variable (:constant-flag t) nil [3786 3814])
+            ("WLAN_FC_SUBTYPE_QOSDATACFPOLL" variable (:constant-flag t) nil [3829 3858])
+            ("WLAN_FC_SUBTYPE_QOSDATACFACKPOLL" variable (:constant-flag t) nil [3873 3905])
+            ("WLAN_FC_SUBTYPE_QOSNULL" variable (:constant-flag t) nil [3917 3940])
+            ("WLAN_FC_SUBTYPE_QOSNULLCFPOLL" variable (:constant-flag t) nil [3961 3990])
+            ("WLAN_FC_SUBTYPE_QOSNULLCFACKPOLL" variable (:constant-flag t) nil [4005 4037])
+            ("RADIOTAP_TSFT" variable (:constant-flag t) nil [4070 4083])
+            ("RADIOTAP_FLAGS" variable (:constant-flag t) nil [4112 4126])
+            ("RADIOTAP_RATE" variable (:constant-flag t) nil [4154 4167])
+            ("RADIOTAP_CHANNEL" variable (:constant-flag t) nil [4196 4212])
+            ("RADIOTAP_FHSS" variable (:constant-flag t) nil [4238 4251])
+            ("RADIOTAP_ANTENNA_SIGNAL" variable (:constant-flag t) nil [4280 4303])
+            ("RADIOTAP_ANTENNA_NOISE" variable (:constant-flag t) nil [4322 4344])
+            ("RADIOTAP_LOCK_QUALITY" variable (:constant-flag t) nil [4364 4385])
+            ("RADIOTAP_TX_ATTENUATION" variable (:constant-flag t) nil [4406 4429])
+            ("RADIOTAP_DB_TX_ATTENUATION" variable (:constant-flag t) nil [4448 4474])
+            ("RADIOTAP_DBM_TX_POWER" variable (:constant-flag t) nil [4490 4511])
+            ("RADIOTAP_ANTENNA" variable (:constant-flag t) nil [4533 4549])
+            ("RADIOTAP_DB_ANTENNA_SIGNAL" variable (:constant-flag t) nil [4576 4602])
+            ("ALIGN2" variable (:constant-flag t) nil [4620 4626])
+            ("IS_PRESENT" variable (:constant-flag t) nil [4675 4685])
+            ("open_dev_for_capture" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("handle" variable
+                       (:pointer 2
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4773 4789])
+                    ("device_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4790 4814])
+                    ("errbuf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4815 4828]))                  
+                :type "int")
+                nil [4748 4829])
+            ("dispatch" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("handle" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4843 4858])
+                    ("cnt" variable (:type "int") (reparse-symbol arg-sub-list) [4859 4867])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("packet_buffer_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4868 4890]))                  
+                :type "int")
+                nil [4830 4891])
+            ("dispatchCallback" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("user" variable
+                       (:pointer 1
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4922 4935])
+                    ("h" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("pcap_pkthdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4936 4964])
+                    ("sp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4965 4982]))                  
+                :type "void")
+                nil [4893 4983])
+            ("dissectPacket" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sp" variable
+                       (:pointer 1
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5003 5014])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [5015 5023])
+                    ("devices" variable
+                       (:pointer 1
+                        :type ("detections_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5024 5046]))                  
+                :type "void")
+                nil [4984 5047])
+            ("compare_ether_addr" function
+               (:prototype-flag t
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("addr1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [5091 5118])
+                    ("addr2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [5119 5146]))                  
+                :type "unsigned int")
+                nil [5049 5147])
+            ("add_mac" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("devs" variable
+                       (:pointer 1
+                        :type ("detections_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5161 5180])
+                    ("addr" variable
+                       (:pointer 1
+                        :type ("ether_addr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5181 5206])
+                    ("rssi" variable (:type "int") (reparse-symbol arg-sub-list) [5207 5216])
+                    ("noise" variable (:type "int") (reparse-symbol arg-sub-list) [5217 5227])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [5228 5237]))                  
+                :type "void")
+                nil [5148 5238]))          
+      :file "procpcap.h"
+      :pointmax 5263
+      :fsize 5262
+      :lastmodtime '(21254 18656 2566 738000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("WLAN_FC_SUBTYPE_BLOCKACK" . ((number "9" 3137 . 3138)))
+          ("RADIOTAP_RATE" . ((number "2" 4186 . 4187)))
+          ("RADIOTAP_CHANNEL" . ((number "3" 4228 . 4229)))
+          ("RADIOTAP_DB_TX_ATTENUATION" . ((number "9" 4480 . 4481)))
+          ("WLAN_FC_SUBTYPE_REASSOCREQ" . ((number "2" 2694 . 2695)))
+          ("PCAP_ERR_BUF" . ((number "4096" 400 . 404)))
+          ("WLAN_FC_TYPE_MGMT" . ((number "0" 2500 . 2501)))
+          ("WLAN_FC_SUBTYPE_ASSOCRESP" . ((number "1" 2656 . 2657)))
+          ("WLAN_FC_SUBTYPE_QOSDATA" . ((number "8" 3776 . 3777)))
+          ("ALIGN2" (spp-arg-list ("p") 4626 . 4629) . ((semantic-list "((p) += ((intptr_t)(p) & 0x1))" 4636 . 4666)))
+          ("WLAN_FC_SUBTYPE_CTS" . ((number "12" 3253 . 3255)))
+          ("WLAN_FC_SUBTYPE_CFEND" . ((number "14" 3331 . 3333)))
+          ("WLAN_FC_SUBTYPE_DATA" . ((number "0" 3432 . 3433)))
+          ("WLAN_FC_SUBTYPE_DATACFPOLL" . ((number "2" 3518 . 3519)))
+          ("_procpcap_h_")
+          ("WLAN_FC_SUBTYPE_ACTION" . ((number "13" 3039 . 3041)))
+          ("WLAN_FC_SUBTYPE_ACK" . ((number "13" 3292 . 3294)))
+          ("WLAN_FC_SUBTYPE_QOSDATACFACK" . ((number "9" 3819 . 3820)))
+          ("WLAN_FC_SUBTYPE_QOSDATACFPOLL" . ((number "10" 3862 . 3864)))
+          ("RADIOTAP_DBM_TX_POWER" . ((number "10" 4522 . 4524)))
+          ("WLAN_FC_SUBTYPE_AUTH" . ((number "11" 2961 . 2963)))
+          ("WLAN_FC_SUBTYPE_DEAUTH" . ((number "12" 3000 . 3002)))
+          ("WLAN_FC_SUBTYPE_PSPOLL" . ((number "10" 3175 . 3177)))
+          ("WLAN_FC_SUBTYPE_CFACKPOLLNODATA" . ((number "7" 3733 . 3734)))
+          ("RADIOTAP_TX_ATTENUATION" . ((number "8" 4438 . 4439)))
+          ("MAX_RSSI_BUF" . ((number "300" 426 . 429)))
+          ("WLAN_FC_TYPE_DATA" . ((number "2" 2556 . 2557)))
+          ("WLAN_FC_SUBTYPE_PROBERESP" . ((number "5" 2808 . 2809)))
+          ("WLAN_FC_SUBTYPE_CFACK" . ((number "5" 3647 . 3648)))
+          ("WLAN_FC_SUBTYPE_QOSNULLCFACKPOLL" . ((number "15" 4038 . 4040)))
+          ("RADIOTAP_ANTENNA_NOISE" . ((number "6" 4354 . 4355)))
+          ("RADIOTAP_DB_ANTENNA_SIGNAL" . ((number "12" 4608 . 4610)))
+          ("IS_PRESENT" (spp-arg-list ("field") 4685 . 4692) . ((semantic-list "(presence_bits & (0x1 << (field)))" 4699 . 4733)))
+          ("WLAN_FC_SUBTYPE_ATIM" . ((number "9" 2884 . 2885)))
+          ("WLAN_FC_SUBTYPE_CFACKPOLL" . ((number "6" 3690 . 3691)))
+          ("RADIOTAP_TSFT" . ((number "0" 4102 . 4103)))
+          ("WLAN_FC_SUBTYPE_BLOCKACKREQ" . ((number "8" 3099 . 3100)))
+          ("WLAN_FC_SUBTYPE_RTS" . ((number "11" 3214 . 3216)))
+          ("WLAN_FC_SUBTYPE_PROBEREQ" . ((number "4" 2770 . 2771)))
+          ("WLAN_FC_SUBTYPE_DATACFACK" . ((number "1" 3475 . 3476)))
+          ("MAX_DETECTIONS" . ((number "1000" 453 . 457)))
+          ("WLAN_FC_SUBTYPE_REASSOCRESP" . ((number "3" 2732 . 2733)))
+          ("WLAN_FC_SUBTYPE_DISASSOC" . ((number "10" 2922 . 2924)))
+          ("WLAN_FC_SUBTYPE_QOSNULL" . ((number "12" 3950 . 3952)))
+          ("RADIOTAP_FLAGS" . ((number "1" 4144 . 4145)))
+          ("RADIOTAP_FHSS" . ((number "4" 4270 . 4271)))
+          ("WLAN_FC_SUBTYPE_BEACON" . ((number "8" 2846 . 2847)))
+          ("WLAN_FC_SUBTYPE_CFENDACK" . ((number "15" 3370 . 3372)))
+          ("WLAN_FC_SUBTYPE_DATANULL" . ((number "4" 3604 . 3605)))
+          ("WLAN_FC_SUBTYPE_QOSDATACFACKPOLL" . ((number "11" 3906 . 3908)))
+          ("RADIOTAP_ANTENNA_SIGNAL" . ((number "5" 4312 . 4313)))
+          ("WLAN_FC_TYPE_CTRL" . ((number "1" 2528 . 2529)))
+          ("WLAN_FC_SUBTYPE_ASSOCREQ" . ((number "0" 2618 . 2619)))
+          ("WLAN_FC_SUBTYPE_DATACFACKPOLL" . ((number "3" 3561 . 3562)))
+          ("WLAN_FC_SUBTYPE_QOSNULLCFPOLL" . ((number "14" 3994 . 3996)))
+          ("RADIOTAP_LOCK_QUALITY" . ((number "7" 4396 . 4397)))
+          ("RADIOTAP_ANTENNA" . ((number "11" 4565 . 4567)))
+          )
+)
+    (semanticdb-table "crc.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("crc.h" include nil nil [1 17])
+            ("crc32_mpeg2" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [40 65])
+                    ("len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [66 83]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [19 265])
+            ("crc32_ccitt" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [288 313])
+                    ("len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [314 331]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [267 491]))          
+      :file "crc.c"
+      :pointmax 1531
+      :fsize 506
+      :lastmodtime '(21243 42081 462504 529000)
+      :unmatched-syntax nil)
+    (semanticdb-table "crc.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_CRC_H_" variable (:constant-flag t) nil [25 32])
+            ("stdio.h" include (:system-flag t) nil [34 52])
+            ("stdint.h" include (:system-flag t) nil [53 72])
+            ("stdlib.h" include (:system-flag t) nil [73 92])
+            ("string.h" include (:system-flag t) nil [93 112])
+            ("crc32_mpeg2_table" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+	0x00000000, 0x04c11db7, 0x09823b6e, 0x0d4326d9, 0x130476dc, 0x17c56b6b,
+	0x1a864db2, 0x1e475005, 0x2608edb8, 0x22c9f00f, 0x2f8ad6d6, 0x2b4bcb61,
+	0x350c9b64, 0x31cd86d3, 0x3c8ea00a, 0x384fbdbd, 0x4c11db70, 0x48d0c6c7,
+	0x4593e01e, 0x4152fda9, 0x5f15adac, 0x5bd4b01b, 0x569796c2, 0x52568b75,
+	0x6a1936c8, 0x6ed82b7f, 0x639b0da6, 0x675a1011, 0x791d4014, 0x7ddc5da3,
+	0x709f7b7a, 0x745e66cd, 0x9823b6e0, 0x9ce2ab57, 0x91a18d8e, 0x95609039,
+	0x8b27c03c, 0x8fe6dd8b, 0x82a5fb52, 0x8664e6e5, 0xbe2b5b58, 0xbaea46ef,
+	0xb7a96036, 0xb3687d81, 0xad2f2d84, 0xa9ee3033, 0xa4ad16ea, 0xa06c0b5d,
+	0xd4326d90, 0xd0f37027, 0xddb056fe, 0xd9714b49, 0xc7361b4c, 0xc3f706fb,
+	0xceb42022, 0xca753d95, 0xf23a8028, 0xf6fb9d9f, 0xfbb8bb46, 0xff79a6f1,
+	0xe13ef6f4, 0xe5ffeb43, 0xe8bccd9a, 0xec7dd02d, 0x34867077, 0x30476dc0,
+	0x3d044b19, 0x39c556ae, 0x278206ab, 0x23431b1c, 0x2e003dc5, 0x2ac12072,
+	0x128e9dcf, 0x164f8078, 0x1b0ca6a1, 0x1fcdbb16, 0x018aeb13, 0x054bf6a4,
+	0x0808d07d, 0x0cc9cdca, 0x7897ab07, 0x7c56b6b0, 0x71159069, 0x75d48dde,
+	0x6b93dddb, 0x6f52c06c, 0x6211e6b5, 0x66d0fb02, 0x5e9f46bf, 0x5a5e5b08,
+	0x571d7dd1, 0x53dc6066, 0x4d9b3063, 0x495a2dd4, 0x44190b0d, 0x40d816ba,
+	0xaca5c697, 0xa864db20, 0xa527fdf9, 0xa1e6e04e, 0xbfa1b04b, 0xbb60adfc,
+	0xb6238b25, 0xb2e29692, 0x8aad2b2f, 0x8e6c3698, 0x832f1041, 0x87ee0df6,
+	0x99a95df3, 0x9d684044, 0x902b669d, 0x94ea7b2a, 0xe0b41de7, 0xe4750050,
+	0xe9362689, 0xedf73b3e, 0xf3b06b3b, 0xf771768c, 0xfa325055, 0xfef34de2,
+	0xc6bcf05f, 0xc27dede8, 0xcf3ecb31, 0xcbffd686, 0xd5b88683, 0xd1799b34,
+	0xdc3abded, 0xd8fba05a, 0x690ce0ee, 0x6dcdfd59, 0x608edb80, 0x644fc637,
+	0x7a089632, 0x7ec98b85, 0x738aad5c, 0x774bb0eb, 0x4f040d56, 0x4bc510e1,
+	0x46863638, 0x42472b8f, 0x5c007b8a, 0x58c1663d, 0x558240e4, 0x51435d53,
+	0x251d3b9e, 0x21dc2629, 0x2c9f00f0, 0x285e1d47, 0x36194d42, 0x32d850f5,
+	0x3f9b762c, 0x3b5a6b9b, 0x0315d626, 0x07d4cb91, 0x0a97ed48, 0x0e56f0ff,
+	0x1011a0fa, 0x14d0bd4d, 0x19939b94, 0x1d528623, 0xf12f560e, 0xf5ee4bb9,
+	0xf8ad6d60, 0xfc6c70d7, 0xe22b20d2, 0xe6ea3d65, 0xeba91bbc, 0xef68060b,
+	0xd727bbb6, 0xd3e6a601, 0xdea580d8, 0xda649d6f, 0xc423cd6a, 0xc0e2d0dd,
+	0xcda1f604, 0xc960ebb3, 0xbd3e8d7e, 0xb9ff90c9, 0xb4bcb610, 0xb07daba7,
+	0xae3afba2, 0xaafbe615, 0xa7b8c0cc, 0xa379dd7b, 0x9b3660c6, 0x9ff77d71,
+	0x92b45ba8, 0x9675461f, 0x8832161a, 0x8cf30bad, 0x81b02d74, 0x857130c3,
+	0x5d8a9099, 0x594b8d2e, 0x5408abf7, 0x50c9b640, 0x4e8ee645, 0x4a4ffbf2,
+	0x470cdd2b, 0x43cdc09c, 0x7b827d21, 0x7f436096, 0x7200464f, 0x76c15bf8,
+	0x68860bfd, 0x6c47164a, 0x61043093, 0x65c52d24, 0x119b4be9, 0x155a565e,
+	0x18197087, 0x1cd86d30, 0x029f3d35, 0x065e2082, 0x0b1d065b, 0x0fdc1bec,
+	0x3793a651, 0x3352bbe6, 0x3e119d3f, 0x3ad08088, 0x2497d08d, 0x2056cd3a,
+	0x2d15ebe3, 0x29d4f654, 0xc5a92679, 0xc1683bce, 0xcc2b1d17, 0xc8ea00a0,
+	0xd6ad50a5, 0xd26c4d12, 0xdf2f6bcb, 0xdbee767c, 0xe3a1cbc1, 0xe760d676,
+	0xea23f0af, 0xeee2ed18, 0xf0a5bd1d, 0xf464a0aa, 0xf9278673, 0xfde69bc4,
+	0x89b8fd09, 0x8d79e0be, 0x803ac667, 0x84fbdbd0, 0x9abc8bd5, 0x9e7d9662,
+	0x933eb0bb, 0x97ffad0c, 0xafb010b1, 0xab710d06, 0xa6322bdf, 0xa2f33668,
+	0xbcb4666d, 0xb8757bda, 0xb5365d03, 0xb1f740b4
+    }"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [114 3283])
+            ("crc32_ccitt_table" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+        0x00000000, 0x77073096, 0xee0e612c, 0x990951ba, 0x076dc419,
+        0x706af48f, 0xe963a535, 0x9e6495a3, 0x0edb8832, 0x79dcb8a4,
+        0xe0d5e91e, 0x97d2d988, 0x09b64c2b, 0x7eb17cbd, 0xe7b82d07,
+        0x90bf1d91, 0x1db71064, 0x6ab020f2, 0xf3b97148, 0x84be41de,
+        0x1adad47d, 0x6ddde4eb, 0xf4d4b551, 0x83d385c7, 0x136c9856,
+        0x646ba8c0, 0xfd62f97a, 0x8a65c9ec, 0x14015c4f, 0x63066cd9,
+        0xfa0f3d63, 0x8d080df5, 0x3b6e20c8, 0x4c69105e, 0xd56041e4,
+        0xa2677172, 0x3c03e4d1, 0x4b04d447, 0xd20d85fd, 0xa50ab56b,
+        0x35b5a8fa, 0x42b2986c, 0xdbbbc9d6, 0xacbcf940, 0x32d86ce3,
+        0x45df5c75, 0xdcd60dcf, 0xabd13d59, 0x26d930ac, 0x51de003a,
+        0xc8d75180, 0xbfd06116, 0x21b4f4b5, 0x56b3c423, 0xcfba9599,
+        0xb8bda50f, 0x2802b89e, 0x5f058808, 0xc60cd9b2, 0xb10be924,
+        0x2f6f7c87, 0x58684c11, 0xc1611dab, 0xb6662d3d, 0x76dc4190,
+        0x01db7106, 0x98d220bc, 0xefd5102a, 0x71b18589, 0x06b6b51f,
+        0x9fbfe4a5, 0xe8b8d433, 0x7807c9a2, 0x0f00f934, 0x9609a88e,
+        0xe10e9818, 0x7f6a0dbb, 0x086d3d2d, 0x91646c97, 0xe6635c01,
+        0x6b6b51f4, 0x1c6c6162, 0x856530d8, 0xf262004e, 0x6c0695ed,
+        0x1b01a57b, 0x8208f4c1, 0xf50fc457, 0x65b0d9c6, 0x12b7e950,
+        0x8bbeb8ea, 0xfcb9887c, 0x62dd1ddf, 0x15da2d49, 0x8cd37cf3,
+        0xfbd44c65, 0x4db26158, 0x3ab551ce, 0xa3bc0074, 0xd4bb30e2,
+        0x4adfa541, 0x3dd895d7, 0xa4d1c46d, 0xd3d6f4fb, 0x4369e96a,
+        0x346ed9fc, 0xad678846, 0xda60b8d0, 0x44042d73, 0x33031de5,
+        0xaa0a4c5f, 0xdd0d7cc9, 0x5005713c, 0x270241aa, 0xbe0b1010,
+        0xc90c2086, 0x5768b525, 0x206f85b3, 0xb966d409, 0xce61e49f,
+        0x5edef90e, 0x29d9c998, 0xb0d09822, 0xc7d7a8b4, 0x59b33d17,
+        0x2eb40d81, 0xb7bd5c3b, 0xc0ba6cad, 0xedb88320, 0x9abfb3b6,
+        0x03b6e20c, 0x74b1d29a, 0xead54739, 0x9dd277af, 0x04db2615,
+        0x73dc1683, 0xe3630b12, 0x94643b84, 0x0d6d6a3e, 0x7a6a5aa8,
+        0xe40ecf0b, 0x9309ff9d, 0x0a00ae27, 0x7d079eb1, 0xf00f9344,
+        0x8708a3d2, 0x1e01f268, 0x6906c2fe, 0xf762575d, 0x806567cb,
+        0x196c3671, 0x6e6b06e7, 0xfed41b76, 0x89d32be0, 0x10da7a5a,
+        0x67dd4acc, 0xf9b9df6f, 0x8ebeeff9, 0x17b7be43, 0x60b08ed5,
+        0xd6d6a3e8, 0xa1d1937e, 0x38d8c2c4, 0x4fdff252, 0xd1bb67f1,
+        0xa6bc5767, 0x3fb506dd, 0x48b2364b, 0xd80d2bda, 0xaf0a1b4c,
+        0x36034af6, 0x41047a60, 0xdf60efc3, 0xa867df55, 0x316e8eef,
+        0x4669be79, 0xcb61b38c, 0xbc66831a, 0x256fd2a0, 0x5268e236,
+        0xcc0c7795, 0xbb0b4703, 0x220216b9, 0x5505262f, 0xc5ba3bbe,
+        0xb2bd0b28, 0x2bb45a92, 0x5cb36a04, 0xc2d7ffa7, 0xb5d0cf31,
+        0x2cd99e8b, 0x5bdeae1d, 0x9b64c2b0, 0xec63f226, 0x756aa39c,
+        0x026d930a, 0x9c0906a9, 0xeb0e363f, 0x72076785, 0x05005713,
+        0x95bf4a82, 0xe2b87a14, 0x7bb12bae, 0x0cb61b38, 0x92d28e9b,
+        0xe5d5be0d, 0x7cdcefb7, 0x0bdbdf21, 0x86d3d2d4, 0xf1d4e242,
+        0x68ddb3f8, 0x1fda836e, 0x81be16cd, 0xf6b9265b, 0x6fb077e1,
+        0x18b74777, 0x88085ae6, 0xff0f6a70, 0x66063bca, 0x11010b5c,
+        0x8f659eff, 0xf862ae69, 0x616bffd3, 0x166ccf45, 0xa00ae278,
+        0xd70dd2ee, 0x4e048354, 0x3903b3c2, 0xa7672661, 0xd06016f7,
+        0x4969474d, 0x3e6e77db, 0xaed16a4a, 0xd9d65adc, 0x40df0b66,
+        0x37d83bf0, 0xa9bcae53, 0xdebb9ec5, 0x47b2cf7f, 0x30b5ffe9,
+        0xbdbdf21c, 0xcabac28a, 0x53b39330, 0x24b4a3a6, 0xbad03605,
+        0xcdd70693, 0x54de5729, 0x23d967bf, 0xb3667a2e, 0xc4614ab8,
+        0x5d681b02, 0x2a6f2b94, 0xb40bbe37, 0xc30c8ea1, 0x5a05df1b,
+        0x2d02ef8d
+}"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [3287 6825])
+            ("crc32_mpeg2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [6848 6873])
+                    ("len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6874 6891]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [6827 6892])
+            ("crc32_ccitt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [6914 6939])
+                    ("len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6940 6957]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [6893 6958]))          
+      :file "crc.h"
+      :pointmax 6978
+      :fsize 6977
+      :lastmodtime '(21243 42081 462504 529000)
+      :unmatched-syntax '((semantic-list 6912 . 6956) (symbol 6901 . 6912) (symbol 6892 . 6900) (semantic-list 6847 . 6891) (symbol 6836 . 6847) (symbol 6827 . 6835) (semantic-list 6847 . 6891) (symbol 6836 . 6847) (symbol 6827 . 6835))
+      :lexical-table 
+        '(("_CRC_H_")
+          )
+)
+    (semanticdb-table "global.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_global_h_" variable (:constant-flag t) nil [28 38])
+            ("sys/time.h" include (:system-flag t) nil [40 61])
+            ("DEBUG" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [63 80])
+            ("DEBUG_MQTT" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [81 103])
+            ("DEBUG_PCAP" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [104 126])
+            ("DEBUG_QOS" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [127 148])
+            ("DEBUG_INST" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [149 171])
+            ("DEBUG_CTRL" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [172 194])
+            ("OFFLINE" variable
+               (:typemodifiers ("extern")
+                :type "char")
+                nil [196 216])
+            ("INPUT_FILE" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type "char")
+                nil [217 245])
+            ("malformed_count" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [247 274])
+            ("packet_count" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [275 299])
+            ("_INSTRUMENT_INIT" variable (:constant-flag t) nil [309 325])
+            ("_INSTRUMENT_START" variable (:constant-flag t) nil [378 395])
+            ("_INSTRUMENT" variable (:constant-flag t) nil [443 454])
+            ("likely" variable (:constant-flag t) nil [813 819])
+            ("unlikely" variable (:constant-flag t) nil [864 872])
+            ("le16" variable (:constant-flag t) nil [1018 1022])
+            ("le32" variable (:constant-flag t) nil [1048 1052]))          
+      :file "global.h"
+      :pointmax 1145
+      :fsize 1144
+      :lastmodtime '(21243 42081 462504 529000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_INSTRUMENT_INIT" . 
+              ((STRUCT "struct" 329 . 335) (symbol "timeval" 336 . 343) (symbol "__start_time" 344 . 356) (punctuation "," 356 . 357) (symbol "__end_time" 358 . 368) (punctuation ";" 368 . 369)))
+          ("_INSTRUMENT_START" . 
+              ((symbol "gettimeofday" 400 . 412) (semantic-list "(&__start_time, NULL)" 412 . 433) (punctuation ";" 433 . 434)))
+          ("likely" (spp-arg-list ("x") 819 . 822) . ((symbol "__builtin_expect" 829 . 845) (semantic-list "(!!(x), 1)" 845 . 855)))
+          ("_global_h_")
+          ("_INSTRUMENT" (spp-arg-list ("x") 454 . 457) . 
+              ((IF "if" 459 . 461) (semantic-list "(DEBUG_INST)" 461 . 473) (semantic-list "{ gettimeofday(&__end_time, NULL); \\
+                            printf(\"%s: %f msecs \\n\", x, \\
+                                (((__end_time.tv_sec * 1000000 +  __end_time.tv_usec) \\
+                                - (__start_time.tv_sec * 1000000 + __start_time.tv_usec)) / 1000.0)); \\
+                        }" 474 . 787)))
+          ("le16" (spp-arg-list ("x") 1022 . 1025) . ((symbol "__bswap_16" 1026 . 1036) (semantic-list "(x)" 1036 . 1039)))
+          ("unlikely" (spp-arg-list ("x") 872 . 875) . ((symbol "__builtin_expect" 880 . 896) (semantic-list "(!!(x), 0)" 896 . 906)))
+          ("le32" (spp-arg-list ("x") 1052 . 1055) . ((symbol "__bswap_32" 1056 . 1066) (semantic-list "(x)" 1066 . 1069)))
+          )
+)
+    (semanticdb-table "cfgparser.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_cfgparser_h_" variable (:constant-flag t) nil [161 174])
+            ("malloc.h" include (:system-flag t) nil [200 219])
+            ("stdio.h" include (:system-flag t) nil [228 246])
+            ("unistd.h" include (:system-flag t) nil [247 266])
+            ("string.h" include (:system-flag t) nil [267 286])
+            ("sys/stat.h" include (:system-flag t) nil [287 308])
+            ("json/json.h" include (:system-flag t) nil [309 331])
+            ("stdlib.h" include (:system-flag t) nil [332 351])
+            ("_keyvalue" type
+               (:members 
+                  ( ("key" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [419 432])
+                    ("val" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [460 473]))                  
+                :type "struct")
+                nil [389 510])
+            ("keyvalue" type
+               (:typedef ("_keyvalue" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [389 510])
+            ("config_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("values" variable
+                             (:pointer 1
+                              :type ("keyvalue" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [622 639])
+                          ("num_values" variable (:type "int") (reparse-symbol classsubparts) [681 696])
+                          ("get" function
+                             (:prototype-flag t
+                              :pointer 1
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "char")
+                                      (reparse-symbol arg-sub-list) [764 770]))                                
+                              :type "char")
+                              (reparse-symbol classsubparts) [751 771])
+                          ("set" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "char")
+                                      (reparse-symbol arg-sub-list) [788 794])
+                                  ("" variable
+                                     (:pointer 1
+                                      :type "char")
+                                      (reparse-symbol arg-sub-list) [795 801]))                                
+                              :type "int")
+                              (reparse-symbol classsubparts) [777 802]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [601 815])
+            ("config" variable (:type ("config_t" type (:type "class") nil nil)) nil [817 833])
+            ("read_config" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1053 1059]))                  
+                :type "int")
+                nil [1037 1060])
+            ("read_config_file" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1223 1239]))                  
+                :type "char")
+                nil [1200 1240])
+            ("get_config_value" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1412 1418]))                  
+                :type "char")
+                nil [1389 1419])
+            ("set_config_value" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1598 1608])
+                    ("value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1609 1621]))                  
+                :type "int")
+                nil [1577 1622])
+            ("json_parse" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("jobj" variable
+                       (:pointer 1
+                        :type ("json_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1758 1777]))                  
+                :type "void")
+                nil [1742 1778])
+            ("has_key" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1928 1938]))                  
+                :type "int")
+                nil [1916 1939]))          
+      :file "cfgparser.h"
+      :pointmax 1965
+      :fsize 1964
+      :lastmodtime '(21243 42081 462504 529000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_cfgparser_h_")
+          )
+)
+    (semanticdb-table "main.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [116 134])
+            ("pcap.h" include (:system-flag t) nil [135 152])
+            ("time.h" include (:system-flag t) nil [153 170])
+            ("assert.h" include (:system-flag t) nil [171 190])
+            ("global.h" include nil nil [192 211])
+            ("main.h" include nil nil [212 229])
+            ("DEBUG" variable
+               (:default-value "0"
+                :type "int")
+                nil [231 245])
+            ("DEBUG_MQTT" variable
+               (:default-value "0"
+                :type "int")
+                nil [246 265])
+            ("DEBUG_PCAP" variable
+               (:default-value "0"
+                :type "int")
+                nil [270 289])
+            ("DEBUG_QOS" variable
+               (:default-value "0"
+                :type "int")
+                nil [290 308])
+            ("DEBUG_INST" variable
+               (:default-value "0"
+                :type "int")
+                nil [309 328])
+            ("DEBUG_CTRL" variable
+               (:default-value "0"
+                :type "int")
+                nil [329 348])
+            ("OFFLINE" variable
+               (:default-value "0"
+                :type "char")
+                nil [350 367])
+            ("INPUT_FILE" variable
+               (:dereference 1
+                :default-value "\"\""
+                :type "char")
+                nil [368 394])
+            ("chanhop_pid" variable
+               (:default-value "0"
+                :type "int")
+                nil [396 416])
+            ("sig_handler" function
+               (:arguments 
+                  ( ("signo" variable (:type "int") (reparse-symbol arg-sub-list) [435 445]))                  
+                :type "void")
+                nil [418 704])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [763 772])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [773 787]))                  
+                :type "int")
+                nil [753 8011])
+            ("packet_buffer" variable (:type ("packet_buffer_t" type (:type "class") nil nil)) nil [3638 3668])
+            ("start_cap" variable (:type ("time_t" type (:type "class") nil nil)) nil [3674 3700])
+            ("end_cap" variable (:type ("time_t" type (:type "class") nil nil)) nil [3674 3700])
+            ("num_packets" variable
+               (:default-value "0"
+                :type "int")
+                nil [3871 3887])
+            ("i" variable
+               (:default-value "0"
+                :type "int")
+                nil [3902 3912])
+            ("MAX_DETECTIONS" variable (:type "int") nil [3917 3932])
+            ("packets" variable
+               (:dereference 1
+                :default-value "(char*) malloc(sizeof(char) * snaplen)"
+                :type "int")
+                nil [3962 4014])
+            ("detections" variable (:type ("detections_t" type (:type "class") nil nil)) nil [4026 4050])
+            ("num_devs" variable
+               (:default-value "0"
+                :type "int")
+                nil [4150 4163])
+            ("puts" function
+               (:prototype-flag t
+                :type "int")
+                nil [4287 4319])
+            ("status" variable
+               (:default-value "0"
+                :type "int")
+                nil [4420 4435])
+            ("cap_time" variable (:type ("time_t" type (:type "class") nil nil)) nil [4464 4480])
+            ("_INSTRUMENT_START" variable (:type "int") nil [4498 4516])
+            ("status" variable
+               (:default-value "dispatch(handle, -1, &packet_buffer)"
+                :type "int")
+                nil [4563 4609])
+            ("time" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("end_cap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4625 4633]))                  
+                :type "int")
+                nil [4619 4634]))          
+      :file "main.c"
+      :pointmax 8012
+      :fsize 8011
+      :lastmodtime '(21262 12059 936808 261000)
+      :unmatched-syntax nil)
+    (semanticdb-table "main.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_main_h_" variable (:constant-flag t) nil [141 149])
+            ("stdbool.h" include (:system-flag t) nil [151 171])
+            ("sys/types.h" include (:system-flag t) nil [172 194])
+            ("sys/socket.h" include (:system-flag t) nil [195 218])
+            ("net/ethernet.h" include (:system-flag t) nil [219 244])
+            ("netinet/ether.h" include (:system-flag t) nil [245 271])
+            ("signal.h" include (:system-flag t) nil [272 291])
+            ("global.h" include nil nil [293 312])
+            ("procpcap.h" include nil nil [313 334])
+            ("mqtt.h" include nil nil [335 352])
+            ("cfgparser.h" include nil nil [353 375])
+            ("util.h" include nil nil [376 393]))          
+      :file "main.h"
+      :pointmax 413
+      :fsize 412
+      :lastmodtime '(21250 5512 553056 948000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_main_h_")
+          )
+)
+    (semanticdb-table "mqtt.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("mqtt.h" include nil nil [137 154])
+            ("mqtt_topic" variable
+               (:pointer 1
+                :type "char")
+                nil [156 173])
+            ("mqtt_client" variable
+               (:pointer 1
+                :type "char")
+                nil [174 192])
+            ("publish_topic" variable
+               (:pointer 1
+                :type "char")
+                nil [193 213])
+            ("mqtt_host" variable
+               (:pointer 1
+                :type "char")
+                nil [214 230])
+            ("will_topic" variable
+               (:pointer 1
+                :type "char")
+                nil [231 248])
+            ("will_payload" variable
+               (:pointer 1
+                :type "char")
+                nil [249 268])
+            ("username" variable
+               (:pointer 1
+                :type "char")
+                nil [269 284])
+            ("passwd" variable
+               (:pointer 1
+                :type "char")
+                nil [285 298])
+            ("ant_id" variable
+               (:pointer 1
+                :constant-flag t
+                :type "char")
+                nil [300 319])
+            ("ant_ip" variable
+               (:pointer 1
+                :constant-flag t
+                :type "char")
+                nil [320 339])
+            ("mqtt_port" variable (:type "int") nil [340 354])
+            ("keepalive" variable
+               (:default-value "30"
+                :type "int")
+                nil [355 374])
+            ("mosq" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("mosquitto" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [375 405])
+            ("shell_fp" variable
+               (:pointer 1
+                :type ("FILE" type (:type "class") nil nil))
+                nil [407 422])
+            ("shell_out_topic" variable
+               (:dereference 1
+                :type "char")
+                nil [423 449])
+            ("shell_in_topic" variable
+               (:dereference 1
+                :type "char")
+                nil [450 475])
+            ("initialize_mosquitto" function
+               (:arguments 
+                  ( ("client_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [502 524])
+                    ("client_ip" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [525 547]))                  
+                :type "int")
+                nil [477 2343])
+            ("do_mosq_loop" function
+               (:arguments 
+                  ( ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [2362 2374])
+                    ("max_pkts" variable (:type "int") (reparse-symbol arg-sub-list) [2375 2388]))                  
+                :type "int")
+                nil [2345 3044])
+            ("publish" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3059 3069]))                  
+                :type "void")
+                nil [3046 3533])
+            ("publish_version" function (:type "void") nil [3535 4262])
+            ("publish_callback" function
+               (:arguments 
+                  ( ("mosqCallback" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4286 4317])
+                    ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4318 4333])
+                    ("mid" variable (:type "int") (reparse-symbol arg-sub-list) [4334 4342]))                  
+                :type "void")
+                nil [4264 4426])
+            ("message_callback" function
+               (:arguments 
+                  ( ("mosqCallback" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4450 4481])
+                    ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4482 4497])
+                    ("message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mosquitto_message" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4498 4538]))                  
+                :type "void")
+                nil [4428 4543])
+            ("connect_callback" function
+               (:arguments 
+                  ( ("mosqCallback" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4567 4598])
+                    ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4599 4614])
+                    ("result" variable (:type "int") (reparse-symbol arg-sub-list) [4615 4626]))                  
+                :type "void")
+                nil [4545 4797])
+            ("subscribe_callback" function
+               (:arguments 
+                  ( ("mosqCallback" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4823 4854])
+                    ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4855 4870])
+                    ("mid" variable (:type "int") (reparse-symbol arg-sub-list) [4871 4879])
+                    ("qos_count" variable (:type "int") (reparse-symbol arg-sub-list) [4880 4894])
+                    ("granted_qos" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4895 4918]))                  
+                :type "void")
+                nil [4799 5014])
+            ("log_callback" function
+               (:arguments 
+                  ( ("mosqCallback" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5034 5065])
+                    ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5066 5081])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [5082 5092])
+                    ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5093 5109]))                  
+                :type "void")
+                nil [5016 5211]))          
+      :file "mqtt.c"
+      :pointmax 5212
+      :fsize 5212
+      :lastmodtime '(21280 40060 212173 344000)
+      :unmatched-syntax nil)
+    (semanticdb-table "mqtt.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("BIPSWiFi_v3_mqtt_h" variable (:constant-flag t) nil [172 190])
+            ("global.h" include nil nil [192 211])
+            ("stdlib.h" include (:system-flag t) nil [212 231])
+            ("mosquitto.h" include (:system-flag t) nil [232 254])
+            ("string.h" include (:system-flag t) nil [255 274])
+            ("stdio.h" include (:system-flag t) nil [275 293])
+            ("cfgparser.h" include nil nil [294 316])
+            ("mqtt-shell.h" include nil nil [317 340])
+            ("publish_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [364 387])
+                    ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [388 403])
+                    ("mid" variable (:type "int") (reparse-symbol arg-sub-list) [404 412]))                  
+                :type "void")
+                nil [342 413])
+            ("message_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [436 459])
+                    ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [460 475])
+                    ("message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mosquitto_message" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [476 516]))                  
+                :type "void")
+                nil [414 517])
+            ("connect_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [540 563])
+                    ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [564 579])
+                    ("result" variable (:type "int") (reparse-symbol arg-sub-list) [580 591]))                  
+                :type "void")
+                nil [518 592])
+            ("connect_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [615 638])
+                    ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [639 654])
+                    ("result" variable (:type "int") (reparse-symbol arg-sub-list) [655 666]))                  
+                :type "void")
+                nil [593 667])
+            ("subscribe_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [692 715])
+                    ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [716 731])
+                    ("mid" variable (:type "int") (reparse-symbol arg-sub-list) [732 740])
+                    ("qos_count" variable (:type "int") (reparse-symbol arg-sub-list) [741 755])
+                    ("granted_qos" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [756 779]))                  
+                :type "void")
+                nil [668 780])
+            ("log_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [799 822])
+                    ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [823 838])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [839 849])
+                    ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [850 866]))                  
+                :type "void")
+                nil [781 867])
+            ("initialize_mosquitto" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("client_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [894 916])
+                    ("client_ip" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [917 939]))                  
+                :type "int")
+                nil [869 940])
+            ("do_mosq_loop" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [958 970])
+                    ("max_pkts" variable (:type "int") (reparse-symbol arg-sub-list) [971 984]))                  
+                :type "int")
+                nil [941 985])
+            ("publish" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [999 1009]))                  
+                :type "void")
+                nil [986 1010])
+            ("publish_version" function
+               (:prototype-flag t
+                :type "void")
+                nil [1011 1034]))          
+      :file "mqtt.h"
+      :pointmax 1043
+      :fsize 1042
+      :lastmodtime '(21250 5512 566390 284000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BIPSWiFi_v3_mqtt_h")
+          )
+)
+    (semanticdb-table "cfgparser.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("cfgparser.h" include nil nil [131 153])
+            ("read_config" function
+               (:arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [171 186]))                  
+                :type "int")
+                nil [155 561])
+            ("read_config_file" function
+               (:pointer 1
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [586 602]))                  
+                :type "char")
+                nil [563 862])
+            ("json_parse" function
+               (:arguments 
+                  ( ("jobj" variable
+                       (:pointer 1
+                        :type ("json_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [880 899]))                  
+                :type "void")
+                nil [864 1285])
+            ("get_config_value" function
+               (:pointer 1
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1310 1320]))                  
+                :type "char")
+                nil [1287 1476])
+            ("set_config_value" function
+               (:arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1499 1509])
+                    ("value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1510 1522]))                  
+                :type "int")
+                nil [1478 1741])
+            ("has_key" function
+               (:arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1755 1765]))                  
+                :type "int")
+                nil [1743 1900]))          
+      :file "cfgparser.c"
+      :pointmax 1901
+      :fsize 1900
+      :lastmodtime '(21243 42081 462504 529000)
+      :unmatched-syntax nil)
+    (semanticdb-table "mqtt-shell.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("mqtt-shell.h" include nil nil [1 24])
+            ("initialize_shell" function (:type "void") nil [26 797]))          
+      :file "mqtt-shell.c"
+      :pointmax 3284
+      :fsize 3283
+      :lastmodtime '(21262 28634 74106 192000)
+      :unmatched-syntax nil)
+    (semanticdb-table "util.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("util.h" include nil nil [1 18])
+            ("get_net_info" function
+               (:arguments 
+                  ( ("iface" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38 56])
+                    ("mac" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [57 68])
+                    ("ip" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [69 79]))                  
+                :type "void")
+                nil [20 1077]))          
+      :file "util.c"
+      :pointmax 1078
+      :fsize 1077
+      :lastmodtime '(21250 5512 566390 284000)
+      :unmatched-syntax '((punctuation 1 . 2)))
+    (semanticdb-table "util.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_UTIL_H_" variable (:constant-flag t) nil [26 34])
+            ("net/if.h" include (:system-flag t) nil [36 55])
+            ("net/ethernet.h" include (:system-flag t) nil [56 81])
+            ("netinet/ether.h" include (:system-flag t) nil [82 108])
+            ("arpa/inet.h" include (:system-flag t) nil [109 131])
+            ("sys/types.h" include (:system-flag t) nil [132 154])
+            ("sys/socket.h" include (:system-flag t) nil [155 178])
+            ("sys/ioctl.h" include (:system-flag t) nil [179 201])
+            ("string.h" include (:system-flag t) nil [202 221])
+            ("stdlib.h" include (:system-flag t) nil [222 241])
+            ("stdio.h" include (:system-flag t) nil [242 260])
+            ("unistd.h" include (:system-flag t) nil [261 280])
+            ("get_net_info" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("iface" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [300 318])
+                    ("mac" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [319 330])
+                    ("ip" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [331 341]))                  
+                :type "void")
+                nil [282 342]))          
+      :file "util.h"
+      :pointmax 363
+      :fsize 362
+      :lastmodtime '(21250 5512 566390 284000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_UTIL_H_")
+          )
+)
+    (semanticdb-table "mqtt-shell.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_mqtt_shell_h_" variable (:constant-flag t) nil [32 46])
+            ("unistd.h" include (:system-flag t) nil [48 67])
+            ("stdio.h" include (:system-flag t) nil [68 86])
+            ("fcntl.h" include (:system-flag t) nil [87 105])
+            ("mosquitto.h" include (:system-flag t) nil [106 128])
+            ("util.h" include nil nil [129 146])
+            ("fd_out" variable
+               (:dereference 1
+                :type "int")
+                nil [148 162])
+            ("fd_in" variable
+               (:dereference 1
+                :type "int")
+                nil [163 176])
+            ("fd_err" variable
+               (:dereference 1
+                :type "int")
+                nil [177 191])
+            ("shell_in" variable (:type "int") nil [193 206])
+            ("shell_out" variable (:type "int") nil [207 221])
+            ("shell_err" variable (:type "int") nil [222 236])
+            ("initialize_shell" function
+               (:prototype-flag t
+                :type "void")
+                nil [238 262]))          
+      :file "mqtt-shell.h"
+      :pointmax 289
+      :fsize 288
+      :lastmodtime '(21250 5512 566390 284000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_mqtt_shell_h_")
+          )
+))
+  :file "!home!jqcorreia!code!sensors-wifi!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

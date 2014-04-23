@@ -1,0 +1,32 @@
+;; Object asn1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "asn1/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("Custom.make" include nil nil [919 939])
+            ("SUBDIRS" variable (:default-value ("$(CUSTOM_SUBDIRS)" "acp133" "acse" "ansi_map" "ansi_tcap" "c1222" "camel" "cdt" "charging_ase" "cmip" "cmp" "credssp" "crmf" "cms" "dap" "dop" "disp" "dsp" "ess" "ftam" "gnm" "goose" "gsm_map" "gprscdr" "h225" "h235" "h245" "h248" "h282" "h283" "h323" "h450" "h450-ros" "h460" "h501" "HI2Operations" "hnbap" "idmp" "inap" "kerberos" "lcsap" "ldap" "logotypecertextn" "lpp" "lppa" "lte-rrc" "m3ap" "mms" "mpeg-audio" "mpeg-pes" "nbap" "ns_cert_exts" "ocsp" "p1" "p22" "p7" "p772" "pcap" "pkcs1" "pkcs12" "pkinit" "pkixac" "pkix1explicit" "pkix1implicit" "pkixproxy" "pkixqualified" "pkixtsp" "pres" "q932" "q932-ros" "qsig" "ranap" "rnsap" "ros" "rrc" "rrlp" "rtse" "rua" "s1ap" "sabp" "sbc-ap" "smrse" "snmp" "spnego" "sv" "t124" "t125" "t38" "tcap" "tetra" "ulp" "wlancertextn" "x2ap" "x509af" "x509ce" "x509if" "x509sat" "x721")) nil [940 1958])
+            ("EXTRA_DIST" variable (:default-value ("Makefile.nmake" "Makefile.inc.nmake" "Makefile.preinc.nmake" "Custom.make")) nil [1959 2052])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in")) nil [2053 2091]))          
+      :file "Makefile.am"
+      :pointmax 2092
+      :fsize 2091
+      :lastmodtime '(20430 13513 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Custom.make"
+      :file "Custom.make"
+      :fsize 1185
+      :lastmodtime '(20430 13513 0 0))
+    (semanticdb-table "Makefile.preinc"
+      :file "Makefile.preinc"
+      :fsize 965
+      :lastmodtime '(20430 13513 0 0))
+    (semanticdb-table "Makefile.inc"
+      :file "Makefile.inc"
+      :fsize 2121
+      :lastmodtime '(20430 13513 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!asn1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

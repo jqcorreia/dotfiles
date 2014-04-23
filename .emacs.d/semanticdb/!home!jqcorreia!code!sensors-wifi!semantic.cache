@@ -1,0 +1,30 @@
+;; Object sensors-wifi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sensors-wifi/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CC" variable (:default-value ("mips-openwrt-linux-gcc")) nil [1 29])
+            ("CFLAGS" variable (:default-value ("-std=gnu99" "-lmosquitto" "-lpcap" "-ljson-c")) nil [29 77])
+            ("SRCDIR" variable (:default-value ("src")) nil [78 91])
+            ("BINDIR" variable (:default-value ("bin")) nil [91 104])
+            ("OBJ" variable (:default-value ("$(addprefix $(BINDIR)/, cfgparser.o main.o mqtt.o procpcap.o crc.o mqtt-shell.o util.o)")) nil [104 198])
+            ("FILES" variable (:default-value ("capture" "config.txt" "mqtt-shell" "chanhop")) nil [199 245])
+            ("all" function (:arguments ("prepare" "$(OBJ)" "shell")) nil [246 307])
+            ("prepare" function nil nil [308 362])
+            ("$(BINDIR)" function (:arguments ("$(SRCDIR)/%.c" "$(SRCDIR)/%.h")) nil [363 448])
+            ("clean" function nil nil [449 494])
+            ("sync/%" function (:arguments ("all")) nil [495 521])
+            ("tests/pcap/%" function nil nil [578 673])
+            ("shell" function nil nil [674 795])
+            ("tar" function (:arguments ("all")) nil [796 880]))          
+      :file "Makefile"
+      :pointmax 881
+      :fsize 880
+      :lastmodtime '(21262 7688 36641 747000)
+      :unmatched-syntax nil))
+  :file "!home!jqcorreia!code!sensors-wifi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

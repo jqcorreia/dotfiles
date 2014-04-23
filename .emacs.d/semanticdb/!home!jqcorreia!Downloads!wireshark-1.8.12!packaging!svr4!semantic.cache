@@ -1,0 +1,19 @@
+;; Object svr4/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "svr4/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("DISTCLEANFILES" variable (:default-value ("Prototype")) nil [60 90])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in")) nil [91 129])
+            ("EXTRA_DIST" variable (:default-value ("checkinstall.in" "mkpkg" "pkginfo.in")) nil [130 176]))          
+      :file "Makefile.am"
+      :pointmax 176
+      :fsize 175
+      :lastmodtime '(20430 13541 0 0)
+      :unmatched-syntax nil))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!packaging!svr4!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

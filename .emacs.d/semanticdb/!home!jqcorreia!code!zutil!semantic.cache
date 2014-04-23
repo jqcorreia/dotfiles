@@ -1,0 +1,72 @@
+;; Object zutil/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "zutil/"
+  :tables
+  (list
+    (semanticdb-table "zutil.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("threading" include nil nil [1 28])
+            ("mosquitto" include nil nil [1 28])
+            ("random" include nil nil [29 62])
+            ("MqttListener" type
+               (:superclasses ("threading.Thread")
+                :members 
+                  ( ("listeners" variable nil (reparse-symbol indented_block_body) [106 120])
+                    ("name" code nil (reparse-symbol indented_block_body) [125 173])
+                    ("__init__" function
+                       (:suite 
+                          ( ("threading" code nil (reparse-symbol indented_block_body) [263 294])
+                            ("self" variable nil (reparse-symbol indented_block_body) [303 346])
+                            ("self" variable nil (reparse-symbol indented_block_body) [355 394])
+                            ("self" variable nil (reparse-symbol indented_block_body) [403 442])
+                            ("self" code nil (reparse-symbol indented_block_body) [460 502])
+                            ("self" code nil (reparse-symbol indented_block_body) [520 554])
+                            ("self" code nil (reparse-symbol indented_block_body) [572 599]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [196 200])
+                            ("host" variable nil (reparse-symbol function_parameters) [202 206])
+                            ("topic" variable nil (reparse-symbol function_parameters) [208 213])
+                            ("user" variable nil (reparse-symbol function_parameters) [215 219])
+                            ("password" variable nil (reparse-symbol function_parameters) [226 234])
+                            ("port" variable nil (reparse-symbol function_parameters) [241 245]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [183 600])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [621 625]))                          )
+                        (reparse-symbol indented_block_body) [613 723])
+                    ("on_message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [751 755])
+                            ("mosq" variable nil (reparse-symbol function_parameters) [757 761])
+                            ("obj" variable nil (reparse-symbol function_parameters) [763 766])
+                            ("msg" variable nil (reparse-symbol function_parameters) [768 771]))                          )
+                        (reparse-symbol indented_block_body) [736 826])
+                    ("on_connect" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [850 854])
+                            ("mosq" variable nil (reparse-symbol function_parameters) [856 860])
+                            ("obj" variable nil (reparse-symbol function_parameters) [862 865])
+                            ("msg" variable nil (reparse-symbol function_parameters) [867 870]))                          )
+                        (reparse-symbol indented_block_body) [835 900])
+                    ("add_listener" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [922 926])
+                            ("listener" variable nil (reparse-symbol function_parameters) [928 936]))                          )
+                        (reparse-symbol indented_block_body) [905 980]))                  
+                :type "class")
+                nil [64 980]))          
+      :file "zutil.py"
+      :pointmax 989
+      :fsize 988
+      :lastmodtime '(21252 49607 575420 84000)
+      :unmatched-syntax '((NEWLINE 62 . 63) (TRY 573 . 576) (NEWLINE 639 . 640))))
+  :file "!home!jqcorreia!code!zutil!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

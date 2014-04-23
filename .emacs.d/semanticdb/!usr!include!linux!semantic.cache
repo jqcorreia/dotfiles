@@ -1,0 +1,324 @@
+;; Object linux/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "linux/"
+  :tables
+  (list
+    (semanticdb-table "if_ether.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_LINUX_IF_ETHER_H" variable (:constant-flag t) nil [806 823])
+            ("linux/types.h" include (:system-flag t) nil [825 849])
+            ("ETH_ALEN" variable (:constant-flag t) nil [981 989])
+            ("ETH_HLEN" variable (:constant-flag t) nil [1036 1044])
+            ("ETH_ZLEN" variable (:constant-flag t) nil [1088 1096])
+            ("ETH_DATA_LEN" variable (:constant-flag t) nil [1145 1157])
+            ("ETH_FRAME_LEN" variable (:constant-flag t) nil [1202 1215])
+            ("ETH_FCS_LEN" variable (:constant-flag t) nil [1266 1277])
+            ("ETH_P_LOOP" variable (:constant-flag t) nil [1373 1383])
+            ("ETH_P_PUP" variable (:constant-flag t) nil [1431 1440])
+            ("ETH_P_PUPAT" variable (:constant-flag t) nil [1481 1492])
+            ("ETH_P_IP" variable (:constant-flag t) nil [1543 1551])
+            ("ETH_P_X25" variable (:constant-flag t) nil [1599 1608])
+            ("ETH_P_ARP" variable (:constant-flag t) nil [1644 1653])
+            ("ETH_P_BPQ" variable (:constant-flag t) nil [1702 1711])
+            ("ETH_P_IEEEPUP" variable (:constant-flag t) nil [1798 1811])
+            ("ETH_P_IEEEPUPAT" variable (:constant-flag t) nil [1861 1876])
+            ("ETH_P_BATMAN" variable (:constant-flag t) nil [1937 1949])
+            ("ETH_P_DEC" variable (:constant-flag t) nil [2037 2046])
+            ("ETH_P_DNA_DL" variable (:constant-flag t) nil [2112 2124])
+            ("ETH_P_DNA_RC" variable (:constant-flag t) nil [2187 2199])
+            ("ETH_P_DNA_RT" variable (:constant-flag t) nil [2262 2274])
+            ("ETH_P_LAT" variable (:constant-flag t) nil [2337 2346])
+            ("ETH_P_DIAG" variable (:constant-flag t) nil [2412 2422])
+            ("ETH_P_CUST" variable (:constant-flag t) nil [2487 2497])
+            ("ETH_P_SCA" variable (:constant-flag t) nil [2562 2571])
+            ("ETH_P_TEB" variable (:constant-flag t) nil [2637 2646])
+            ("ETH_P_RARP" variable (:constant-flag t) nil [2691 2701])
+            ("ETH_P_ATALK" variable (:constant-flag t) nil [2753 2764])
+            ("ETH_P_AARP" variable (:constant-flag t) nil [2802 2812])
+            ("ETH_P_8021Q" variable (:constant-flag t) nil [2851 2862])
+            ("ETH_P_IPX" variable (:constant-flag t) nil [2922 2931])
+            ("ETH_P_IPV6" variable (:constant-flag t) nil [2969 2979])
+            ("ETH_P_PAUSE" variable (:constant-flag t) nil [3022 3033])
+            ("ETH_P_SLOW" variable (:constant-flag t) nil [3089 3099])
+            ("ETH_P_WCCP" variable (:constant-flag t) nil [3153 3163])
+            ("ETH_P_PPP_DISC" variable (:constant-flag t) nil [3270 3284])
+            ("ETH_P_PPP_SES" variable (:constant-flag t) nil [3336 3349])
+            ("ETH_P_MPLS_UC" variable (:constant-flag t) nil [3395 3408])
+            ("ETH_P_MPLS_MC" variable (:constant-flag t) nil [3453 3466])
+            ("ETH_P_ATMMPOA" variable (:constant-flag t) nil [3512 3525])
+            ("ETH_P_LINK_CTL" variable (:constant-flag t) nil [3571 3585])
+            ("ETH_P_ATMFATE" variable (:constant-flag t) nil [3637 3650])
+            ("ETH_P_PAE" variable (:constant-flag t) nil [3727 3736])
+            ("ETH_P_AOE" variable (:constant-flag t) nil [3792 3801])
+            ("ETH_P_8021AD" variable (:constant-flag t) nil [3843 3855])
+            ("ETH_P_802_EX1" variable (:constant-flag t) nil [3908 3921])
+            ("ETH_P_TIPC" variable (:constant-flag t) nil [3973 3983])
+            ("ETH_P_8021AH" variable (:constant-flag t) nil [4014 4026])
+            ("ETH_P_MVRP" variable (:constant-flag t) nil [4086 4096])
+            ("ETH_P_1588" variable (:constant-flag t) nil [4156 4166])
+            ("ETH_P_FCOE" variable (:constant-flag t) nil [4208 4218])
+            ("ETH_P_TDLS" variable (:constant-flag t) nil [4270 4280])
+            ("ETH_P_FIP" variable (:constant-flag t) nil [4316 4325])
+            ("ETH_P_QINQ1" variable (:constant-flag t) nil [4377 4388])
+            ("ETH_P_QINQ2" variable (:constant-flag t) nil [4468 4479])
+            ("ETH_P_QINQ3" variable (:constant-flag t) nil [4559 4570])
+            ("ETH_P_EDSA" variable (:constant-flag t) nil [4650 4660])
+            ("ETH_P_AF_IUCV" variable (:constant-flag t) nil [4733 4746])
+            ("ETH_P_802_3_MIN" variable (:constant-flag t) nil [4820 4835])
+            ("ETH_P_802_3" variable (:constant-flag t) nil [5027 5038])
+            ("ETH_P_AX25" variable (:constant-flag t) nil [5090 5100])
+            ("ETH_P_ALL" variable (:constant-flag t) nil [5152 5161])
+            ("ETH_P_802_2" variable (:constant-flag t) nil [5213 5224])
+            ("ETH_P_SNAP" variable (:constant-flag t) nil [5262 5272])
+            ("ETH_P_DDCMP" variable (:constant-flag t) nil [5310 5321])
+            ("ETH_P_WAN_PPP" variable (:constant-flag t) nil [5385 5398])
+            ("ETH_P_PPP_MP" variable (:constant-flag t) nil [5460 5472])
+            ("ETH_P_LOCALTALK" variable (:constant-flag t) nil [5535 5550])
+            ("ETH_P_CAN" variable (:constant-flag t) nil [5596 5605])
+            ("ETH_P_CANFD" variable (:constant-flag t) nil [5657 5668])
+            ("ETH_P_PPPTALK" variable (:constant-flag t) nil [5720 5733])
+            ("ETH_P_TR_802_2" variable (:constant-flag t) nil [5785 5799])
+            ("ETH_P_MOBITEX" variable (:constant-flag t) nil [5837 5850])
+            ("ETH_P_CONTROL" variable (:constant-flag t) nil [5896 5909])
+            ("ETH_P_IRDA" variable (:constant-flag t) nil [5961 5971])
+            ("ETH_P_ECONET" variable (:constant-flag t) nil [6007 6019])
+            ("ETH_P_HDLC" variable (:constant-flag t) nil [6057 6067])
+            ("ETH_P_ARCNET" variable (:constant-flag t) nil [6104 6116])
+            ("ETH_P_DSA" variable (:constant-flag t) nil [6168 6177])
+            ("ETH_P_TRAILER" variable (:constant-flag t) nil [6225 6238])
+            ("ETH_P_PHONET" variable (:constant-flag t) nil [6284 6296])
+            ("ETH_P_IEEE802154" variable (:constant-flag t) nil [6348 6364])
+            ("ETH_P_CAIF" variable (:constant-flag t) nil [6407 6417])
+            ("ethhdr" type
+               (:members 
+                  ( ("h_dest" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [6521 6552])
+                    ("h_source" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [6581 6614])
+                    ("h_proto" variable (:type ("__be16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6640 6656]))                  
+                :type "struct")
+                nil [6504 6711]))          
+      :file "if_ether.h"
+      :pointmax 6745
+      :fsize 6744
+      :lastmodtime '(21159 47707 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ETH_P_IPX" . ((number "0x8137" 2932 . 2938)))
+          ("ETH_P_FCOE" . ((number "0x8906" 4219 . 4225)))
+          ("ETH_P_QINQ3" . ((number "0x9300" 4571 . 4577)))
+          ("ETH_P_MOBITEX" . ((number "0x0015" 5851 . 5857)))
+          ("ETH_P_HDLC" . ((number "0x0019" 6068 . 6074)))
+          ("ETH_P_IP" . ((number "0x0800" 1552 . 1558)))
+          ("ETH_P_RARP" . ((number "0x8035" 2707 . 2713)))
+          ("ETH_P_PPP_DISC" . ((number "0x8863" 3285 . 3291)))
+          ("ETH_P_8021AD" . ((number "0x88A8" 3856 . 3862)))
+          ("ETH_P_802_2" . ((number "0x0004" 5225 . 5231)))
+          ("ETH_P_CAIF" . ((number "0x00F7" 6418 . 6424)))
+          ("ETH_DATA_LEN" . ((number "1500" 1158 . 1162)))
+          ("ETH_P_DNA_RC" . ((number "0x6002" 2203 . 2209)))
+          ("ETH_P_SCA" . ((number "0x6007" 2578 . 2584)))
+          ("ETH_P_ATMMPOA" . ((number "0x884c" 3526 . 3532)))
+          ("ETH_P_TDLS" . ((number "0x890D" 4281 . 4287)))
+          ("ETH_P_802_3" . ((number "0x0001" 5039 . 5045)))
+          ("ETH_HLEN" . ((number "14" 1045 . 1047)))
+          ("ETH_P_MVRP" . ((number "0x88F5" 4097 . 4103)))
+          ("ETH_P_EDSA" . ((number "0xDADA" 4661 . 4667)))
+          ("ETH_P_AX25" . ((number "0x0002" 5101 . 5107)))
+          ("ETH_P_SNAP" . ((number "0x0005" 5273 . 5279)))
+          ("ETH_P_ARP" . ((number "0x0806" 1654 . 1660)))
+          ("ETH_P_LAT" . ((number "0x6004" 2353 . 2359)))
+          ("ETH_P_CUST" . ((number "0x6006" 2503 . 2509)))
+          ("ETH_P_TIPC" . ((number "0x88CA" 3984 . 3990)))
+          ("ETH_P_DDCMP" . ((number "0x0006" 5326 . 5332)))
+          ("ETH_P_PUP" . ((number "0x0200" 1441 . 1447)))
+          ("ETH_P_DEC" . ((number "0x6000" 2053 . 2059)))
+          ("ETH_P_TEB" . ((number "0x6558" 2647 . 2653)))
+          ("ETH_P_WCCP" . ((number "0x883E" 3164 . 3170)))
+          ("ETH_P_8021AH" . ((number "0x88E7" 4027 . 4033)))
+          ("ETH_P_1588" . ((number "0x88F7" 4167 . 4173)))
+          ("ETH_P_TRAILER" . ((number "0x001C" 6239 . 6245)))
+          ("ETH_P_IEEEPUP" . ((number "0x0a00" 1812 . 1818)))
+          ("ETH_P_DNA_RT" . ((number "0x6003" 2278 . 2284)))
+          ("ETH_P_MPLS_UC" . ((number "0x8847" 3409 . 3415)))
+          ("ETH_P_LINK_CTL" . ((number "0x886c" 3586 . 3592)))
+          ("ETH_P_PPPTALK" . ((number "0x0010" 5734 . 5740)))
+          ("ETH_P_DSA" . ((number "0x001B" 6178 . 6184)))
+          ("ETH_P_LOCALTALK" . ((number "0x0009" 5551 . 5557)))
+          ("ETH_P_TR_802_2" . ((number "0x0011" 5800 . 5806)))
+          ("ETH_P_IEEE802154" . ((number "0x00F6" 6365 . 6371)))
+          ("ETH_ZLEN" . ((number "60" 1097 . 1099)))
+          ("ETH_P_LOOP" . ((number "0x0060" 1384 . 1390)))
+          ("ETH_P_BPQ" . ((number "0x08FF" 1712 . 1718)))
+          ("ETH_P_IEEEPUPAT" . ((number "0x0a01" 1877 . 1883)))
+          ("ETH_P_DNA_DL" . ((number "0x6001" 2128 . 2134)))
+          ("ETH_P_SLOW" . ((number "0x8809" 3100 . 3106)))
+          ("ETH_P_MPLS_MC" . ((number "0x8848" 3467 . 3473)))
+          ("ETH_P_AF_IUCV" . ((number "0xFBFB" 4749 . 4755)))
+          ("ETH_P_ALL" . ((number "0x0003" 5162 . 5168)))
+          ("ETH_P_CAN" . ((number "0x000C" 5606 . 5612)))
+          ("ETH_ALEN" . ((number "6" 990 . 991)))
+          ("ETH_P_BATMAN" . ((number "0x4305" 1950 . 1956)))
+          ("ETH_P_IPV6" . ((number "0x86DD" 2980 . 2986)))
+          ("ETH_P_ATMFATE" . ((number "0x8884" 3651 . 3657)))
+          ("ETH_P_FIP" . ((number "0x8914" 4326 . 4332)))
+          ("ETH_P_WAN_PPP" . ((number "0x0007" 5401 . 5407)))
+          ("ETH_P_ARCNET" . ((number "0x001A" 6117 . 6123)))
+          ("ETH_P_PHONET" . ((number "0x00F5" 6297 . 6303)))
+          ("ETH_P_X25" . ((number "0x0805" 1609 . 1615)))
+          ("ETH_P_AARP" . ((number "0x80F3" 2813 . 2819)))
+          ("ETH_P_PPP_SES" . ((number "0x8864" 3350 . 3356)))
+          ("ETH_P_AOE" . ((number "0x88A2" 3802 . 3808)))
+          ("ETH_P_IRDA" . ((number "0x0017" 5972 . 5978)))
+          ("ETH_FRAME_LEN" . ((number "1514" 1216 . 1220)))
+          ("ETH_P_ATALK" . ((number "0x809B" 2765 . 2771)))
+          ("ETH_P_8021Q" . ((number "0x8100" 2863 . 2869)))
+          ("ETH_P_PAUSE" . ((number "0x8808" 3034 . 3040)))
+          ("ETH_P_QINQ1" . ((number "0x9100" 4389 . 4395)))
+          ("ETH_P_CONTROL" . ((number "0x0016" 5910 . 5916)))
+          ("_LINUX_IF_ETHER_H")
+          ("ETH_FCS_LEN" . ((number "4" 1278 . 1279)))
+          ("ETH_P_PUPAT" . ((number "0x0201" 1493 . 1499)))
+          ("ETH_P_DIAG" . ((number "0x6005" 2428 . 2434)))
+          ("ETH_P_PAE" . ((number "0x888E" 3737 . 3743)))
+          ("ETH_P_802_EX1" . ((number "0x88B5" 3922 . 3928)))
+          ("ETH_P_QINQ2" . ((number "0x9200" 4480 . 4486)))
+          ("ETH_P_802_3_MIN" . ((number "0x0600" 4836 . 4842)))
+          ("ETH_P_PPP_MP" . ((number "0x0008" 5476 . 5482)))
+          ("ETH_P_CANFD" . ((number "0x000D" 5669 . 5675)))
+          ("ETH_P_ECONET" . ((number "0x0018" 6020 . 6026)))
+          )
+)
+    (semanticdb-table "types.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_LINUX_TYPES_H" variable (:constant-flag t) nil [32 46])
+            ("asm/types.h" include (:system-flag t) nil [48 70])
+            ("linux/posix_types.h" include (:system-flag t) nil [94 124])
+            ("__bitwise__" variable (:constant-flag t) nil [337 348])
+            ("__bitwise" variable (:constant-flag t) nil [424 433])
+            ("__le16" type
+               (:typedef ("__u16" type (:type "class") nil nil)
+                :type "typedef")
+                nil [442 473])
+            ("__be16" type
+               (:typedef ("__u16" type (:type "class") nil nil)
+                :type "typedef")
+                nil [474 505])
+            ("__le32" type
+               (:typedef ("__u32" type (:type "class") nil nil)
+                :type "typedef")
+                nil [506 537])
+            ("__be32" type
+               (:typedef ("__u32" type (:type "class") nil nil)
+                :type "typedef")
+                nil [538 569])
+            ("__le64" type
+               (:typedef ("__u64" type (:type "class") nil nil)
+                :type "typedef")
+                nil [570 601])
+            ("__be64" type
+               (:typedef ("__u64" type (:type "class") nil nil)
+                :type "typedef")
+                nil [602 633])
+            ("__sum16" type
+               (:typedef ("__u16" type (:type "class") nil nil)
+                :type "typedef")
+                nil [635 667])
+            ("__wsum" type
+               (:typedef ("__u32" type (:type "class") nil nil)
+                :type "typedef")
+                nil [668 699])
+            ("__aligned_u64" variable (:constant-flag t) nil [1211 1224])
+            ("__aligned_be64" variable (:constant-flag t) nil [1267 1281])
+            ("__aligned_le64" variable (:constant-flag t) nil [1325 1339]))          
+      :file "types.h"
+      :pointmax 1431
+      :fsize 1430
+      :lastmodtime '(21159 47708 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_LINUX_TYPES_H")
+          ("__aligned_u64" . 
+              ((symbol "__u64" 1225 . 1230) (symbol "__attribute__" 1231 . 1244) (semantic-list "((aligned(8)))" 1244 . 1258)))
+          ("__aligned_le64" . 
+              ((symbol "__le64" 1340 . 1346) (symbol "__attribute__" 1347 . 1360) (semantic-list "((aligned(8)))" 1360 . 1374)))
+          ("__bitwise__")
+          ("__bitwise")
+          ("__aligned_be64" . 
+              ((symbol "__be64" 1282 . 1288) (symbol "__attribute__" 1289 . 1302) (semantic-list "((aligned(8)))" 1302 . 1316)))
+          )
+)
+    (semanticdb-table "posix_types.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_LINUX_POSIX_TYPES_H" variable (:constant-flag t) nil [38 58])
+            ("linux/stddef.h" include (:system-flag t) nil [60 85])
+            ("__FD_SETSIZE" variable (:constant-flag t) nil [690 702])
+            ("__kernel_fd_set" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("fds_bits" variable
+                             (:dereference 1
+                              :type "unsigned long")
+                              (reparse-symbol classsubparts) [727 785]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [709 804])
+            ("__kernel_sighandler_t" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [877 881]))                  
+                :type "void")
+                nil [847 882])
+            ("__kernel_key_t" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [915 942])
+            ("__kernel_mqd_t" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [943 970])
+            ("asm/posix_types.h" include (:system-flag t) nil [972 1000]))          
+      :file "posix_types.h"
+      :pointmax 1036
+      :fsize 1035
+      :lastmodtime '(21159 47708 0 0)
+      :unmatched-syntax '((TYPEDEF 839 . 846))
+      :lexical-table 
+        '(("_LINUX_POSIX_TYPES_H")
+          ("__FD_SETSIZE" . ((number "1024" 703 . 707)))
+          )
+)
+    (semanticdb-table "stddef.h"
+      :major-mode 'c-mode
+      :tags nil
+      :file "stddef.h"
+      :pointmax 2
+      :fsize 1
+      :lastmodtime '(21159 47708 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ioctl.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_LINUX_IOCTL_H" variable (:constant-flag t) nil [32 46])
+            ("asm/ioctl.h" include (:system-flag t) nil [48 70]))          
+      :file "ioctl.h"
+      :pointmax 101
+      :fsize 100
+      :lastmodtime '(21159 47708 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_LINUX_IOCTL_H")
+          )
+))
+  :file "!usr!include!linux!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,23 @@
+;; Object h460/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "h460/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("../Makefile.preinc" include nil nil [872 899])
+            ("Makefile.common" include nil nil [899 923])
+            ("../Makefile.inc" include nil nil [923 947]))          
+      :file "Makefile.am"
+      :pointmax 947
+      :fsize 946
+      :lastmodtime '(20430 13513 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 1867
+      :lastmodtime '(20430 13513 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!asn1!h460!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

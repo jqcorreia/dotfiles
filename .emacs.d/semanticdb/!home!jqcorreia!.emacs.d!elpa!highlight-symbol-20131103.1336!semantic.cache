@@ -1,0 +1,16 @@
+;; Object highlight-symbol-20131103.1336/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "highlight-symbol-20131103.1336/"
+  :tables
+  (list
+    (semanticdb-table "highlight-symbol-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "highlight-symbol-autoloads.el"
+      :pointmax 290
+      :fsize 3164
+      :lastmodtime '(21242 17870 612074 21000)
+      :unmatched-syntax nil))
+  :file "!home!jqcorreia!.emacs.d!elpa!highlight-symbol-20131103.1336!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object qml-mode-20130417.744/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "qml-mode-20130417.744/"
+  :tables
+  (list
+    (semanticdb-table "qml-mode-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "qml-mode-autoloads.el"
+      :pointmax 266
+      :fsize 551
+      :lastmodtime '(21250 13304 969045 224000)
+      :unmatched-syntax nil))
+  :file "!home!jqcorreia!.emacs.d!elpa!qml-mode-20130417.744!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

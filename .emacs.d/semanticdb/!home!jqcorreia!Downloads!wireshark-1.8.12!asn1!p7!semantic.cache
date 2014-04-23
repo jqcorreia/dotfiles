@@ -1,0 +1,23 @@
+;; Object p7/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "p7/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("../Makefile.preinc" include nil nil [873 900])
+            ("Makefile.common" include nil nil [900 924])
+            ("../Makefile.inc" include nil nil [924 948]))          
+      :file "Makefile.am"
+      :pointmax 949
+      :fsize 948
+      :lastmodtime '(20430 13512 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 1795
+      :lastmodtime '(20430 13512 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!asn1!p7!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

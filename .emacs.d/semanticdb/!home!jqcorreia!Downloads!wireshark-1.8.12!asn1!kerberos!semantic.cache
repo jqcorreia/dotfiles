@@ -1,0 +1,22 @@
+;; Object kerberos/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "kerberos/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("../Makefile.preinc" include nil nil [877 904])
+            ("Makefile.common" include nil nil [904 928]))          
+      :file "Makefile.am"
+      :pointmax 1001
+      :fsize 1000
+      :lastmodtime '(20430 13512 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 1377
+      :lastmodtime '(20430 13512 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!asn1!kerberos!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

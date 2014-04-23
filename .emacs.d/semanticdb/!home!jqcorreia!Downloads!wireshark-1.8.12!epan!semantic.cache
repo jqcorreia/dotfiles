@@ -1,0 +1,2143 @@
+;; Object epan/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "epan/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("../Makefile.am.inc" include nil nil [1016 1043])
+            ("wslua_lib" variable (:default-value ("wslua/libwslua.la")) nil [1059 1089])
+            ("wslua_dir" variable (:default-value ("wslua")) nil [1089 1107])
+            ("wslua_dist_dir" variable nil nil [1107 1124])
+            ("wslua_lib" variable nil nil [1154 1166])
+            ("wslua_dir" variable nil nil [1166 1178])
+            ("wslua_dist_dir" variable (:default-value ("wslua")) nil [1178 1201])
+            ("wspython_lib" variable (:default-value ("wspython/libwspython.la")) nil [1246 1285])
+            ("wspython_dir" variable (:default-value ("wspython")) nil [1285 1309])
+            ("wspython_dist_dir" variable nil nil [1309 1329])
+            ("py_dissectors_dir" variable (:default-value ("-DPYTHON_DIR=\\\"@pythondir@\\\"")) nil [1329 1378])
+            ("wspython_lib" variable nil nil [1383 1398])
+            ("wspython_dir" variable nil nil [1398 1413])
+            ("wspython_dist_dir" variable (:default-value ("wspython")) nil [1413 1442])
+            ("py_dissectors_dir" variable (:default-value ("-DPYTHONDIR=")) nil [1442 1475])
+            ("SUBDIRS" variable (:default-value ("crypt" "ftypes" "dfilter" "dissectors" "$(wslua_dir)" "$(wspython_dir)")) nil [1482 1553])
+            ("DIST_SUBDIRS" variable (:default-value ("$(SUBDIRS)" "$(wslua_dist_dir)" "$(wspython_dist_dir)")) nil [1554 1619])
+            ("ACLOCAL_AMFLAGS" variable (:default-value ("`../aclocal-flags`")) nil [1620 1657])
+            ("noinst_LTLIBRARIES" variable (:default-value ("libwireshark_generated.la")) nil [1658 1728])
+            ("lib_LTLIBRARIES" variable (:default-value ("libwireshark.la")) nil [1728 1762])
+            ("libwireshark_la_LDFLAGS" variable (:default-value ("-version-info" "2:12:0" "-export-symbols" "libwireshark.sym" "@LDFLAGS_SHAREDLIB@")) nil [1844 1944])
+            ("Makefile.common" include nil nil [1945 1969])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(srcdir)/.." "-I$(srcdir)/$(LEMON)" "-I$(builddir)/wslua" "@LUA_INCLUDES@" "$(LIBGNUTLS_CFLAGS)" "$(LIBGCRYPT_CFLAGS)" "$(LIBSMI_CFLAGS)" "$(LIBGEOIP_CFLAGS)" "$(PY_CFLAGS)")) nil [1970 2150])
+            ("AM_NON_GENERATED_CFLAGS" variable (:default-value ("-Werror")) nil [2179 2213])
+            ("libwireshark_la_SOURCES" variable (:default-value ("$(LIBWIRESHARK_SRC)" "$(LIBWIRESHARK_INCLUDES)")) nil [2501 2578])
+            ("libwireshark_la_CFLAGS" variable (:default-value ("$(AM_NON_GENERATED_CFLAGS)" "$(py_dissectors_dir)")) nil [2578 2651])
+            ("libwireshark_generated_la_SOURCES" variable (:default-value ("$(LIBWIRESHARK_GENERATED_SRC)" "$(LIBWIRESHARK_GENERATED_INCLUDES)")) nil [2652 2759])
+            ("libwireshark_asmopt_la_SOURCES" variable (:default-value ("asm_utils.c" "asm_utils.h" "asm_utils_win32_x86.asm")) nil [2860 2952])
+            ("EXTRA_DIST" variable (:default-value ("diam_dict.l" "dtd_grammar.lemon" "dtd_parse.l" "dtd_parse.h" "dtd_preparse.l" "enterprise-numbers" "libwireshark.def" "libwireshark.vcproj" "Makefile.common" "Makefile.nmake" "radius_dict.l" "tvbtest.c" "reassemble_test.c" "uat_load.l" "exntest.c" "doxygen.cfg.in" "CMakeLists.txt")) nil [2953 3286])
+            ("CLEANFILES" variable (:default-value ("libwireshark.a" "libwireshark.la" "libwireshark_generated.a" "libwireshark_generated.la" "libwireshark_asmopt.a" "libwireshark_asmopt.la" "libwireshark.sym" "*~")) nil [3287 3482])
+            ("DISTCLEANFILES" variable (:default-value ("$(LIBWIRESHARK_DISTCLEAN_GENERATED_SRC)" "$(LIBWIRESHARK_DISTCLEAN_GENERATED_INCLUDES)" "dtd_grammar.out")) nil [3483 3610])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("$(LIBWIRESHARK_NODISTCLEAN_GENERATED_SRC)" "$(LIBWIRESHARK_NODISTCLEAN_GENERATED_INCLUDES)" "Makefile.in" "sminmpec.c")) nil [3611 3759])
+            ("libwireshark_la_LIBADD" variable (:default-value ("libwireshark_generated.la" "libwireshark_asmopt.la" "crypt/libairpdcap.la" "ftypes/libftypes.la" "dfilter/libdfilter.la" "dissectors/libdissectors.la" "dissectors/libdirtydissectors.la" "$(wslua_lib)" "$(wspython_lib)" "@SOCKET_LIBS@" "@NSL_LIBS@" "@C_ARES_LIBS@" "@ADNS_LIBS@" "@LIBGCRYPT_LIBS@" "@LIBGNUTLS_LIBS@" "@KRB5_LIBS@" "@SSL_LIBS@" "@LIBSMI_LDFLAGS@" "@GEOIP_LIBS@" "${top_builddir}/wiretap/libwiretap.la" "@GLIB_LIBS@" "${top_builddir}/wsutil/libwsutil.la" "-lm")) nil [3817 4296])
+            ("libwireshark_la_DEPENDENCIES" variable (:default-value ("libwireshark_generated.la" "libwireshark_asmopt.la" "crypt/libairpdcap.la" "ftypes/libftypes.la" "dfilter/libdfilter.la" "dissectors/libdissectors.la" "dissectors/libdirtydissectors.la" "$(wslua_lib)" "$(wspython_lib)" "${top_builddir}/wsutil/libwsutil.la" "${top_builddir}/wiretap/libwiretap.la" "libwireshark.sym")) nil [4297 4642])
+            ("EXTRA_PROGRAMS" variable (:default-value ("reassemble_test")) nil [4643 4676])
+            ("reassemble_test_LDADD" variable (:default-value ("libwireshark.la" "$(GLIB_LIBS)" "-lz")) nil [4676 4742])
+            ("tvbtest" function (:arguments ("tvbtest.o" "tvbuff.o" "except.o" "to_str.o" "strutil.o" "emem.o" "charsets.o")) nil [4743 4846])
+            ("exntest" function (:arguments ("exntest.o" "except.o")) nil [4847 4900])
+            ("RUNLEX" variable (:default-value ("$(top_srcdir)/tools/runlex.sh")) nil [4901 4938])
+            ("diam_dict_lex.h" function (:arguments ("diam_dict.c")) nil [4939 4968])
+            ("dtd_parse_lex.h" function (:arguments ("dtd_parse.c")) nil [4969 4998])
+            ("dtd_parse.lo" function (:arguments ("dtd_grammar.h")) nil [4999 5027])
+            ("dtd_preparse_lex.h" function (:arguments ("dtd_preparse.c")) nil [5028 5063])
+            ("radius_dict_lex.h" function (:arguments ("radius_dict.c")) nil [5064 5097])
+            ("uat_load_lex.h" function (:arguments ("uat_load.c")) nil [5098 5125])
+            ("LEMON" variable (:default-value ("../tools/lemon")) nil [5126 5147])
+            ("dtd_grammar.h" function (:arguments ("dtd_grammar.c")) nil [5148 5177])
+            ("dtd_grammar.c" function (:arguments ("$(LEMON)/lemon$(EXEEXT)" "$(srcdir)/$(LEMON)/lempar.c" "$(srcdir)/dtd_grammar.lemon")) nil [5178 5356])
+            ("exntest.o" function (:arguments ("exceptions.h")) nil [5357 5391])
+            ("tvbtest.o" function (:arguments ("exceptions.h")) nil [5357 5391])
+            ("sminmpec.c" function (:arguments ("enterprise-numbers" "../tools/make-sminmpec.pl")) nil [5392 5534])
+            ("def_sym_filter_symbols" variable nil nil [5535 5560])
+            ("def_sym_filter_symbols" variable (:default-value ("/^register_all_wiretap_modules/" "||" "/^register_all_plugin_tap_listeners/" "||" "/^plugin_list/" "{next;};")) nil [5678 5803])
+            ("def_sym_filter_symbols" variable (:default-value ("/^py_create_dissector_handle/" "||" "/^py_dissector_args/" "{next;};")) nil [5923 6013])
+            ("def_sym_filter_symbols" variable (:default-value ("/^py_generic_dissector/" "||" "/^py_pinfo/" "||" "/^py_tree/" "||" "/^py_tvbuff/" "{next;};")) nil [6013 6117])
+            ("def_sym_filter_symbols" variable (:default-value ("/^hf_register_info_add/" "||" "/^hf_register_info_create/" "||" "/^hf_register_info_destroy/" "{next;};")) nil [6117 6239])
+            ("plugin_src" variable (:default-value ("../plugins/asn1/packet-asn1.c" "../plugins/docsis/packet-bintrngreq.c" "../plugins/docsis/packet-bpkmattr.c" "../plugins/docsis/packet-bpkmreq.c" "../plugins/docsis/packet-bpkmrsp.c" "../plugins/docsis/packet-docsis.c" "../plugins/docsis/packet-dsaack.c" "../plugins/docsis/packet-dsareq.c" "../plugins/docsis/packet-dsarsp.c" "../plugins/docsis/packet-dscack.c" "../plugins/docsis/packet-dscreq.c" "../plugins/docsis/packet-dscrsp.c" "../plugins/docsis/packet-dsdreq.c" "../plugins/docsis/packet-dsdrsp.c" "../plugins/docsis/packet-intrngreq.c" "../plugins/docsis/packet-macmgmt.c" "../plugins/docsis/packet-map.c" "../plugins/docsis/packet-regack.c" "../plugins/docsis/packet-regreq.c" "../plugins/docsis/packet-regrsp.c" "../plugins/docsis/packet-rngreq.c" "../plugins/docsis/packet-rngrsp.c" "../plugins/docsis/packet-tlv.c" "../plugins/docsis/packet-type29ucd.c" "../plugins/docsis/packet-uccreq.c" "../plugins/docsis/packet-uccrsp.c" "../plugins/docsis/packet-ucd.c" "../plugins/giop/packet-cosnaming.c" "../plugins/giop/packet-coseventcomm.c" "../plugins/gryphon/packet-gryphon.c" "../plugins/interlink/packet-interlink.c" "../plugins/irda/packet-irda.c" "../plugins/m2m/packet-m2m.c" "../plugins/m2m/wimax_tlv.c" "../plugins/mgcp/packet-mgcp.c" "../plugins/rdm/packet-rdm.c" "../plugins/sercosiii/packet-sercosiii.c" "../plugins/wimax/crc.c" "../plugins/wimax/crc_data.c" "../plugins/wimax/mac_hd_generic_decoder.c" "../plugins/wimax/mac_hd_type1_decoder.c" "../plugins/wimax/mac_hd_type2_decoder.c" "../plugins/wimax/mac_mgmt_msg_decoder.c" "../plugins/wimax/msg_aas_beam.c" "../plugins/wimax/msg_aas_fbck.c" "../plugins/wimax/msg_arq.c" "../plugins/wimax/msg_clk_cmp.c" "../plugins/wimax/msg_dcd.c" "../plugins/wimax/msg_dlmap.c" "../plugins/wimax/msg_dreg.c" "../plugins/wimax/msg_dsa.c" "../plugins/wimax/msg_dsc.c" "../plugins/wimax/msg_dsd.c" "../plugins/wimax/msg_dsx_rvd.c" "../plugins/wimax/msg_fpc.c" "../plugins/wimax/msg_pkm.c" "../plugins/wimax/msg_pmc.c" "../plugins/wimax/msg_prc_lt_ctrl.c" "../plugins/wimax/msg_reg_req.c" "../plugins/wimax/msg_reg_rsp.c" "../plugins/wimax/msg_rep.c" "../plugins/wimax/msg_res_cmd.c" "../plugins/wimax/msg_rng_req.c" "../plugins/wimax/msg_rng_rsp.c" "../plugins/wimax/msg_sbc.c" "../plugins/wimax/msg_ucd.c" "../plugins/wimax/msg_ulmap.c" "../plugins/wimax/packet-wmx.c" "../plugins/wimax/wimax_cdma_code_decoder.c" "../plugins/wimax/wimax_compact_dlmap_ie_decoder.c" "../plugins/wimax/wimax_compact_ulmap_ie_decoder.c" "../plugins/wimax/wimax_fch_decoder.c" "../plugins/wimax/wimax_ffb_decoder.c" "../plugins/wimax/wimax_hack_decoder.c" "../plugins/wimax/wimax_harq_map_decoder.c" "../plugins/wimax/wimax_pdu_decoder.c" "../plugins/wimax/wimax_phy_attributes_decoder.c" "../plugins/wimax/wimax_tlv.c" "../plugins/wimax/wimax_utils.c")) nil [6312 9492])
+            ("plugin_src" variable nil nil [9517 9530])
+            ("plugin_src" variable nil nil [9576 9589])
+            ("doxygen" function nil nil [9613 9622])
+            ("dumpabi" function (:arguments ("all" "abi-descriptor.xml")) nil [9833 10983])
+            ("checkapi" function nil nil [10984 11066]))          
+      :file "Makefile.am"
+      :pointmax 11066
+      :fsize 11065
+      :lastmodtime '(21108 5705 0 0)
+      :unmatched-syntax '((shell-command 10995 . 11065) (bol 10994 . 10994) (ENDIF 9662 . 9667) (bol 9662 . 9662) (shell-command 9639 . 9661) (bol 9638 . 9638) (ENDIF 9590 . 9595) (bol 9590 . 9590) (ELSE 9555 . 9559) (bol 9555 . 9555) (ENDIF 9531 . 9536) (bol 9531 . 9531) (ELSE 9494 . 9498) (bol 9494 . 9494) (symbol 6289 . 6311) (symbol 6280 . 6288) (bol 6280 . 6280) (symbol 5565 . 5577) (punctuation 5564 . 5565) (IF 5561 . 5563) (bol 5561 . 5561) (ENDIF 1201 . 1206) (bol 1201 . 1201) (ELSE 1124 . 1128) (bol 1124 . 1124)))
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 5279
+      :lastmodtime '(20430 13540 0 0))
+    (semanticdb-table "crc32-tvb.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("glib.h" include (:system-flag t) nil [1065 1082])
+            ("epan/tvbuff.h" include (:system-flag t) nil [1083 1107])
+            ("wsutil/crc32.h" include (:system-flag t) nil [1108 1133])
+            ("crc32_ccitt_tvb" function
+               (:arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1160 1174])
+                    ("len" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1175 1185]))                  
+                :type ("guint32" type (:type "class") nil nil))
+                nil [1136 1369])
+            ("crc32_ccitt_tvb_offset" function
+               (:arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1402 1416])
+                    ("offset" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1417 1430])
+                    ("len" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1431 1441]))                  
+                :type ("guint32" type (:type "class") nil nil))
+                nil [1371 1612])
+            ("crc32_ccitt_tvb_seed" function
+               (:arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1643 1657])
+                    ("len" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1658 1668])
+                    ("seed" variable (:type ("guint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1669 1682]))                  
+                :type ("guint32" type (:type "class") nil nil))
+                nil [1614 1854])
+            ("crc32_ccitt_tvb_offset_seed" function
+               (:arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1892 1906])
+                    ("offset" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1907 1920])
+                    ("len" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1921 1931])
+                    ("seed" variable (:type ("guint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1939 1952]))                  
+                :type ("guint32" type (:type "class") nil nil))
+                nil [1856 2134])
+            ("crc32_802_tvb" function
+               (:arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2513 2527])
+                    ("len" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2528 2538]))                  
+                :type ("guint32" type (:type "class") nil nil))
+                nil [2491 2787])
+            ("crc32_mpeg2_tvb_offset_seed" function
+               (:arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2825 2839])
+                    ("offset" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2840 2853])
+                    ("len" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2893 2903])
+                    ("seed" variable (:type ("guint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2904 2917]))                  
+                :type ("guint32" type (:type "class") nil nil))
+                nil [2789 3099])
+            ("crc32_mpeg2_tvb" function
+               (:arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3125 3139])
+                    ("len" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3140 3150]))                  
+                :type ("guint32" type (:type "class") nil nil))
+                nil [3101 3229])
+            ("crc32_mpeg2_tvb_offset" function
+               (:arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3262 3276])
+                    ("offset" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3277 3290])
+                    ("len" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3291 3301]))                  
+                :type ("guint32" type (:type "class") nil nil))
+                nil [3231 3385])
+            ("crc32_mpeg2_tvb_seed" function
+               (:arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3416 3430])
+                    ("len" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3431 3441])
+                    ("seed" variable (:type ("guint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3442 3455]))                  
+                :type ("guint32" type (:type "class") nil nil))
+                nil [3387 3522]))          
+      :file "crc32-tvb.c"
+      :pointmax 3523
+      :fsize 3522
+      :lastmodtime '(20430 13540 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "tvbuff.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__TVBUFF_H__" variable (:constant-flag t) nil [1342 1354])
+            ("glib.h" include (:system-flag t) nil [1356 1373])
+            ("epan/ipv6-utils.h" include (:system-flag t) nil [1374 1402])
+            ("epan/guid-utils.h" include (:system-flag t) nil [1403 1431])
+            ("exceptions.h" include nil nil [1432 1455])
+            ("tvb_child_uncompress" function
+               (:type ("tvbuff_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31413 31430])
+                    ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31431 31445])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [31446 31463])
+                    ("comprlen" variable (:type "int") (reparse-symbol arg-sub-list) [31464 31477]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [31375 31478])
+            ("tvb_uncompress" function
+               (:type ("tvbuff_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31112 31126])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [31127 31144])
+                    ("comprlen" variable (:type "int") (reparse-symbol arg-sub-list) [31146 31159]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [31080 31160])
+            ("tvb_find_tvb" function
+               (:type ("gint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("haystack_tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30806 30829])
+                    ("needle_tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30830 30851])
+                    ("haystack_offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30853 30880]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [30781 30881])
+            ("tvb_get_ds_tvb" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("tvbuff" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30494 30508]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [30464 30509])
+            ("tvb_bcd_dig_to_ep_str" function
+               (:type ("gchar" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30375 30389])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30390 30408])
+                    ("len" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30409 30424])
+                    ("dgt" variable
+                       (:pointer 1
+                        :type ("dgt_set_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30425 30440])
+                    ("skip_first" variable (:type ("gboolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30441 30461]))                  
+                :constant-flag t
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [30333 30462])
+            ("dgt_set_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("dgt_set_t" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [30262 30331])
+            ("dgt_set_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("out" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [30290 30318]))                  )
+                (reparse-symbol extern-c-contents) [30262 30331])
+            ("tvb_bytes_to_str" function
+               (:type ("gchar" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29671 29685])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29686 29704])
+                    ("len" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29705 29720]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [29640 29721])
+            ("tvb_bytes_to_str_punct" function
+               (:type ("gchar" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29445 29459])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29460 29478])
+                    ("len" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29479 29494])
+                    ("punct" variable
+                       (:constant-flag t
+                        :type ("gchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29499 29517]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [29408 29518])
+            ("tvb_memeql" function
+               (:type ("gint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29179 29193])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29194 29212])
+                    ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("guint8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29213 29231])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29236 29248]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [29156 29249])
+            ("tvb_strncaseeql" function
+               (:type ("gint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28931 28945])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28946 28964])
+                    ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("gchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28965 28982])
+                    ("size" variable
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28987 29005]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [28903 29006])
+            ("tvb_strneql" function
+               (:type ("gint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28665 28679])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28680 28698])
+                    ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("gchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28699 28716])
+                    ("size" variable
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28721 28739]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [28641 28740])
+            ("tvb_skip_wsp_return" function
+               (:type ("gint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28456 28470])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28471 28489]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [28424 28490])
+            ("tvb_skip_wsp" function
+               (:type ("gint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28366 28380])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28381 28399])
+                    ("maxlength" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28400 28421]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [28341 28422])
+            ("tvb_find_line_end_unquoted" function
+               (:type ("gint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27603 27617])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27618 27636])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [27637 27645])
+                    ("next_offset" variable
+                       (:pointer 1
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27650 27668]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [27564 27669])
+            ("tvb_find_line_end" function
+               (:type ("gint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26717 26731])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26732 26750])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [26751 26759])
+                    ("next_offset" variable
+                       (:pointer 1
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26764 26782])
+                    ("desegment" variable
+                       (:constant-flag t
+                        :type ("gboolean" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26783 26808]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [26687 26809])
+            ("tvb_get_nstringz0" function
+               (:type ("gint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25880 25894])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25895 25913])
+                    ("bufsize" variable
+                       (:constant-flag t
+                        :type ("guint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25914 25934])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type ("guint8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25939 25954]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [25850 25955])
+            ("tvb_get_nstringz" function
+               (:type ("gint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25515 25529])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25530 25548])
+                    ("bufsize" variable
+                       (:constant-flag t
+                        :type ("guint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25549 25569])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type ("guint8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25574 25589]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [25486 25590])
+            ("tvb_get_seasonal_stringz" function
+               (:type ("guint8" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24679 24693])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24694 24712])
+                    ("lengthp" variable
+                       (:pointer 1
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24713 24727]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24639 24728])
+            ("tvb_get_ephemeral_unicode_stringz" function
+               (:type ("gchar" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24567 24581])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24582 24600])
+                    ("lengthp" variable
+                       (:pointer 1
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24601 24615])
+                    ("encoding" variable
+                       (:constant-flag t
+                        :type ("guint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24616 24637]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24518 24638])
+            ("tvb_get_ephemeral_stringz_enc" function
+               (:type ("guint8" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24446 24460])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24461 24479])
+                    ("lengthp" variable
+                       (:pointer 1
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24480 24494])
+                    ("encoding" variable
+                       (:constant-flag t
+                        :type ("guint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24495 24516]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24401 24517])
+            ("tvb_get_ephemeral_stringz" function
+               (:type ("guint8" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24351 24365])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24366 24384])
+                    ("lengthp" variable
+                       (:pointer 1
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24385 24399]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24310 24400])
+            ("tvb_get_const_stringz" function
+               (:type ("guint8" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24260 24274])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24275 24293])
+                    ("lengthp" variable
+                       (:pointer 1
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24294 24308]))                  
+                :constant-flag t
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24217 24309])
+            ("tvb_get_stringz_enc" function
+               (:type ("guint8" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24145 24159])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24160 24178])
+                    ("lengthp" variable
+                       (:pointer 1
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24179 24193])
+                    ("encoding" variable
+                       (:constant-flag t
+                        :type ("guint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24194 24215]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24110 24216])
+            ("tvb_get_stringz" function
+               (:type ("guint8" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24060 24074])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24075 24093])
+                    ("lengthp" variable
+                       (:pointer 1
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24094 24108]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24029 24109])
+            ("tvb_get_seasonal_string" function
+               (:type ("guint8" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22217 22231])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22232 22250])
+                    ("length" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22251 22269]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [22178 22270])
+            ("tvb_get_ephemeral_unicode_string" function
+               (:type ("gchar" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22108 22122])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22123 22141])
+                    ("length" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22142 22154])
+                    ("encoding" variable
+                       (:constant-flag t
+                        :type ("guint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22155 22176]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [22060 22177])
+            ("tvb_get_ephemeral_string_enc" function
+               (:type ("guint8" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21980 21994])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21995 22013])
+                    ("length" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22018 22036])
+                    ("encoding" variable
+                       (:constant-flag t
+                        :type ("guint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22037 22058]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [21936 22059])
+            ("tvb_get_ephemeral_string" function
+               (:type ("guint8" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21882 21896])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21897 21915])
+                    ("length" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21916 21934]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [21842 21935])
+            ("tvb_get_unicode_string" function
+               (:type ("gchar" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21772 21786])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21787 21805])
+                    ("length" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21806 21818])
+                    ("encoding" variable
+                       (:constant-flag t
+                        :type ("guint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21819 21840]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [21734 21841])
+            ("tvb_get_string" function
+               (:type ("guint8" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21680 21694])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21695 21713])
+                    ("length" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21714 21732]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [21650 21733])
+            ("tvb_format_stringzpad_wsp" function
+               (:type ("gchar" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20381 20395])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20396 20414])
+                    ("size" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20415 20431]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [20341 20432])
+            ("tvb_format_stringzpad" function
+               (:type ("gchar" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20165 20179])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20180 20198])
+                    ("size" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20199 20215]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [20129 20216])
+            ("tvb_format_text_wsp" function
+               (:type ("gchar" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19957 19971])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19972 19990])
+                    ("size" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19991 20007]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [19922 20008])
+            ("tvb_format_text" function
+               (:type ("gchar" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19768 19782])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19783 19801])
+                    ("size" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19802 19818]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [19737 19819])
+            ("tvb_get_ephemeral_faked_unicode" function
+               (:type "char"
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19570 19584])
+                    ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [19585 19596])
+                    ("len" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [19597 19611])
+                    ("little_endian" variable
+                       (:constant-flag t
+                        :type ("gboolean" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19642 19671]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [19525 19672])
+            ("tvb_fake_unicode" function
+               (:type "char"
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19422 19436])
+                    ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [19437 19448])
+                    ("len" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [19449 19463])
+                    ("little_endian" variable
+                       (:constant-flag t
+                        :type ("gboolean" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19494 19523]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [19392 19524])
+            ("tvb_strnlen" function
+               (:type ("gint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18638 18648])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18649 18667])
+                    ("maxlength" variable
+                       (:constant-flag t
+                        :type ("guint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18668 18690]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [18614 18691])
+            ("tvb_unicode_strsize" function
+               (:type ("guint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18360 18374])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18375 18393]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [18327 18394])
+            ("tvb_strsize" function
+               (:type ("guint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18056 18070])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18071 18089]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [18031 18090])
+            ("tvb_pbrk_guint8" function
+               (:type ("gint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17718 17729])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17730 17748])
+                    ("maxlength" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17749 17770])
+                    ("needles" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("guint8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17775 17797])
+                    ("found_needle" variable
+                       (:pointer 1
+                        :type ("guchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17798 17819]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17690 17820])
+            ("tvb_find_guint8" function
+               (:type ("gint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17231 17241])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17242 17260])
+                    ("maxlength" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17261 17282])
+                    ("needle" variable
+                       (:constant-flag t
+                        :type ("guint8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17287 17307]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17203 17308])
+            ("tvb_get_ptr" function
+               (:type ("guint8" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16743 16753])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16754 16772])
+                    ("length" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16773 16791]))                  
+                :constant-flag t
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16710 16792])
+            ("ep_tvb_memdup" function
+               (:type "void"
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15081 15095])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15096 15114])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15115 15129]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15054 15130])
+            ("tvb_memdup" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14796 14806])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14807 14825])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14826 14840]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14772 14841])
+            ("tvb_memcpy" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14600 14610])
+                    ("target" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [14611 14624])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14625 14643])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14644 14658]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14576 14659])
+            ("ep_tvb_get_bits" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("guint8" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14150 14164])
+                    ("bit_offset" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14165 14182])
+                    ("no_of_bits" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14183 14199])
+                    ("lsb0" variable (:type ("gboolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14200 14214]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14126 14215])
+            ("tvb_get_bits_buf" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14047 14061])
+                    ("bit_offset" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14062 14079])
+                    ("no_of_bits" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14080 14096])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("guint8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14097 14109])
+                    ("lsb0" variable (:type ("gboolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14110 14124]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14025 14125])
+            ("tvb_get_bits" function
+               (:type ("guint32" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13939 13953])
+                    ("bit_offset" variable
+                       (:constant-flag t
+                        :type ("guint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13954 13977])
+                    ("no_of_bits" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13978 14000])
+                    ("encoding" variable
+                       (:constant-flag t
+                        :type ("guint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14001 14022]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13911 14023])
+            ("tvb_get_bits64" function
+               (:type ("guint64" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13750 13764])
+                    ("bit_offset" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13765 13782])
+                    ("no_of_bits" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13783 13805])
+                    ("encoding" variable
+                       (:constant-flag t
+                        :type ("guint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13806 13827]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13720 13828])
+            ("tvb_get_bits32" function
+               (:type ("guint32" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13597 13611])
+                    ("bit_offset" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13612 13629])
+                    ("no_of_bits" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13630 13652])
+                    ("encoding" variable
+                       (:constant-flag t
+                        :type ("guint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13653 13674]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13567 13675])
+            ("tvb_get_bits16" function
+               (:type ("guint16" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13444 13458])
+                    ("bit_offset" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13459 13476])
+                    ("no_of_bits" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13477 13499])
+                    ("encoding" variable
+                       (:constant-flag t
+                        :type ("guint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13500 13521]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13414 13522])
+            ("tvb_get_bits8" function
+               (:type ("guint8" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13313 13327])
+                    ("bit_offset" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13328 13345])
+                    ("no_of_bits" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13346 13368]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13285 13369])
+            ("tvb_get_guid" function
+               (:type "void"
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12935 12949])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12950 12968])
+                    ("guid" variable
+                       (:pointer 1
+                        :type ("e_guid_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12969 12984])
+                    ("representation" variable
+                       (:constant-flag t
+                        :type ("guint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12985 13012]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12910 13013])
+            ("tvb_get_letohguid" function
+               (:type "void"
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12859 12873])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12874 12892])
+                    ("guid" variable
+                       (:pointer 1
+                        :type ("e_guid_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12893 12908]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12829 12909])
+            ("tvb_get_ntohguid" function
+               (:type "void"
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12778 12792])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12793 12811])
+                    ("guid" variable
+                       (:pointer 1
+                        :type ("e_guid_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12812 12827]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12749 12828])
+            ("tvb_get_ipv6" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12672 12682])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12683 12701])
+                    ("addr" variable
+                       (:pointer 1
+                        :type ("e_in6_addr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12702 12726]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12647 12727])
+            ("tvb_get_ipv4" function
+               (:type ("guint32" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12586 12596])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12597 12615]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12558 12616])
+            ("tvb_get_letohieee_double" function
+               (:type ("gdouble" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12351 12361])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12362 12380]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12311 12381])
+            ("tvb_get_letohieee_float" function
+               (:type ("gfloat" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12280 12290])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12291 12309]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12242 12310])
+            ("tvb_get_letoh64" function
+               (:type ("guint64" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12211 12221])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12222 12240]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12180 12241])
+            ("tvb_get_letoh56" function
+               (:type ("guint64" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12149 12159])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12160 12178]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12118 12179])
+            ("tvb_get_letoh48" function
+               (:type ("guint64" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12087 12097])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12098 12116]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12056 12117])
+            ("tvb_get_letoh40" function
+               (:type ("guint64" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12025 12035])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12036 12054]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11994 12055])
+            ("tvb_get_letohl" function
+               (:type ("guint32" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11963 11973])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11974 11992]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11933 11993])
+            ("tvb_get_letoh24" function
+               (:type ("guint32" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11902 11912])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11913 11931]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11871 11932])
+            ("tvb_get_letohs" function
+               (:type ("guint16" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11840 11850])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11851 11869]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11810 11870])
+            ("tvb_get_ntohieee_double" function
+               (:type ("gdouble" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11778 11788])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11789 11807]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11739 11808])
+            ("tvb_get_ntohieee_float" function
+               (:type ("gfloat" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11708 11718])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11719 11737]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11671 11738])
+            ("tvb_get_ntoh64" function
+               (:type ("guint64" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11640 11650])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11651 11669]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11610 11670])
+            ("tvb_get_ntoh56" function
+               (:type ("guint64" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11579 11589])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11590 11608]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11549 11609])
+            ("tvb_get_ntoh48" function
+               (:type ("guint64" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11518 11528])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11529 11547]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11488 11548])
+            ("tvb_get_ntoh40" function
+               (:type ("guint64" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11457 11467])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11468 11486]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11427 11487])
+            ("tvb_get_ntohl" function
+               (:type ("guint32" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11396 11406])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11407 11425]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11367 11426])
+            ("tvb_get_ntoh24" function
+               (:type ("guint32" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11336 11346])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11347 11365]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11306 11366])
+            ("tvb_get_ntohs" function
+               (:type ("guint16" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11275 11285])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11286 11304]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11246 11305])
+            ("tvb_get_guint8" function
+               (:type ("guint8" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11214 11224])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11225 11243]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11184 11244])
+            ("tvb_raw_offset" function
+               (:type ("gint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11054 11068]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11027 11069])
+            ("tvb_offset_from_real_beginning" function
+               (:type ("guint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10945 10965]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10901 10966])
+            ("tvb_set_reported_length" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10875 10885])
+                    ("" variable
+                       (:constant-flag t
+                        :type ("guint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10886 10898]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10839 10899])
+            ("tvb_reported_length_remaining" function
+               (:type ("gint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10530 10550])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10551 10569]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10488 10570])
+            ("tvb_reported_length" function
+               (:type ("guint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10235 10251]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10202 10252])
+            ("tvb_offset_exists" function
+               (:type ("gboolean" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10128 10144])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10145 10163]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10094 10164])
+            ("tvb_ensure_bytes_exist" function
+               (:type "void"
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9966 9986])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9987 10005])
+                    ("length" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10006 10024]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9931 10025])
+            ("tvb_bytes_exist" function
+               (:type ("gboolean" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9739 9755])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9756 9774])
+                    ("length" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9775 9793]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9707 9794])
+            ("tvb_ensure_length_remaining" function
+               (:type ("guint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9551 9567])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9568 9586]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9510 9587])
+            ("tvb_length_remaining" function
+               (:type ("gint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9394 9410])
+                    ("offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9411 9429]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9361 9430])
+            ("tvb_length" function
+               (:type ("guint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9135 9151]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9111 9152])
+            ("tvb_composite_finalize" function
+               (:type "void"
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9060 9074]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9025 9075])
+            ("tvb_new_composite" function
+               (:type ("tvbuff_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8873 8878]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8838 8879])
+            ("tvb_composite_prepend" function
+               (:type "void"
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8680 8694])
+                    ("member" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8695 8712]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8646 8713])
+            ("tvb_composite_append" function
+               (:type "void"
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8538 8552])
+                    ("member" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8553 8570]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8505 8571])
+            ("tvb_new_subset_remaining" function
+               (:type ("tvbuff_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("backing" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8221 8239])
+                    ("backing_offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8242 8268]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8179 8269])
+            ("tvb_new_subset" function
+               (:type ("tvbuff_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("backing" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7950 7968])
+                    ("backing_offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7971 7997])
+                    ("backing_length" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7998 8024])
+                    ("reported_length" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8025 8052]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7918 8053])
+            ("tvb_set_subset" function
+               (:type "void"
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7711 7725])
+                    ("backing" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7726 7744])
+                    ("backing_offset" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7747 7773])
+                    ("backing_length" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7774 7800])
+                    ("reported_length" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7801 7828]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7684 7829])
+            ("tvb_new_real_data" function
+               (:type ("tvbuff_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("guint8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7150 7169])
+                    ("length" variable
+                       (:constant-flag t
+                        :type ("guint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7170 7189])
+                    ("reported_length" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7194 7221]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7115 7222])
+            ("tvb_set_real_data" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6737 6747])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("guint8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6748 6767])
+                    ("length" variable
+                       (:constant-flag t
+                        :type ("guint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6768 6787])
+                    ("reported_length" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6792 6819]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6707 6820])
+            ("tvb_new_child_real_data" function
+               (:type ("tvbuff_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6539 6556])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("guint8" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6557 6576])
+                    ("length" variable
+                       (:constant-flag t
+                        :type ("guint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6577 6596])
+                    ("reported_length" variable
+                       (:constant-flag t
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6601 6628]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6498 6629])
+            ("tvb_set_child_real_data_tvbuff" function
+               (:type "void"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6461 6478])
+                    ("child" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6479 6495]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6418 6496])
+            ("tvb_set_free_cb" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5725 5735])
+                    ("" variable
+                       (:constant-flag t
+                        :type ("tvbuff_free_cb_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5736 5759]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5697 5760])
+            ("tvb_free_chain" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5463 5473]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5436 5474])
+            ("tvb_free" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5182 5192]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5161 5193])
+            ("tvb_new_octet_aligned" function
+               (:type ("tvbuff_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4867 4881])
+                    ("bit_offset" variable (:type ("guint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4882 4901])
+                    ("no_of_bits" variable (:type ("gint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4902 4920]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4828 4921])
+            ("tvb_new" function
+               (:type ("tvbuff_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type ("tvbuff_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4649 4661]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4624 4662])
+            ("tvbuff_free_cb_t" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4428 4434]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4403 4435])
+            ("tvbuff_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("tvbuff" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [2036 2067])
+            ("tvbuff" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :prototype t)
+                (reparse-symbol extern-c-contents) [2021 2035])
+            ("tvbuff_type" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("TVBUFF_REAL_DATA" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1953 1970])
+                          ("TVBUFF_SUBSET" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1972 1986])
+                          ("TVBUFF_COMPOSITE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1988 2006]))                        
+                      :type "enum")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [1937 2019]))          
+      :file "tvbuff.h"
+      :pointmax 31605
+      :fsize 31604
+      :lastmodtime '(20430 13540 0 0)
+      :unmatched-syntax '((TYPEDEF 4395 . 4402))
+      :lexical-table 
+        '(("__TVBUFF_H__")
+          )
+)
+    (semanticdb-table "crc32-tvb.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__CRC32_TVB_H__" variable (:constant-flag t) nil [986 1001])
+            ("crc32_mpeg2_tvb_offset_seed" function
+               (:type ("guint32" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4279 4293])
+                    ("offset" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4294 4307])
+                    ("len" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4351 4361])
+                    ("seed" variable (:type ("guint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4362 4375]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4236 4376])
+            ("crc32_mpeg2_tvb_seed" function
+               (:type ("guint32" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3891 3905])
+                    ("len" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3906 3916])
+                    ("seed" variable (:type ("guint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3917 3930]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3855 3931])
+            ("crc32_mpeg2_tvb_offset" function
+               (:type ("guint32" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3556 3570])
+                    ("offset" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3571 3584])
+                    ("len" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3585 3595]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3518 3596])
+            ("crc32_mpeg2_tvb" function
+               (:type ("guint32" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3245 3259])
+                    ("len" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3260 3270]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3214 3271])
+            ("crc32_802_tvb" function
+               (:type ("guint32" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2986 3000])
+                    ("len" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3001 3011]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2957 3012])
+            ("crc32_ccitt_tvb_offset_seed" function
+               (:type ("guint32" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2651 2665])
+                    ("offset" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2666 2679])
+                    ("len" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2723 2733])
+                    ("seed" variable (:type ("guint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2734 2747]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2608 2748])
+            ("crc32_ccitt_tvb_seed" function
+               (:type ("guint32" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2098 2112])
+                    ("len" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2113 2123])
+                    ("seed" variable (:type ("guint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2124 2137]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2062 2138])
+            ("crc32_ccitt_tvb_offset" function
+               (:type ("guint32" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1598 1612])
+                    ("offset" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1613 1626])
+                    ("len" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1627 1637]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1560 1638])
+            ("crc32_ccitt_tvb" function
+               (:type ("guint32" type (:type "class") nil nil)
+                :arguments 
+                  ( ("tvb" variable
+                       (:pointer 1
+                        :type ("tvbuff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1289 1303])
+                    ("len" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1304 1314]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1258 1315]))          
+      :file "crc32-tvb.h"
+      :pointmax 4449
+      :fsize 4448
+      :lastmodtime '(20430 13540 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__CRC32_TVB_H__")
+          )
+)
+    (semanticdb-table "ipv6-utils.h"
+      :file "ipv6-utils.h"
+      :fsize 1651
+      :lastmodtime '(20430 13540 0 0))
+    (semanticdb-table "guid-utils.h"
+      :file "guid-utils.h"
+      :fsize 2131
+      :lastmodtime '(20430 13540 0 0))
+    (semanticdb-table "exceptions.h"
+      :file "exceptions.h"
+      :fsize 12941
+      :lastmodtime '(20790 32372 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!epan!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

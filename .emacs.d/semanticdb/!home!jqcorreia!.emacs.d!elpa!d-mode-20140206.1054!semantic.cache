@@ -1,0 +1,16 @@
+;; Object d-mode-20140206.1054/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "d-mode-20140206.1054/"
+  :tables
+  (list
+    (semanticdb-table "d-mode-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "d-mode-autoloads.el"
+      :pointmax 260
+      :fsize 846
+      :lastmodtime '(21279 18661 395528 893000)
+      :unmatched-syntax nil))
+  :file "!home!jqcorreia!.emacs.d!elpa!d-mode-20140206.1054!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

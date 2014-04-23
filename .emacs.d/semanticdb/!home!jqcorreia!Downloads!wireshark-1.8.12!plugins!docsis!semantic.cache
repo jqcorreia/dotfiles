@@ -1,0 +1,34 @@
+;; Object docsis/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "docsis/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)" "-I$(includedir)")) nil [925 971])
+            ("Makefile.common" include nil nil [972 996])
+            ("AM_CFLAGS" variable (:default-value ("-Werror")) nil [1024 1044])
+            ("plugindir" variable (:default-value ("@plugindir@")) nil [1051 1075])
+            ("plugin_LTLIBRARIES" variable (:default-value ("docsis.la")) nil [1076 1107])
+            ("docsis_la_SOURCES" variable (:default-value ("plugin.c" "moduleinfo.h" "$(DISSECTOR_SRC)" "$(DISSECTOR_SUPPORT_SRC)" "$(DISSECTOR_INCLUDES)")) nil [1107 1228])
+            ("docsis_la_LDFLAGS" variable (:default-value ("-module" "-avoid-version")) nil [1228 1271])
+            ("docsis_la_LIBADD" variable (:default-value ("@PLUGIN_LIBS@")) nil [1271 1304])
+            ("LIBS" variable nil nil [1462 1469])
+            ("plugin.c" function (:arguments ("$(DISSECTOR_SRC)" "Makefile.common" "$(top_srcdir)/tools/make-dissector-reg" "$(top_srcdir)/tools/make-dissector-reg.py")) nil [2989 3449])
+            ("CLEANFILES" variable (:default-value ("docsis" "*~")) nil [4167 4196])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in" "plugin.c")) nil [4197 4247])
+            ("EXTRA_DIST" variable (:default-value ("Makefile.common" "Makefile.nmake" "moduleinfo.nmake" "plugin.rc.in" "README" "CMakeLists.txt")) nil [4248 4367])
+            ("checkapi" function nil nil [4368 4489]))          
+      :file "Makefile.am"
+      :pointmax 4489
+      :fsize 4488
+      :lastmodtime '(20873 33376 0 0)
+      :unmatched-syntax '((shell-command 4379 . 4488) (bol 4378 . 4378)))
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 2073
+      :lastmodtime '(20430 13517 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!plugins!docsis!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,34 @@
+;; Object unistim/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "unistim/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)" "-I$(includedir)")) nil [987 1033])
+            ("Makefile.common" include nil nil [1034 1058])
+            ("AM_CFLAGS" variable (:default-value ("-Werror")) nil [1086 1106])
+            ("plugindir" variable (:default-value ("@plugindir@")) nil [1113 1137])
+            ("plugin_LTLIBRARIES" variable (:default-value ("unistim.la")) nil [1138 1170])
+            ("unistim_la_SOURCES" variable (:default-value ("plugin.c" "moduleinfo.h" "$(DISSECTOR_SRC)" "$(DISSECTOR_SUPPORT_SRC)" "$(DISSECTOR_INCLUDES)")) nil [1170 1292])
+            ("unistim_la_LDFLAGS" variable (:default-value ("-module" "-avoid-version")) nil [1292 1336])
+            ("unistim_la_LIBADD" variable (:default-value ("@PLUGIN_LIBS@")) nil [1336 1370])
+            ("LIBS" variable nil nil [1528 1535])
+            ("plugin.c" function (:arguments ("$(DISSECTOR_SRC)" "Makefile.common" "$(top_srcdir)/tools/make-dissector-reg" "$(top_srcdir)/tools/make-dissector-reg.py")) nil [3055 3515])
+            ("CLEANFILES" variable (:default-value ("unistim" "*~")) nil [4233 4263])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in" "plugin.c")) nil [4264 4314])
+            ("EXTRA_DIST" variable (:default-value ("Makefile.common" "Makefile.nmake" "moduleinfo.nmake" "plugin.rc.in" "CMakeLists.txt")) nil [4315 4422])
+            ("checkapi" function nil nil [4424 4545]))          
+      :file "Makefile.am"
+      :pointmax 4545
+      :fsize 4544
+      :lastmodtime '(20873 33377 0 0)
+      :unmatched-syntax '((shell-command 4435 . 4544) (bol 4434 . 4434)))
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 1446
+      :lastmodtime '(20430 13517 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!plugins!unistim!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

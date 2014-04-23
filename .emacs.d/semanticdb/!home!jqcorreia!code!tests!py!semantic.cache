@@ -1,0 +1,60 @@
+;; Object py/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "py/"
+  :tables
+  (list
+    (semanticdb-table "pycassatest.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [1 11])
+            ("pycassa" include nil nil [12 26])
+            ("counter" variable nil nil [543 554])
+            ("for" code nil nil [555 796])
+            ("print" code nil nil [809 838]))          
+      :file "pycassatest.py"
+      :pointmax 839
+      :fsize 837
+      :lastmodtime '(21273 47628 312822 966000)
+      :unmatched-syntax nil)
+
+    (semanticdb-table "zmqtest.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("zmq" include nil nil [1 11])
+            ("threading" include nil nil [12 28])
+            ("msgpack" include nil nil [29 43])
+            ("pack_msg" function (:arguments 
+              ( ("msg" variable nil (reparse-symbol function_parameters) [59 62]))              ) nil [46 134])
+            ("unpack_msg" function (:arguments 
+              ( ("msg" variable nil (reparse-symbol function_parameters) [151 154]))              ) nil [136 247])
+            ("ZmqTest" type
+               (:superclasses ("threading.Thread")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [317 335])
+                            ("self" variable nil (reparse-symbol indented_block_body) [353 382])
+                            ("self" variable nil (reparse-symbol indented_block_body) [391 436])
+                            ("self" code nil (reparse-symbol indented_block_body) [445 486]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [302 306]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [289 487])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [500 504]))                          )
+                        (reparse-symbol indented_block_body) [492 719]))                  
+                :type "class")
+                nil [252 719])
+            ("t" variable nil nil [720 733])
+            ("t" code nil nil [734 743]))          
+      :file "zmqtest.py"
+      :pointmax 744
+      :fsize 743
+      :lastmodtime '(21274 3492 306971 368000)
+      :unmatched-syntax nil))
+  :file "!home!jqcorreia!code!tests!py!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,44 @@
+;; Object wiretap/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "wiretap/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("../Makefile.am.inc" include nil nil [917 944])
+            ("ACLOCAL_AMFLAGS" variable (:default-value ("`../aclocal-flags`")) nil [945 982])
+            ("Makefile.common" include nil nil [983 1007])
+            ("noinst_LTLIBRARIES" variable (:default-value ("libwiretap_generated.la")) nil [1008 1053])
+            ("lib_LTLIBRARIES" variable (:default-value ("libwiretap.la")) nil [1053 1085])
+            ("libwiretap_la_LDFLAGS" variable (:default-value ("-version-info" "3:12:1" "-export-symbols" "wtap.sym" "@LDFLAGS_SHAREDLIB@")) nil [1167 1257])
+            ("AM_NON_GENERATED_CFLAGS" variable (:default-value ("-Werror")) nil [1285 1319])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(srcdir)/..")) nil [1326 1355])
+            ("CLEANFILES" variable (:default-value ("libwiretap.a" "libwiretap.la" "libwiretap_generated.a" "libwiretap_generated.la" "wtap.sym" "*~")) nil [1356 1476])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("$(GENERATED_FILES)" "Makefile.in")) nil [1477 1537])
+            ("libwiretap_la_SOURCES" variable (:default-value ("$(NONGENERATED_C_FILES)" "$(NONGENERATED_HEADER_FILES)")) nil [1819 1902])
+            ("libwiretap_la_CFLAGS" variable (:default-value ("$(AM_NON_GENERATED_CFLAGS)")) nil [1902 1952])
+            ("libwiretap_generated_la_SOURCES" variable (:default-value ("$(GENERATED_C_FILES)")) nil [1953 2011])
+            ("EXTRA_DIST" variable (:default-value ("README.airmagnet" "README.developer" "Makefile.common" "Makefile.nmake" "libwiretap.vcproj" "wtap.def" "$(GENERATOR_FILES)" "$(GENERATED_FILES)")) nil [2012 2183])
+            ("libwiretap_la_LIBADD" variable (:default-value ("libwiretap_generated.la" "${top_builddir}/wsutil/libwsutil.la" "$(GLIB_LIBS)")) nil [2184 2280])
+            ("libwiretap_la_DEPENDENCIES" variable (:default-value ("libwiretap_generated.la" "${top_builddir}/wsutil/libwsutil.la" "wtap.sym")) nil [2280 2378])
+            ("RUNLEX" variable (:default-value ("$(top_srcdir)/tools/runlex.sh")) nil [2379 2418])
+            ("k12text_lex.h" function (:arguments ("k12text.c")) nil [2419 2445])
+            ("ascend_scanner_lex.h" function (:arguments ("ascend_scanner.c")) nil [2446 2486])
+            ("ascend_scanner.c" function (:arguments ("ascend.h")) nil [2487 2514])
+            ("ascend.h" function (:arguments ("ascend.y")) nil [2515 2693])
+            ("ascend.c" function (:arguments ("ascend.y")) nil [2515 2693])
+            ("dumpabi" function (:arguments ("all" "abi-descriptor.xml")) nil [2842 3287])
+            ("checkapi" function nil nil [3288 3298]))          
+      :file "Makefile.am"
+      :pointmax 3586
+      :fsize 3585
+      :lastmodtime '(21108 5703 0 0)
+      :unmatched-syntax '((shell-command 3492 . 3585) (bol 3491 . 3491)))
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 3440
+      :lastmodtime '(20430 13542 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!wiretap!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

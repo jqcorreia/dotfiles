@@ -1,0 +1,2558 @@
+;; Object pcap/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pcap/"
+  :tables
+  (list
+    (semanticdb-table "pcap.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("lib_pcap_pcap_h" variable (:constant-flag t) nil [2063 2078])
+            ("sys/types.h" include (:system-flag t) nil [2241 2265])
+            ("sys/time.h" include (:system-flag t) nil [2266 2289])
+            ("pcap/bpf.h" include (:system-flag t) nil [2358 2379])
+            ("stdio.h" include (:system-flag t) nil [2388 2406])
+            ("pcap_get_selectable_fd" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18047 18056]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [18020 18057])
+            ("bpf_dump" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("bpf_program" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17351 17378])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [17379 17383]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17337 17384])
+            ("bpf_image" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("bpf_insn" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17306 17330])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [17331 17335]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17290 17336])
+            ("bpf_validate" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("bpf_insn" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17254 17279])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [17280 17288]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17237 17289])
+            ("bpf_filter" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("u_int" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("bpf_insn" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17174 17198])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17199 17214])
+                    ("" variable (:type ("u_int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17215 17221])
+                    ("" variable (:type ("u_int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17222 17228]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17157 17229])
+            ("pcap_lib_version" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16810 16815]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16781 16816])
+            ("pcap_freealldevs" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_if_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16766 16778]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16744 16779])
+            ("pcap_findalldevs" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 2
+                        :type ("pcap_if_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16721 16734])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16735 16742]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16700 16743])
+            ("pcap_dump" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16644 16653])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("pcap_pkthdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16654 16681])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16682 16697]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16629 16698])
+            ("pcap_dump_close" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_dumper_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16611 16627]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16590 16628])
+            ("pcap_dump_flush" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_dumper_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16572 16588]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16552 16589])
+            ("pcap_dump_ftell" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "long"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_dumper_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16534 16550]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16513 16551])
+            ("pcap_dump_file" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("FILE" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_dumper_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16495 16511]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16474 16512])
+            ("pcap_dump_fopen" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("pcap_dumper_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16453 16462])
+                    ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16463 16472]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16422 16473])
+            ("pcap_dump_open" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("pcap_dumper_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16397 16406])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16407 16420]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16367 16421])
+            ("pcap_fileno" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16355 16364]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16339 16365])
+            ("pcap_file" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("FILE" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16328 16337]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16312 16338])
+            ("pcap_minor_version" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16290 16299]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16267 16300])
+            ("pcap_major_version" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16256 16265]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16233 16266])
+            ("pcap_is_swapped" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16222 16231]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16202 16232])
+            ("pcap_snapshot" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16191 16200]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16173 16201])
+            ("pcap_datalink_val_to_description" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [16167 16171]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16122 16172])
+            ("pcap_datalink_val_to_name" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [16116 16120]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16078 16121])
+            ("pcap_datalink_name_to_val" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16063 16076]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16033 16077])
+            ("pcap_free_datalinks" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [16025 16031]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16000 16032])
+            ("pcap_set_datalink" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15984 15993])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [15994 15998]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15962 15999])
+            ("pcap_list_datalinks" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15943 15952])
+                    ("" variable
+                       (:pointer 2
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [15953 15960]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15919 15961])
+            ("pcap_datalink_ext" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15908 15917]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15886 15918])
+            ("pcap_datalink" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15875 15884]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15857 15885])
+            ("pcap_offline_filter" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("bpf_program" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15779 15806])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("pcap_pkthdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15812 15839])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15840 15855]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15755 15856])
+            ("pcap_freecode" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("bpf_program" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15732 15753]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15713 15754])
+            ("pcap_compile_nopcap" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [15643 15647])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [15648 15652])
+                    ("" variable
+                       (:pointer 1
+                        :type ("bpf_program" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15653 15674])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15680 15693])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [15694 15698])
+                    ("" variable (:type ("bpf_u_int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15699 15711]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15619 15712])
+            ("pcap_compile" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15549 15558])
+                    ("" variable
+                       (:pointer 1
+                        :type ("bpf_program" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15559 15580])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15581 15594])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [15595 15599])
+                    ("" variable (:type ("bpf_u_int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15605 15617]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15532 15618])
+            ("pcap_perror" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15513 15522])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15523 15530]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15496 15531])
+            ("pcap_geterr" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15485 15494]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15467 15495])
+            ("pcap_strerror" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [15461 15465]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15435 15466])
+            ("pcap_statustostr" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [15429 15433]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15400 15434])
+            ("pcap_sendpacket" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15368 15377])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15378 15393])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [15394 15398]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15348 15399])
+            ("pcap_inject" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15315 15324])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15325 15338])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15339 15346]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15299 15347])
+            ("pcap_setnonblock" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15275 15284])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [15285 15289])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15290 15297]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15254 15298])
+            ("pcap_getnonblock" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15235 15244])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15245 15252]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15214 15253])
+            ("pcap_setdirection" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15185 15194])
+                    ("" variable (:type ("pcap_direction_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15195 15212]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15162 15213])
+            ("pcap_setfilter" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15129 15138])
+                    ("" variable
+                       (:pointer 1
+                        :type ("bpf_program" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15139 15160]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15110 15161])
+            ("pcap_stats" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15079 15088])
+                    ("" variable
+                       (:pointer 1
+                        :type ("pcap_stat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15089 15108]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15064 15109])
+            ("pcap_breakloop" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15053 15062]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15033 15063])
+            ("pcap_next_ex" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14982 14991])
+                    ("" variable
+                       (:pointer 2
+                        :type ("pcap_pkthdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14992 15014])
+                    ("" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15015 15031]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14964 15032])
+            ("pcap_next" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("u_char" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14931 14940])
+                    ("" variable
+                       (:pointer 1
+                        :type ("pcap_pkthdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14941 14962]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14906 14963])
+            ("pcap_dispatch" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14866 14875])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [14876 14880])
+                    ("" variable (:type ("pcap_handler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14881 14894])
+                    ("" variable
+                       (:pointer 1
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14895 14904]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14848 14905])
+            ("pcap_loop" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14808 14817])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [14818 14822])
+                    ("" variable (:type ("pcap_handler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14823 14836])
+                    ("" variable
+                       (:pointer 1
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14837 14846]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14794 14847])
+            ("pcap_close" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14783 14792]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14767 14793])
+            ("pcap_fopen_offline" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("pcap_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14732 14739])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14740 14747]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14705 14748])
+            ("pcap_fopen_offline_with_tstamp_precision" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("pcap_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14681 14688])
+                    ("" variable (:type ("u_int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14689 14695])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14696 14703]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14632 14704])
+            ("pcap_open_offline" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("pcap_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14038 14051])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14052 14059]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14012 14060])
+            ("pcap_open_offline_with_tstamp_precision" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("pcap_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13982 13995])
+                    ("" variable (:type ("u_int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13996 14002])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14003 14010]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13934 14011])
+            ("pcap_open_dead_with_tstamp_precision" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("pcap_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [13916 13920])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [13921 13925])
+                    ("" variable (:type ("u_int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13926 13932]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13871 13933])
+            ("pcap_open_dead" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("pcap_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [13860 13864])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [13865 13869]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13837 13870])
+            ("pcap_open_live" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("pcap_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13799 13812])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [13813 13817])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [13818 13822])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [13823 13827])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13828 13835]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13776 13836])
+            ("PCAP_TSTAMP_PRECISION_NANO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13699 13725])
+            ("PCAP_TSTAMP_PRECISION_MICRO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13604 13631])
+            ("PCAP_TSTAMP_ADAPTER_UNSYNCED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13299 13327])
+            ("PCAP_TSTAMP_ADAPTER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13216 13235])
+            ("PCAP_TSTAMP_HOST_HIPREC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13145 13168])
+            ("PCAP_TSTAMP_HOST_LOWPREC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13075 13099])
+            ("PCAP_TSTAMP_HOST" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13002 13018])
+            ("pcap_tstamp_type_val_to_description" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [11136 11140]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11088 11141])
+            ("pcap_tstamp_type_val_to_name" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [11082 11086]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11041 11087])
+            ("pcap_tstamp_type_name_to_val" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11026 11039]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10993 11040])
+            ("pcap_free_tstamp_types" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [10985 10991]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10957 10992])
+            ("pcap_list_tstamp_types" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10938 10947])
+                    ("" variable
+                       (:pointer 2
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [10948 10955]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10911 10956])
+            ("pcap_activate" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10899 10908]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10881 10909])
+            ("pcap_get_tstamp_precision" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10870 10879]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10840 10880])
+            ("pcap_set_tstamp_precision" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10824 10833])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [10834 10838]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10794 10839])
+            ("pcap_set_buffer_size" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10778 10787])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [10788 10792]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10753 10793])
+            ("pcap_set_immediate_mode" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10737 10746])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [10747 10751]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10709 10752])
+            ("pcap_set_tstamp_type" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10693 10702])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [10703 10707]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10668 10708])
+            ("pcap_set_timeout" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10652 10661])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [10662 10666]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10631 10667])
+            ("pcap_set_rfmon" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10615 10624])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [10625 10629]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10596 10630])
+            ("pcap_can_set_rfmon" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10585 10594]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10562 10595])
+            ("pcap_set_promisc" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10546 10555])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [10556 10560]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10525 10561])
+            ("pcap_set_snaplen" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10509 10518])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [10519 10523]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10488 10524])
+            ("pcap_create" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("pcap_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10465 10478])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10479 10486]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10445 10487])
+            ("pcap_lookupnet" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10391 10404])
+                    ("" variable
+                       (:pointer 1
+                        :type ("bpf_u_int32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10405 10419])
+                    ("" variable
+                       (:pointer 1
+                        :type ("bpf_u_int32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10420 10434])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10435 10442]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10372 10443])
+            ("pcap_lookupdev" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10363 10370]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10342 10371])
+            ("PCAP_NETMASK_UNKNOWN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10309 10329])
+            ("PCAP_WARNING_TSTAMP_TYPE_NOTSUP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10114 10145])
+            ("PCAP_WARNING_PROMISC_NOTSUP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10025 10052])
+            ("PCAP_WARNING" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9973 9985])
+            ("PCAP_ERROR_TSTAMP_PRECISION_NOTSUP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9745 9779])
+            ("PCAP_ERROR_PROMISC_PERM_DENIED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9639 9669])
+            ("PCAP_ERROR_CANTSET_TSTAMP_TYPE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9534 9564])
+            ("PCAP_ERROR_IFACE_NOT_UP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9473 9496])
+            ("PCAP_ERROR_PERM_DENIED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9399 9421])
+            ("PCAP_ERROR_NOT_RFMON" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9319 9339])
+            ("PCAP_ERROR_RFMON_NOTSUP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9228 9251])
+            ("PCAP_ERROR_NO_SUCH_DEVICE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9163 9188])
+            ("PCAP_ERROR_ACTIVATED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9061 9081])
+            ("PCAP_ERROR_NOT_ACTIVATED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8985 9009])
+            ("PCAP_ERROR_BREAK" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8916 8932])
+            ("PCAP_ERROR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8867 8877])
+            ("pcap_handler" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8605 8614])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("pcap_pkthdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8615 8642])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8651 8666]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8584 8667])
+            ("pcap_addr" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("next" variable
+                       (:pointer 1
+                        :type ("pcap_addr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [8307 8330])
+                    ("addr" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [8332 8354])
+                    ("netmask" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [8371 8396])
+                    ("broadaddr" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [8429 8456])
+                    ("dstaddr" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [8499 8524]))                  )
+                (reparse-symbol extern-c-contents) [8287 8574])
+            ("PCAP_IF_LOOPBACK" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8180 8196])
+            ("pcap_if" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("next" variable
+                       (:pointer 1
+                        :type ("pcap_if" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [7942 7963])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [7965 7976])
+                    ("description" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [8020 8038])
+                    ("addresses" variable
+                       (:pointer 1
+                        :type ("pcap_addr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [8088 8116])
+                    ("flags" variable (:type ("bpf_u_int32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8118 8136]))                  )
+                (reparse-symbol extern-c-contents) [7924 8170])
+            ("pcap_stat" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("ps_recv" variable (:type ("u_int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6246 6260])
+                    ("ps_drop" variable (:type ("u_int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6296 6310])
+                    ("ps_ifdrop" variable (:type ("u_int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6345 6361]))                  )
+                (reparse-symbol extern-c-contents) [6226 6525])
+            ("pcap_pkthdr" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("ts" variable (:type ("timeval" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [6037 6055])
+                    ("caplen" variable (:type ("bpf_u_int32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6074 6093])
+                    ("len" variable (:type ("bpf_u_int32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6127 6143]))                  )
+                (reparse-symbol extern-c-contents) [6015 6182])
+            ("pcap_direction_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("PCAP_D_INOUT" variable
+                             (:constant-flag t
+                              :default-value (5320 5321)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5305 5321])
+                          ("PCAP_D_IN" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5330 5340])
+                          ("PCAP_D_OUT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [5348 5360]))                        
+                      :type "enum")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [5283 5378])
+            ("LT_FCS_DATALINK_EXT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5223 5242])
+            ("LT_FCS_LENGTH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5170 5183])
+            ("LT_FCS_LENGTH_PRESENT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5118 5139])
+            ("pcap_file_header" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("magic" variable (:type ("bpf_u_int32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4629 4647])
+                    ("version_major" variable (:type ("u_short" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4649 4671])
+                    ("version_minor" variable (:type ("u_short" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4673 4695])
+                    ("thiszone" variable (:type ("bpf_int32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4697 4716])
+                    ("sigfigs" variable (:type ("bpf_u_int32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4748 4768])
+                    ("snaplen" variable (:type ("bpf_u_int32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4799 4819])
+                    ("linktype" variable (:type ("bpf_u_int32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4864 4885]))                  )
+                (reparse-symbol extern-c-contents) [4602 4922])
+            ("pcap_addr_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("pcap_addr" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [3082 3119])
+            ("pcap_if_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("pcap_if" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [3048 3081])
+            ("pcap_dumper_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("pcap_dumper" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [3006 3047])
+            ("pcap_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("pcap" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [2978 3005])
+            ("bpf_u_int32" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("u_int" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [2943 2969])
+            ("bpf_int32" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("int"))
+                (reparse-symbol extern-c-contents) [2920 2942])
+            ("PCAP_ERRBUF_SIZE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2761 2777])
+            ("PCAP_VERSION_MINOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2731 2749])
+            ("PCAP_VERSION_MAJOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2702 2720]))          
+      :file "pcap.h"
+      :pointmax 18148
+      :fsize 18147
+      :lastmodtime '(21141 8391 0 0)
+      :unmatched-syntax '((TYPEDEF 8576 . 8583))
+      :lexical-table 
+        '(("PCAP_ERROR" . ((punctuation "-" 8880 . 8881) (number "1" 8881 . 8882)))
+          ("PCAP_ERROR_CANTSET_TSTAMP_TYPE" . ((punctuation "-" 9565 . 9566) (number "10" 9566 . 9568)))
+          ("PCAP_TSTAMP_PRECISION_MICRO" . ((number "0" 13632 . 13633)))
+          ("PCAP_VERSION_MAJOR" . ((number "2" 2721 . 2722)))
+          ("PCAP_ERROR_BREAK" . ((punctuation "-" 8934 . 8935) (number "2" 8935 . 8936)))
+          ("PCAP_TSTAMP_HOST_HIPREC" . ((number "2" 13170 . 13171)))
+          ("PCAP_ERROR_NO_SUCH_DEVICE" . ((punctuation "-" 9189 . 9190) (number "5" 9190 . 9191)))
+          ("PCAP_ERROR_NOT_RFMON" . ((punctuation "-" 9341 . 9342) (number "7" 9342 . 9343)))
+          ("lib_pcap_pcap_h")
+          ("LT_FCS_LENGTH_PRESENT" (spp-arg-list ("x") 5139 . 5142) . ((semantic-list "((x) & 0x04000000)" 5143 . 5161)))
+          ("PCAP_ERROR_NOT_ACTIVATED" . ((punctuation "-" 9010 . 9011) (number "3" 9011 . 9012)))
+          ("PCAP_ERROR_PERM_DENIED" . ((punctuation "-" 9423 . 9424) (number "8" 9424 . 9425)))
+          ("PCAP_WARNING_PROMISC_NOTSUP" . ((number "2" 10053 . 10054)))
+          ("PCAP_VERSION_MINOR" . ((number "4" 2750 . 2751)))
+          ("PCAP_WARNING_TSTAMP_TYPE_NOTSUP" . ((number "3" 10146 . 10147)))
+          ("PCAP_TSTAMP_ADAPTER_UNSYNCED" . ((number "4" 13328 . 13329)))
+          ("PCAP_TSTAMP_PRECISION_NANO" . ((number "1" 13726 . 13727)))
+          ("PCAP_ERROR_ACTIVATED" . ((punctuation "-" 9083 . 9084) (number "4" 9084 . 9085)))
+          ("PCAP_NETMASK_UNKNOWN" . ((number "0xffffffff" 10330 . 10340)))
+          ("PCAP_ERROR_IFACE_NOT_UP" . ((punctuation "-" 9498 . 9499) (number "9" 9499 . 9500)))
+          ("PCAP_TSTAMP_HOST" . ((number "0" 13020 . 13021)))
+          ("LT_FCS_LENGTH" (spp-arg-list ("x") 5183 . 5186) . ((semantic-list "(((x) & 0xF0000000) >> 28)" 5188 . 5214)))
+          ("LT_FCS_DATALINK_EXT" (spp-arg-list ("x") 5242 . 5245) . ((semantic-list "((((x) & 0xF) << 28) | 0x04000000)" 5247 . 5281)))
+          ("PCAP_IF_LOOPBACK" . ((number "0x00000001" 8197 . 8207)))
+          ("PCAP_ERROR_PROMISC_PERM_DENIED" . ((punctuation "-" 9670 . 9671) (number "11" 9671 . 9673)))
+          ("PCAP_WARNING" . ((number "1" 9988 . 9989)))
+          ("PCAP_TSTAMP_HOST_LOWPREC" . ((number "1" 13100 . 13101)))
+          ("PCAP_TSTAMP_ADAPTER" . ((number "3" 13237 . 13238)))
+          ("PCAP_ERRBUF_SIZE" . ((number "256" 2778 . 2781)))
+          ("PCAP_ERROR_RFMON_NOTSUP" . ((punctuation "-" 9253 . 9254) (number "6" 9254 . 9255)))
+          ("PCAP_ERROR_TSTAMP_PRECISION_NOTSUP" . ((punctuation "-" 9780 . 9781) (number "12" 9781 . 9783)))
+          )
+)
+    (semanticdb-table "bpf.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("lib_pcap_bpf_h" variable (:constant-flag t) nil [3674 3688])
+            ("BPF_MEMWORDS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [41836 41848])
+            ("bpf_filter" function
+               (:type ("u_int" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("bpf_insn" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41630 41654])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41655 41670])
+                    ("" variable (:type ("u_int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41671 41677])
+                    ("" variable (:type ("u_int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41678 41684]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [41606 41685])
+            ("bpf_validate" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("bpf_insn" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41575 41599])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [41600 41604]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [41551 41605])
+            ("BPF_JUMP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [41456 41464])
+            ("BPF_STMT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [41401 41409])
+            ("bpf_insn" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("code" variable (:type ("u_short" type (:type "class") nil nil)) (reparse-symbol classsubparts) [41287 41300])
+                    ("jt" variable (:type ("u_char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [41302 41313])
+                    ("jf" variable (:type ("u_char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [41315 41326])
+                    ("k" variable (:type ("bpf_u_int32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [41328 41342]))                  )
+                (reparse-symbol extern-c-contents) [41268 41345])
+            ("BPF_TXA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [41211 41218])
+            ("BPF_TAX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [41188 41195])
+            ("BPF_MISCOP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [41146 41156])
+            ("BPF_A" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [41114 41119])
+            ("BPF_RVAL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [41074 41082])
+            ("BPF_X" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [41014 41019])
+            ("BPF_K" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40993 40998])
+            ("BPF_SRC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40954 40961])
+            ("BPF_JSET" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40932 40940])
+            ("BPF_JGE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40909 40916])
+            ("BPF_JGT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40886 40893])
+            ("BPF_JEQ" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40863 40870])
+            ("BPF_JA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40841 40847])
+            ("BPF_NEG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40818 40825])
+            ("BPF_RSH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40795 40802])
+            ("BPF_LSH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40772 40779])
+            ("BPF_AND" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40749 40756])
+            ("BPF_OR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40727 40733])
+            ("BPF_DIV" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40704 40711])
+            ("BPF_MUL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40681 40688])
+            ("BPF_SUB" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40658 40665])
+            ("BPF_ADD" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40635 40642])
+            ("BPF_OP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40597 40603])
+            ("BPF_MSH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40553 40560])
+            ("BPF_LEN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40530 40537])
+            ("BPF_MEM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40507 40514])
+            ("BPF_IND" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40484 40491])
+            ("BPF_ABS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40461 40468])
+            ("BPF_IMM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40438 40445])
+            ("BPF_MODE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40398 40406])
+            ("BPF_B" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40378 40383])
+            ("BPF_H" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40357 40362])
+            ("BPF_W" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40336 40341])
+            ("BPF_SIZE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40296 40304])
+            ("BPF_MISC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40253 40261])
+            ("BPF_RET" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40230 40237])
+            ("BPF_JMP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40207 40214])
+            ("BPF_ALU" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40184 40191])
+            ("BPF_STX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40161 40168])
+            ("BPF_ST" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40139 40145])
+            ("BPF_LDX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40116 40123])
+            ("BPF_LD" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40094 40100])
+            ("BPF_CLASS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [40053 40062])
+            ("DLT_IS_NETBSD_RAWAF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [39916 39935])
+            ("DLT_NETBSD_RAWAF_AF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [39866 39885])
+            ("DLT_NETBSD_RAWAF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [39805 39821])
+            ("DLT_CLASS_NETBSD_RAWAF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [39763 39785])
+            ("DLT_CLASS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [39420 39429])
+            ("DLT_MATCHING_MAX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [39183 39199])
+            ("DLT_WIRESHARK_UPPER_PDU" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [39146 39169])
+            ("DLT_BLUETOOTH_LE_LL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [38737 38756])
+            ("DLT_RTAC_SERIAL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [38580 38595])
+            ("DLT_USBPCAP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [38410 38421])
+            ("DLT_SCTP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [38281 38289])
+            ("DLT_INFINIBAND" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [38111 38125])
+            ("DLT_PFSYNC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [37948 37958])
+            ("DLT_NFC_LLCP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [37532 37544])
+            ("DLT_NG40" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [37212 37220])
+            ("DLT_MPEG_2_TS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [37014 37027])
+            ("DLT_IPOIB" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [36874 36883])
+            ("DLT_NETANALYZER_TRANSPARENT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [36718 36745])
+            ("DLT_NETANALYZER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [36347 36362])
+            ("DLT_NFLOG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [36026 36035])
+            ("DLT_JUNIPER_ATM_CEMIC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [35828 35849])
+            ("DLT_STANAG_5066_D_PDU" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [35691 35712])
+            ("DLT_MUX27010" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [35574 35586])
+            ("DLT_DVB_CI" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [35361 35371])
+            ("DLT_JUNIPER_FIBRECHANNEL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [35087 35111])
+            ("DLT_JUNIPER_SRX_E2E" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [35054 35073])
+            ("DLT_JUNIPER_VS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [35025 35039])
+            ("DLT_DBUS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [34900 34908])
+            ("DLT_IEEE802_15_4_NOFCS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [34407 34429])
+            ("DLT_IPV6" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [34207 34215])
+            ("DLT_IPV4" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [34185 34193])
+            ("DLT_CAN_SOCKETCAN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [33998 34015])
+            ("DLT_IPNET" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [33751 33760])
+            ("DLT_FC_2_WITH_FRAME_DELIMS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [32122 32148])
+            ("DLT_FC_2" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [31620 31628])
+            ("DLT_WIHART" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [31480 31490])
+            ("DLT_AOS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [31266 31273])
+            ("DLT_DECT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [30960 30968])
+            ("DLT_USB_LINUX_MMAPPED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [30826 30847])
+            ("DLT_MPLS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [30667 30675])
+            ("DLT_GSMTAP_ABIS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [30495 30510])
+            ("DLT_GSMTAP_UM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [30468 30481])
+            ("DLT_LINUX_EVDEV" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [30313 30328])
+            ("DLT_IEEE802_15_4_NONASK_PHY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [30016 30043])
+            ("DLT_X2E_XORAYA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [29635 29649])
+            ("DLT_X2E_SERIAL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [29470 29484])
+            ("DLT_LIN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [29321 29328])
+            ("DLT_MOST" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [29137 29145])
+            ("DLT_FLEXRAY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [28934 28945])
+            ("DLT_IPMB_LINUX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [28785 28799])
+            ("DLT_LAPB_WITH_DIR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [28521 28538])
+            ("DLT_FRELAY_WITH_DIR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [28471 28490])
+            ("DLT_C_HDLC_WITH_DIR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [28422 28441])
+            ("DLT_PPP_WITH_DIR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [28339 28355])
+            ("DLT_LAPD" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [28070 28078])
+            ("DLT_AX25_KISS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [27885 27898])
+            ("DLT_BLUETOOTH_HCI_H4_WITH_PHDR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [27690 27720])
+            ("DLT_JUNIPER_ST" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [27511 27525])
+            ("DLT_IPMB" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [27316 27324])
+            ("DLT_RAIF1" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [27117 27126])
+            ("DLT_ERF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26937 26944])
+            ("DLT_SITA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26742 26750])
+            ("DLT_IEEE802_15_4" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26571 26587])
+            ("DLT_JUNIPER_ISM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26241 26256])
+            ("DLT_IEEE802_16_MAC_CPS_RADIO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [26006 26034])
+            ("DLT_PPI" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [25868 25875])
+            ("DLT_IEEE802_15_4_LINUX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [25706 25728])
+            ("DLT_CAN20B" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [25553 25563])
+            ("DLT_USB_LINUX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [25234 25247])
+            ("DLT_IEEE802_16_MAC_CPS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [25088 25110])
+            ("DLT_BLUETOOTH_HCI_H4" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [24955 24975])
+            ("DLT_USB" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [24846 24853])
+            ("DLT_A653_ICM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [24699 24711])
+            ("DLT_A429" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [24471 24479])
+            ("DLT_JUNIPER_VP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [24166 24180])
+            ("DLT_MFR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [23944 23951])
+            ("DLT_JUNIPER_CHDLC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [23865 23882])
+            ("DLT_JUNIPER_FRELAY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [23829 23847])
+            ("DLT_JUNIPER_PPP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [23793 23808])
+            ("DLT_JUNIPER_ETHER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [23757 23774])
+            ("DLT_LINUX_LAPD" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [23475 23489])
+            ("DLT_ERF_POS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [23173 23184])
+            ("DLT_ERF_ETH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [23133 23144])
+            ("DLT_JUNIPER_PIC_PEER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [22871 22891])
+            ("DLT_GCOM_SERIAL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [22657 22672])
+            ("DLT_GCOM_T1E1" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [22630 22643])
+            ("DLT_GPF_F" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [22468 22477])
+            ("DLT_GPF_T" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [22411 22420])
+            ("DLT_GPRS_LLC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [22370 22382])
+            ("DLT_JUNIPER_PPPOE_ATM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [22333 22354])
+            ("DLT_JUNIPER_PPPOE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [22297 22314])
+            ("DLT_LINUX_PPP_WITHDIRECTION" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [22034 22061])
+            ("DLT_PPP_WITH_DIRECTION" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [21990 22012])
+            ("DLT_PPP_PPPD" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [21836 21848])
+            ("DLT_BACNET_MS_TP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [21139 21155])
+            ("DLT_JUNIPER_MONITOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [21071 21090])
+            ("DLT_IEEE802_11_RADIO_AVS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20794 20818])
+            ("DLT_USER15" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20464 20474])
+            ("DLT_USER14" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20440 20450])
+            ("DLT_USER13" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20416 20426])
+            ("DLT_USER12" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20392 20402])
+            ("DLT_USER11" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20368 20378])
+            ("DLT_USER10" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20344 20354])
+            ("DLT_USER9" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20321 20330])
+            ("DLT_USER8" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20298 20307])
+            ("DLT_USER7" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20275 20284])
+            ("DLT_USER6" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20252 20261])
+            ("DLT_USER5" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20229 20238])
+            ("DLT_USER4" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20206 20215])
+            ("DLT_USER3" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20183 20192])
+            ("DLT_USER2" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20160 20169])
+            ("DLT_USER1" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20137 20146])
+            ("DLT_USER0" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20114 20123])
+            ("DLT_IBM_SN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [18854 18864])
+            ("DLT_IBM_SP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [18830 18840])
+            ("DLT_LINUX_IRDA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [18732 18746])
+            ("DLT_DOCSIS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17957 17967])
+            ("DLT_SCCP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17855 17863])
+            ("DLT_MTP3" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17791 17799])
+            ("DLT_MTP2" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17735 17743])
+            ("DLT_MTP2_WITH_PHDR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17648 17666])
+            ("DLT_APPLE_IP_OVER_IEEE1394" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17474 17500])
+            ("DLT_JUNIPER_ATM1" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16970 16986])
+            ("DLT_JUNIPER_SERVICES" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16934 16954])
+            ("DLT_JUNIPER_ATM2" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16898 16914])
+            ("DLT_JUNIPER_MFR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16862 16877])
+            ("DLT_JUNIPER_GGSN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16826 16842])
+            ("DLT_JUNIPER_ES" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16790 16804])
+            ("DLT_JUNIPER_MLFR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16754 16770])
+            ("DLT_JUNIPER_MLPPP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16718 16735])
+            ("DLT_ARCNET_LINUX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16470 16486])
+            ("DLT_TZSP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [16007 16015])
+            ("DLT_IEEE802_11_RADIO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [15624 15644])
+            ("DLT_AURORA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [15360 15370])
+            ("DLT_PCI_EXP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [15302 15313])
+            ("DLT_RIO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [15248 15255])
+            ("DLT_SUNATM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [15109 15119])
+            ("DLT_IP_OVER_FC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14491 14505])
+            ("DLT_HHDLC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14182 14191])
+            ("DLT_AIRONET_HEADER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12380 12398])
+            ("DLT_PRISM_HEADER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12229 12245])
+            ("DLT_CISCO_IOS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12054 12067])
+            ("DLT_PFLOG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11986 11995])
+            ("DLT_IPFILTER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11931 11943])
+            ("DLT_ECONET" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11857 11867])
+            ("DLT_LTALK" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11810 11819])
+            ("DLT_LINUX_SLL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11747 11760])
+            ("DLT_ENC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11414 11421])
+            ("DLT_LOOP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11175 11183])
+            ("DLT_FRELAY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10833 10843])
+            ("DLT_IEEE802_11" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10311 10325])
+            ("DLT_CHDLC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10281 10290])
+            ("DLT_C_HDLC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10241 10251])
+            ("DLT_MATCHING_MIN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9591 9607])
+            ("DLT_SYMANTEC_FIREWALL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8947 8968])
+            ("DLT_PPP_ETHER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8583 8596])
+            ("DLT_PPP_SERIAL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8511 8525])
+            ("DLT_REDBACK_SMARTEDGE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8262 8283])
+            ("DLT_ATM_CLIP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8090 8102])
+            ("DLT_PPP_BSDOS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6728 6741])
+            ("DLT_SLIP_BSDOS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6674 6688])
+            ("DLT_RAW" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6191 6198])
+            ("DLT_ATM_RFC1483" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6078 6093])
+            ("DLT_FDDI" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5684 5692])
+            ("DLT_PPP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5635 5642])
+            ("DLT_SLIP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5595 5603])
+            ("DLT_ARCNET" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5538 5548])
+            ("DLT_IEEE802" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5493 5504])
+            ("DLT_CHAOS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5461 5470])
+            ("DLT_PRONET" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5408 5418])
+            ("DLT_AX25" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5363 5371])
+            ("DLT_EN3MB" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5309 5318])
+            ("DLT_EN10MB" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5266 5276])
+            ("DLT_NULL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5214 5222])
+            ("bpf_program" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("bf_len" variable (:type ("u_int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4385 4398])
+                    ("bf_insns" variable
+                       (:pointer 1
+                        :type ("bpf_insn" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4400 4426]))                  )
+                (reparse-symbol extern-c-contents) [4363 4429])
+            ("BPF_WORDALIGN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4232 4245])
+            ("BPF_ALIGNMENT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4144 4157])
+            ("bpf_u_int32" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("u_int" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [3918 3944])
+            ("bpf_int32" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("int"))
+                (reparse-symbol extern-c-contents) [3895 3917])
+            ("BPF_RELEASE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3767 3778]))          
+      :file "bpf.h"
+      :pointmax 41986
+      :fsize 41985
+      :lastmodtime '(21141 8391 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DLT_ARCNET" . ((number "7" 5549 . 5550)))
+          ("DLT_RAW" . ((number "12" 6200 . 6202)))
+          ("DLT_PPP_SERIAL" . ((number "50" 8526 . 8528)))
+          ("DLT_PFLOG" . ((number "117" 11996 . 11999)))
+          ("DLT_APPLE_IP_OVER_IEEE1394" . ((number "138" 17501 . 17504)))
+          ("DLT_MTP2" . ((number "140" 17745 . 17748)))
+          ("DLT_SCCP" . ((number "142" 17865 . 17868)))
+          ("DLT_USER15" . ((number "162" 20476 . 20479)))
+          ("DLT_IEEE802_11_RADIO_AVS" . ((number "163" 20819 . 20822)))
+          ("DLT_PPP_PPPD" . ((number "166" 21850 . 21853)))
+          ("DLT_JUNIPER_PIC_PEER" . ((number "174" 22895 . 22898)))
+          ("DLT_PPI" . ((number "192" 25878 . 25881)))
+          ("DLT_IEEE802_15_4" . ((number "195" 26588 . 26591)))
+          ("DLT_LIN" . ((number "212" 29331 . 29334)))
+          ("DLT_JUNIPER_FIBRECHANNEL" . ((number "234" 35112 . 35115)))
+          ("DLT_NETANALYZER_TRANSPARENT" . ((number "241" 36746 . 36749)))
+          ("BPF_LDX" . ((number "0x01" 40125 . 40129)))
+          ("BPF_ALU" . ((number "0x04" 40193 . 40197)))
+          ("BPF_JGT" . ((number "0x20" 40895 . 40899)))
+          ("DLT_AURORA" . ((number "126" 15384 . 15387)))
+          ("DLT_MTP3" . ((number "141" 17801 . 17804)))
+          ("DLT_PPP_WITH_DIRECTION" . ((symbol "DLT_PPP_PPPD" 22013 . 22025)))
+          ("DLT_LINUX_PPP_WITHDIRECTION" . ((symbol "DLT_PPP_PPPD" 22062 . 22074)))
+          ("DLT_JUNIPER_ISM" . ((number "194" 26265 . 26268)))
+          ("DLT_USB_LINUX_MMAPPED" . ((number "220" 30848 . 30851)))
+          ("DLT_MUX27010" . ((number "236" 35588 . 35591)))
+          ("DLT_STANAG_5066_D_PDU" . ((number "237" 35713 . 35716)))
+          ("DLT_MPEG_2_TS" . ((number "243" 37029 . 37032)))
+          ("DLT_RTAC_SERIAL" . ((number "250" 38597 . 38600)))
+          ("DLT_MATCHING_MAX" . ((number "252" 39200 . 39203)))
+          ("BPF_LD" . ((number "0x00" 40102 . 40106)))
+          ("BPF_JMP" . ((number "0x05" 40216 . 40220)))
+          ("BPF_RET" . ((number "0x06" 40239 . 40243)))
+          ("BPF_MEM" . ((number "0x60" 40516 . 40520)))
+          ("BPF_SUB" . ((number "0x10" 40667 . 40671)))
+          ("BPF_RELEASE" . ((number "199606" 3779 . 3785)))
+          ("DLT_EN10MB" . ((number "1" 5277 . 5278)))
+          ("DLT_AX25" . ((number "3" 5372 . 5373)))
+          ("DLT_MATCHING_MIN" . ((number "104" 9608 . 9611)))
+          ("DLT_C_HDLC" . ((number "104" 10252 . 10255)))
+          ("DLT_LTALK" . ((number "114" 11820 . 11823)))
+          ("DLT_AIRONET_HEADER" . ((number "120" 12399 . 12402)))
+          ("DLT_IBM_SN" . ((number "146" 18866 . 18869)))
+          ("DLT_GPF_F" . ((number "171" 22479 . 22482)))
+          ("DLT_ERF_POS" . ((number "176" 23186 . 23189)))
+          ("DLT_JUNIPER_VP" . ((number "183" 24190 . 24193)))
+          ("DLT_AX25_KISS" . ((number "202" 27900 . 27903)))
+          ("DLT_LAPD" . ((number "203" 28080 . 28083)))
+          ("DLT_AOS" . ((number "222" 31290 . 31293)))
+          ("DLT_FC_2" . ((number "224" 31630 . 31633)))
+          ("DLT_IEEE802_15_4_NOFCS" . ((number "230" 34430 . 34433)))
+          ("DLT_INFINIBAND" . ((number "247" 38127 . 38130)))
+          ("DLT_WIRESHARK_UPPER_PDU" . ((number "252" 39170 . 39173)))
+          ("BPF_CLASS" (spp-arg-list ("code") 40062 . 40068) . ((semantic-list "((code) & 0x07)" 40069 . 40084)))
+          ("BPF_IMM" . ((number "0x00" 40447 . 40451)))
+          ("BPF_AND" . ((number "0x50" 40758 . 40762)))
+          ("DLT_ECONET" . ((number "115" 11868 . 11871)))
+          ("DLT_CISCO_IOS" . ((number "118" 12068 . 12071)))
+          ("DLT_RIO" . ((number "124" 15272 . 15275)))
+          ("DLT_JUNIPER_MFR" . ((number "134" 16886 . 16889)))
+          ("DLT_USER0" . ((number "147" 20125 . 20128)))
+          ("DLT_JUNIPER_MONITOR" . ((number "164" 21095 . 21098)))
+          ("DLT_GPF_T" . ((number "170" 22422 . 22425)))
+          ("DLT_GCOM_SERIAL" . ((number "173" 22674 . 22677)))
+          ("DLT_RAIF1" . ((number "198" 27128 . 27131)))
+          ("DLT_X2E_XORAYA" . ((number "214" 29651 . 29654)))
+          ("DLT_IPNET" . ((number "226" 33762 . 33765)))
+          ("DLT_JUNIPER_ATM_CEMIC" . ((number "238" 35850 . 35853)))
+          ("DLT_NETANALYZER" . ((number "240" 36364 . 36367)))
+          ("DLT_PFSYNC" . ((number "246" 37960 . 37963)))
+          ("DLT_CLASS_NETBSD_RAWAF" . ((number "0x02240000" 39786 . 39796)))
+          ("DLT_IS_NETBSD_RAWAF" (spp-arg-list ("x") 39935 . 39938) . ((semantic-list "(DLT_CLASS(x) == DLT_CLASS_NETBSD_RAWAF)" 39939 . 39979)))
+          ("BPF_LSH" . ((number "0x60" 40781 . 40785)))
+          ("BPF_MISCOP" (spp-arg-list ("code") 41156 . 41162) . ((semantic-list "((code) & 0xf8)" 41163 . 41178)))
+          ("BPF_JUMP" (spp-arg-list ("code" "k" "jt" "jf") 41464 . 41481) . ((semantic-list "{ (u_short)(code), jt, jf, k }" 41482 . 41512)))
+          ("DLT_PRONET" . ((number "4" 5419 . 5420)))
+          ("DLT_ATM_CLIP" . ((number "19" 8103 . 8105)))
+          ("DLT_LINUX_SLL" . ((number "113" 11761 . 11764)))
+          ("DLT_IBM_SP" . ((number "145" 18842 . 18845)))
+          ("DLT_USER1" . ((number "148" 20148 . 20151)))
+          ("DLT_JUNIPER_PPPOE_ATM" . ((number "168" 22357 . 22360)))
+          ("DLT_MFR" . ((number "182" 23968 . 23971)))
+          ("DLT_IEEE802_15_4_LINUX" . ((number "191" 25729 . 25732)))
+          ("DLT_IEEE802_16_MAC_CPS_RADIO" . ((number "193" 26035 . 26038)))
+          ("DLT_X2E_SERIAL" . ((number "213" 29486 . 29489)))
+          ("DLT_IEEE802_15_4_NONASK_PHY" . ((number "215" 30044 . 30047)))
+          ("DLT_LINUX_EVDEV" . ((number "216" 30330 . 30333)))
+          ("BPF_H" . ((number "0x08" 40364 . 40368)))
+          ("BPF_NEG" . ((number "0x80" 40827 . 40831)))
+          ("BPF_JEQ" . ((number "0x10" 40872 . 40876)))
+          ("BPF_JSET" . ((number "0x40" 40941 . 40945)))
+          ("BPF_ALIGNMENT" . ((SIZEOF "sizeof" 4158 . 4164) (semantic-list "(bpf_int32)" 4164 . 4175)))
+          ("DLT_FDDI" . ((number "10" 5693 . 5695)))
+          ("DLT_ATM_RFC1483" . ((number "11" 6094 . 6096)))
+          ("DLT_REDBACK_SMARTEDGE" . ((number "32" 8284 . 8286)))
+          ("DLT_IPFILTER" . ((number "116" 11944 . 11947)))
+          ("DLT_USER2" . ((number "149" 20171 . 20174)))
+          ("DLT_BACNET_MS_TP" . ((number "165" 21156 . 21159)))
+          ("DLT_JUNIPER_ETHER" . ((number "178" 23781 . 23784)))
+          ("DLT_BLUETOOTH_HCI_H4" . ((number "187" 24976 . 24979)))
+          ("DLT_FRELAY_WITH_DIR" . ((number "206" 28491 . 28494)))
+          ("DLT_GSMTAP_UM" . ((number "217" 30483 . 30486)))
+          ("DLT_CAN_SOCKETCAN" . ((number "227" 34016 . 34019)))
+          ("DLT_JUNIPER_VS" . ((number "232" 35042 . 35045)))
+          ("DLT_DVB_CI" . ((number "235" 35373 . 35376)))
+          ("DLT_NETBSD_RAWAF_AF" (spp-arg-list ("x") 39885 . 39888) . ((semantic-list "((x) & 0x0000ffff)" 39889 . 39907)))
+          ("BPF_MODE" (spp-arg-list ("code") 40406 . 40412) . ((semantic-list "((code) & 0xe0)" 40413 . 40428)))
+          ("BPF_RSH" . ((number "0x70" 40804 . 40808)))
+          ("BPF_JA" . ((number "0x00" 40849 . 40853)))
+          ("BPF_TXA" . ((number "0x80" 41220 . 41224)))
+          ("lib_pcap_bpf_h")
+          ("DLT_CHAOS" . ((number "5" 5471 . 5472)))
+          ("DLT_ENC" . ((number "109" 11423 . 11426)))
+          ("DLT_PRISM_HEADER" . ((number "119" 12246 . 12249)))
+          ("DLT_IP_OVER_FC" . ((number "122" 14507 . 14510)))
+          ("DLT_JUNIPER_ES" . ((number "132" 16814 . 16817)))
+          ("DLT_JUNIPER_ATM1" . ((number "137" 16994 . 16997)))
+          ("DLT_LINUX_IRDA" . ((number "144" 18748 . 18751)))
+          ("DLT_USER3" . ((number "150" 20194 . 20197)))
+          ("DLT_JUNIPER_PPPOE" . ((number "167" 22321 . 22324)))
+          ("DLT_JUNIPER_PPP" . ((number "179" 23817 . 23820)))
+          ("DLT_IPMB" . ((number "199" 27326 . 27329)))
+          ("DLT_IPV4" . ((number "228" 34195 . 34198)))
+          ("DLT_IPOIB" . ((number "242" 36885 . 36888)))
+          ("DLT_NG40" . ((number "244" 37222 . 37225)))
+          ("BPF_W" . ((number "0x00" 40343 . 40347)))
+          ("BPF_LEN" . ((number "0x80" 40539 . 40543)))
+          ("BPF_DIV" . ((number "0x30" 40713 . 40717)))
+          ("BPF_SRC" (spp-arg-list ("code") 40961 . 40967) . ((semantic-list "((code) & 0x08)" 40968 . 40983)))
+          ("BPF_RVAL" (spp-arg-list ("code") 41082 . 41088) . ((semantic-list "((code) & 0x18)" 41089 . 41104)))
+          ("BPF_WORDALIGN" (spp-arg-list ("x") 4245 . 4248) . ((semantic-list "(((x)+(BPF_ALIGNMENT-1))&~(BPF_ALIGNMENT-1))" 4249 . 4293)))
+          ("DLT_PPP" . ((number "9" 5644 . 5645)))
+          ("DLT_LOOP" . ((number "108" 11184 . 11187)))
+          ("DLT_PCI_EXP" . ((number "125" 15326 . 15329)))
+          ("DLT_JUNIPER_MLPPP" . ((number "130" 16742 . 16745)))
+          ("DLT_JUNIPER_GGSN" . ((number "133" 16850 . 16853)))
+          ("DLT_JUNIPER_ATM2" . ((number "135" 16922 . 16925)))
+          ("DLT_USER4" . ((number "151" 20217 . 20220)))
+          ("DLT_GCOM_T1E1" . ((number "172" 22645 . 22648)))
+          ("DLT_A429" . ((number "184" 24495 . 24498)))
+          ("DLT_LAPB_WITH_DIR" . ((number "207" 28539 . 28542)))
+          ("DLT_GSMTAP_ABIS" . ((number "218" 30512 . 30515)))
+          ("DLT_DECT" . ((number "221" 30970 . 30973)))
+          ("DLT_WIHART" . ((number "223" 31492 . 31495)))
+          ("DLT_FC_2_WITH_FRAME_DELIMS" . ((number "225" 32149 . 32152)))
+          ("DLT_DBUS" . ((number "231" 34910 . 34913)))
+          ("DLT_NFLOG" . ((number "239" 36037 . 36040)))
+          ("DLT_USBPCAP" . ((number "249" 38423 . 38426)))
+          ("BPF_STX" . ((number "0x03" 40170 . 40174)))
+          ("BPF_MISC" . ((number "0x07" 40262 . 40266)))
+          ("BPF_ABS" . ((number "0x20" 40470 . 40474)))
+          ("BPF_K" . ((number "0x00" 41000 . 41004)))
+          ("BPF_X" . ((number "0x08" 41021 . 41025)))
+          ("BPF_STMT" (spp-arg-list ("code" "k") 41409 . 41418) . ((semantic-list "{ (u_short)(code), 0, 0, k }" 41419 . 41447)))
+          ("DLT_SLIP" . ((number "8" 5604 . 5605)))
+          ("DLT_PPP_BSDOS" . ((number "16" 6742 . 6744)))
+          ("DLT_CHDLC" . ((symbol "DLT_C_HDLC" 10291 . 10301)))
+          ("DLT_USER5" . ((number "152" 20240 . 20243)))
+          ("DLT_USER10" . ((number "157" 20356 . 20359)))
+          ("DLT_USB" . ((number "186" 24856 . 24859)))
+          ("DLT_IEEE802_16_MAC_CPS" . ((number "188" 25111 . 25114)))
+          ("DLT_ERF" . ((number "197" 26947 . 26950)))
+          ("DLT_IPV6" . ((number "229" 34217 . 34220)))
+          ("DLT_NFC_LLCP" . ((number "245" 37546 . 37549)))
+          ("DLT_SLIP_BSDOS" . ((number "15" 6689 . 6691)))
+          ("DLT_FRELAY" . ((number "107" 10844 . 10847)))
+          ("DLT_TZSP" . ((number "128" 16031 . 16034)))
+          ("DLT_ARCNET_LINUX" . ((number "129" 16487 . 16490)))
+          ("DLT_DOCSIS" . ((number "143" 17969 . 17972)))
+          ("DLT_USER6" . ((number "153" 20263 . 20266)))
+          ("DLT_USER11" . ((number "158" 20380 . 20383)))
+          ("DLT_JUNIPER_CHDLC" . ((number "181" 23889 . 23892)))
+          ("DLT_A653_ICM" . ((number "185" 24723 . 24726)))
+          ("DLT_CAN20B" . ((number "190" 25577 . 25580)))
+          ("DLT_BLUETOOTH_HCI_H4_WITH_PHDR" . ((number "201" 27721 . 27724)))
+          ("DLT_PPP_WITH_DIR" . ((number "204" 28356 . 28359)))
+          ("DLT_JUNIPER_SRX_E2E" . ((number "233" 35075 . 35078)))
+          ("DLT_CLASS" (spp-arg-list ("x") 39429 . 39432) . ((semantic-list "((x) & 0x03ff0000)" 39434 . 39452)))
+          ("DLT_NETBSD_RAWAF" (spp-arg-list ("af") 39821 . 39825) . ((semantic-list "(DLT_CLASS_NETBSD_RAWAF | (af))" 39826 . 39857)))
+          ("BPF_IND" . ((number "0x40" 40493 . 40497)))
+          ("BPF_OP" (spp-arg-list ("code") 40603 . 40609) . ((semantic-list "((code) & 0xf0)" 40610 . 40625)))
+          ("BPF_MUL" . ((number "0x20" 40690 . 40694)))
+          ("BPF_MEMWORDS" . ((number "16" 41849 . 41851)))
+          ("DLT_PPP_ETHER" . ((number "51" 8597 . 8599)))
+          ("DLT_IEEE802_11" . ((number "105" 10326 . 10329)))
+          ("DLT_HHDLC" . ((number "121" 14193 . 14196)))
+          ("DLT_IEEE802_11_RADIO" . ((number "127" 15645 . 15648)))
+          ("DLT_JUNIPER_MLFR" . ((number "131" 16778 . 16781)))
+          ("DLT_MTP2_WITH_PHDR" . ((number "139" 17667 . 17670)))
+          ("DLT_USER7" . ((number "154" 20286 . 20289)))
+          ("DLT_USER12" . ((number "159" 20404 . 20407)))
+          ("DLT_JUNIPER_FRELAY" . ((number "180" 23853 . 23856)))
+          ("DLT_JUNIPER_ST" . ((number "200" 27535 . 27538)))
+          ("DLT_IPMB_LINUX" . ((number "209" 28801 . 28804)))
+          ("BPF_SIZE" (spp-arg-list ("code") 40304 . 40310) . ((semantic-list "((code) & 0x18)" 40311 . 40326)))
+          ("BPF_A" . ((number "0x10" 41121 . 41125)))
+          ("DLT_NULL" . ((number "0" 5223 . 5224)))
+          ("DLT_JUNIPER_SERVICES" . ((number "136" 16958 . 16961)))
+          ("DLT_USER8" . ((number "155" 20309 . 20312)))
+          ("DLT_USER13" . ((number "160" 20428 . 20431)))
+          ("DLT_ERF_ETH" . ((number "175" 23146 . 23149)))
+          ("DLT_C_HDLC_WITH_DIR" . ((number "205" 28442 . 28445)))
+          ("DLT_MOST" . ((number "211" 29147 . 29150)))
+          ("DLT_MPLS" . ((number "219" 30677 . 30680)))
+          ("DLT_BLUETOOTH_LE_LL" . ((number "251" 38757 . 38760)))
+          ("BPF_B" . ((number "0x10" 40385 . 40389)))
+          ("BPF_ADD" . ((number "0x00" 40644 . 40648)))
+          ("BPF_OR" . ((number "0x40" 40735 . 40739)))
+          ("BPF_JGE" . ((number "0x30" 40918 . 40922)))
+          ("BPF_TAX" . ((number "0x00" 41197 . 41201)))
+          ("DLT_EN3MB" . ((number "2" 5319 . 5320)))
+          ("DLT_IEEE802" . ((number "6" 5505 . 5506)))
+          ("DLT_SYMANTEC_FIREWALL" . ((number "99" 8969 . 8971)))
+          ("DLT_SUNATM" . ((number "123" 15121 . 15124)))
+          ("DLT_USER9" . ((number "156" 20332 . 20335)))
+          ("DLT_USER14" . ((number "161" 20452 . 20455)))
+          ("DLT_GPRS_LLC" . ((number "169" 22384 . 22387)))
+          ("DLT_LINUX_LAPD" . ((number "177" 23491 . 23494)))
+          ("DLT_USB_LINUX" . ((number "189" 25249 . 25252)))
+          ("DLT_SITA" . ((number "196" 26752 . 26755)))
+          ("DLT_FLEXRAY" . ((number "210" 28947 . 28950)))
+          ("DLT_SCTP" . ((number "248" 38291 . 38294)))
+          ("BPF_ST" . ((number "0x02" 40147 . 40151)))
+          ("BPF_MSH" . ((number "0xa0" 40562 . 40566)))
+          )
+))
+  :file "!usr!include!pcap!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,43 @@
+;; Object dissectors/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dissectors/"
+  :tables
+  (list
+    (semanticdb-table "packet-ieee80211.c"
+      :major-mode 'c-mode
+      :tags nil
+      :file "packet-ieee80211.c"
+      :pointmax 667055
+      :fsize 667054
+      :lastmodtime '(21038 19411 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("noinst_LTLIBRARIES" variable (:default-value ("libdirtydissectors.la")) nil [889 949])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(srcdir)/../.." "-I$(srcdir)/.." "$(LIBGNUTLS_CFLAGS)" "$(LIBGCRYPT_CFLAGS)")) nil [950 1040])
+            ("Makefile.common" include nil nil [1041 1065])
+            ("libdirtydissectors_la_SOURCES" variable (:default-value ("$(DIRTY_DISSECTOR_SRC)" "$(DIRTY_ASN1_DISSECTOR_SRC)" "$(DIRTY_PIDL_DISSECTOR_SRC)")) nil [1066 1191])
+            ("AM_CLEAN_CFLAGS" variable (:default-value ("-Werror")) nil [1219 1245])
+            ("libdissectors_la_SOURCES" variable (:default-value ("$(DISSECTOR_SRC)" "$(ASN1_DISSECTOR_SRC)" "$(PIDL_DISSECTOR_SRC)" "$(DISSECTOR_SUPPORT_SRC)")) nil [1252 1377])
+            ("libdissectors_la_CFLAGS" variable (:default-value ("$(AM_CLEAN_CFLAGS)")) nil [1377 1422])
+            ("DIST_SUBDIRS" variable (:default-value ("dcerpc" "pidl")) nil [1497 1524])
+            ("EXTRA_DIST" variable (:default-value ("Custom.common" "Makefile.common" "Makefile.nmake" "packet-ncp2222.inc" "README.X11" "dissectors.vcproj" "x11-fields")) nil [1525 1667])
+            ("packet-ncp2222.c" function (:arguments ("$(top_srcdir)/tools/ncp2222.py")) nil [1668 1738])
+            ("x11-dissector" function (:arguments ("$(top_srcdir)/tools/process-x11-fields.pl" "x11-fields" "$(top_srcdir)/tools/process-x11-xcb.pl")) nil [1864 2083])
+            ("register.c" function (:arguments ("$(plugin_src)" "$(ALL_DISSECTORS_SRC)" "Makefile.common" "$(top_srcdir)/tools/make-dissector-reg" "$(top_srcdir)/tools/make-dissector-reg.py")) nil [3619 4121])
+            ("CLEANFILES" variable (:default-value ("libdissectors.a" "libdissectors.la" "libdirtydissectors.a" "libdirtydissectors.la" "register.c-tmp" "register-cache.pkl" "$(GENERATED_HEADER_FILES)" "*~")) nil [4976 5160])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("$(GENERATED_FILES)" "Makefile.in")) nil [5161 5221])
+            ("checkapi" function nil nil [5222 5367]))          
+      :file "Makefile.am"
+      :pointmax 5367
+      :fsize 5366
+      :lastmodtime '(20873 33377 0 0)
+      :unmatched-syntax '((shell-command 5233 . 5366) (bol 5232 . 5232)))
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 32084
+      :lastmodtime '(20580 2725 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!epan!dissectors!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

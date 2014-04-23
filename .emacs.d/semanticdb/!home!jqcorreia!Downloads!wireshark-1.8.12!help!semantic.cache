@@ -1,0 +1,22 @@
+;; Object help/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "help/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("helpdir" variable (:default-value ("$(pkgdatadir)/help")) nil [1012 1041])
+            ("help_DATA" variable (:default-value ("toc" "getting_started.txt" "capturing.txt" "capture_filters.txt" "display_filters.txt" "faq.txt" "overview.txt")) nil [1041 1178])
+            ("EXTRA_DIST" variable (:default-value ("$(help_DATA)" "Makefile.nmake" "$(srcdir)/faq.py" "faq.txt")) nil [1179 1259])
+            ("CLEANFILES" variable (:default-value ("faq.txt")) nil [1260 1281])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in")) nil [1282 1320])
+            ("faq.txt" function (:arguments ("$(srcdir)/faq.py")) nil [1487 1970]))          
+      :file "Makefile.am"
+      :pointmax 1970
+      :fsize 1969
+      :lastmodtime '(20430 13513 0 0)
+      :unmatched-syntax '((shell-command 1514 . 1969) (bol 1513 . 1513))))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!help!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

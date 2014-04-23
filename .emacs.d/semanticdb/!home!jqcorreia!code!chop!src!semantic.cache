@@ -1,0 +1,34 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "main.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [2 20])
+            ("mac80211/uapi/linux/nl80211.h" include (:system-flag t) nil [22 62])
+            ("netlink/genl/genl.h" include (:system-flag t) nil [63 93])
+            ("netlink/genl/family.h" include (:system-flag t) nil [94 126])
+            ("netlink/genl/ctrl.h" include (:system-flag t) nil [127 157])
+            ("netlink/msg.h" include (:system-flag t) nil [158 182])
+            ("netlink/attr.h" include (:system-flag t) nil [183 208])
+            ("linux/genetlink.h" include (:system-flag t) nil [209 237])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [249 258])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [259 272]))                  
+                :type "int")
+                nil [240 2002]))          
+      :file "main.c"
+      :pointmax 2004
+      :fsize 2003
+      :lastmodtime '(21272 33723 413130 604000)
+      :unmatched-syntax nil))
+  :file "!home!jqcorreia!code!chop!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

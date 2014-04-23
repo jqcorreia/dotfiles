@@ -1,0 +1,21 @@
+;; Object plugins/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "plugins/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("SUBDIRS" variable (:default-value ("$(_CUSTOM_SUBDIRS_)" "asn1" "docsis" "ethercat" "gryphon" "irda" "m2m" "mate" "opcua" "profinet" "stats_tree" "unistim" "wimax" "wimaxasncp")) nil [950 1113])
+            ("plugindir" variable (:default-value ("@plugindir@")) nil [1114 1138])
+            ("EXTRA_DIST" variable (:default-value ("$(_CUSTOM_EXTRA_DIST_)" "plugins.vcproj" "Makefile.nmake" "Custom.make.example" "Custom.m4.example" "Custom.nmake.example")) nil [1139 1282])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in")) nil [1283 1321])
+            ("checkapi" function nil nil [1322 1399]))          
+      :file "Makefile.am"
+      :pointmax 1400
+      :fsize 1399
+      :lastmodtime '(20580 15439 0 0)
+      :unmatched-syntax '((symbol 938 . 949) (symbol 929 . 937) (bol 929 . 929))))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!plugins!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

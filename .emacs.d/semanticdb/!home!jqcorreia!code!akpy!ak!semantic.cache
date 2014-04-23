@@ -1,0 +1,189 @@
+;; Object ak/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ak/"
+  :tables
+  (list
+    (semanticdb-table "netutils.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__all__" variable nil nil [2 60])
+            ("netaddr" include nil nil [63 77])
+            ("ether_addr_to_unix" function
+               (:documentation "
+    Formats MAC from 12:DB:00:CC:DD:4E to 12:db:0:cc:dd:4e.
+    "
+                :arguments 
+                  ( ("mac" variable nil (reparse-symbol function_parameters) [103 106]))                  )
+                nil [80 245])
+            ("ether_addr_to_standard" function
+               (:documentation "
+    Formats MAC from 12:db:0:cc:dd:4e to 12:DB:00:CC:DD:4E
+    "
+                :arguments 
+                  ( ("mac" variable nil (reparse-symbol function_parameters) [275 278]))                  )
+                nil [248 415]))          
+      :file "netutils.py"
+      :pointmax 416
+      :fsize 415
+      :lastmodtime '(21251 27358 698743 253000)
+      :unmatched-syntax nil)
+    (semanticdb-table "wifiutils.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("ak" include nil nil [24 33])
+            ("decimal" include nil nil [35 69])
+            ("__all__" variable nil nil [71 187])
+            ("DEFAULT_N" variable nil nil [190 205])
+            ("USE_CACHE" variable nil nil [206 223])
+            ("_CACHE" variable nil nil [225 236])
+            ("rssi_to_distance" function
+               (:documentation "
+    **RSS Ranging**. Calculates the distance from the user device to the
+    station based on the recived power.
+
+    The algorithm uses the signal's path loss property which is experessed
+    as the inverse square law. The environment constant `n` defines how
+    fast the signal power weakens with the distance.
+
+    RSSI[dBm] = -10 * n * log10(d) + A[dBm]
+    A[dBm] = -37.0
+
+    dec(RSSI) ==  dec(-10) * dec(n) * dec(d).log10() + dec(A)
+    dec(d) == dec(10) ** ((dec(RSSI) - dec(A)) / (dec(-10) * dec(n)))
+
+    RSSI: dBm(< 0)  - The recived power from (RSS(I) value)
+    A: dBm(< 0) - The recived power at distance `d0`.
+    d0: m(> 0) = 1.0 - Fixed initial distance in meters (default = 1.0)
+    n: float(> 2) = 2.0 - Environment characterization variable.
+    "
+                :arguments 
+                  ( ("RSSI" variable nil (reparse-symbol function_parameters) [260 264])
+                    ("A" variable nil (reparse-symbol function_parameters) [266 267])
+                    ("d0" variable nil (reparse-symbol function_parameters) [275 277])
+                    ("n" variable nil (reparse-symbol function_parameters) [283 284])
+                    ("use_cache" variable nil (reparse-symbol function_parameters) [296 305]))                  )
+                nil [239 1466])
+            ("distance_to_rssi" function (:arguments 
+              ( ("d" variable nil (reparse-symbol function_parameters) [1489 1490])
+                ("n" variable nil (reparse-symbol function_parameters) [1492 1493]))              ) nil [1468 1613])
+            ("adjusted_plexp" function (:arguments 
+              ( ("rssi" variable nil (reparse-symbol function_parameters) [1634 1638])
+                ("d" variable nil (reparse-symbol function_parameters) [1640 1641]))              ) nil [1615 1759])
+            ("gen_table" function (:arguments 
+              ( ("s" variable nil (reparse-symbol function_parameters) [1775 1776])
+                ("e" variable nil (reparse-symbol function_parameters) [1781 1782]))              ) nil [1761 2004]))          
+      :file "wifiutils.py"
+      :pointmax 2007
+      :fsize 2006
+      :lastmodtime '(21251 27358 698743 253000)
+      :unmatched-syntax nil)
+    (semanticdb-table "log.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 38])
+            ("ak" include nil nil [40 49])
+            ("try" code nil nil [51 147])
+            ("LogLevel" variable nil nil [149 354])
+            ("__all__" code nil nil [356 427])
+            ("separator" function nil nil [430 535])
+            ("log" function (:arguments 
+              ( ("logLevel" variable nil (reparse-symbol function_parameters) [545 553])
+                ("msg" variable nil (reparse-symbol function_parameters) [555 558]))              ) nil [537 598])
+            ("info" function (:arguments 
+              ( ("msg" variable nil (reparse-symbol function_parameters) [609 612]))              ) nil [600 702])
+            ("status" function (:arguments 
+              ( ("msg" variable nil (reparse-symbol function_parameters) [715 718]))              ) nil [704 810])
+            ("debug" function (:arguments 
+              ( ("msg" variable nil (reparse-symbol function_parameters) [822 825]))              ) nil [812 926])
+            ("trace" function (:arguments 
+              ( ("msg" variable nil (reparse-symbol function_parameters) [938 941]))              ) nil [928 1044])
+            ("warning" function (:arguments 
+              ( ("msg" variable nil (reparse-symbol function_parameters) [1058 1061]))              ) nil [1046 1154])
+            ("error" function (:arguments 
+              ( ("msg" variable nil (reparse-symbol function_parameters) [1166 1169]))              ) nil [1156 1260]))          
+      :file "log.py"
+      :pointmax 1263
+      :fsize 1264
+      :lastmodtime '(21251 27358 698743 253000)
+      :unmatched-syntax '((NAME 1176 . 1179) (IF 1194 . 1196) (ELSE 1222 . 1226) (NAME 1068 . 1071) (IF 1086 . 1088) (ELSE 1114 . 1118) (NAME 960 . 963) (IF 978 . 980) (ELSE 1006 . 1010) (NAME 842 . 845) (IF 860 . 862) (ELSE 888 . 892) (NAME 725 . 728) (IF 743 . 745) (ELSE 771 . 775) (NAME 619 . 622) (IF 637 . 639) (ELSE 665 . 669)))
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("ak.colors" include nil nil [3 26])
+            ("ak.types" include nil nil [27 49])
+            ("ak.log" include nil nil [50 70])
+            ("ak.geometry" include nil nil [71 96])
+            ("ak.graph" include nil nil [97 119])
+            ("ak.wifiutils" include nil nil [120 146])
+            ("ak.netutils" include nil nil [147 172])
+            ("ak.wifiutils" include nil nil [173 199])
+            ("ak.data" include nil nil [200 221])
+            ("ak.math" include nil nil [222 243])
+            ("c" variable nil nil [246 255])
+            ("sys" include nil nil [258 268])
+            ("Spinner" type
+               (:documentation "A class to show a spinning ascii animation on a character terminal.
+
+    It informs the user that some processing is being done.
+    "
+                :members 
+                  ( ("HeartBit" variable nil (reparse-symbol indented_block_body) [434 449])
+                    ("Spinner" variable nil (reparse-symbol indented_block_body) [454 470])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [516 538])
+                            ("self" variable nil (reparse-symbol indented_block_body) [547 584])
+                            ("self" variable nil (reparse-symbol indented_block_body) [593 622])
+                            ("self" variable nil (reparse-symbol indented_block_body) [631 641]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [489 493])
+                            ("message" variable nil (reparse-symbol function_parameters) [495 502]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [476 642])
+                    ("spin" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [656 660]))                          )
+                        (reparse-symbol indented_block_body) [647 818])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [832 836])
+                            ("stop_message" variable nil (reparse-symbol function_parameters) [838 850]))                          )
+                        (reparse-symbol indented_block_body) [823 905]))                  
+                :type "class")
+                nil [270 905])
+            ("spinner" variable nil nil [907 926]))          
+      :file "__init__.py"
+      :pointmax 929
+      :fsize 930
+      :lastmodtime '(21251 27358 698743 253000)
+      :unmatched-syntax nil)
+    (semanticdb-table "colors.py"
+      :file "colors.py"
+      :fsize 1967
+      :lastmodtime '(21251 27358 698743 253000))
+    (semanticdb-table "types.py"
+      :file "types.py"
+      :fsize 870
+      :lastmodtime '(21251 27358 698743 253000))
+    (semanticdb-table "geometry.py"
+      :file "geometry.py"
+      :fsize 10549
+      :lastmodtime '(21251 27358 698743 253000))
+    (semanticdb-table "graph.py"
+      :file "graph.py"
+      :fsize 4322
+      :lastmodtime '(21251 27358 698743 253000))
+    (semanticdb-table "data.py"
+      :file "data.py"
+      :fsize 1069
+      :lastmodtime '(21251 27358 698743 253000))
+    (semanticdb-table "math.py"
+      :file "math.py"
+      :fsize 62
+      :lastmodtime '(21251 27358 698743 253000)))
+  :file "!home!jqcorreia!code!akpy!ak!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

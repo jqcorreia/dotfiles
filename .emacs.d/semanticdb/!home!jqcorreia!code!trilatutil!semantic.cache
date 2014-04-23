@@ -1,0 +1,203 @@
+;; Object trilatutil/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "trilatutil/"
+  :tables
+  (list
+    (semanticdb-table "main.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("settings" include nil nil [25 40])
+            ("controllers" include nil nil [41 59])
+            ("trilateration" include nil nil [60 80])
+            ("ak" include nil nil [82 91])
+            ("qt" include nil nil [92 101])
+            ("sys" include nil nil [102 112])
+            ("if" code nil nil [114 1050]))          
+      :file "main.py"
+      :pointmax 1050
+      :fsize 1049
+      :lastmodtime '(21255 26423 535358 677000)
+      :unmatched-syntax nil)
+    (semanticdb-table "settings.py"
+      :file "settings.py"
+      :fsize 201
+      :lastmodtime '(21250 15587 185798 815000))
+    (semanticdb-table "controllers.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("qt" include nil nil [2 18])
+            ("mqttclient" include nil nil [19 52])
+            ("random" include nil nil [53 78])
+            ("ApplicationController" type
+               (:superclasses ("QObject")
+                :members 
+                  ( ("didReceiveStationInfo" variable nil (reparse-symbol indented_block_body) [124 163])
+                    ("didReceiveDetection" variable nil (reparse-symbol indented_block_body) [168 205])
+                    ("didCalculateDevicePosition" variable nil (reparse-symbol indented_block_body) [210 263])
+                    ("didUpdateSignalRadiusForStation" variable nil (reparse-symbol indented_block_body) [268 324])
+                    ("__init__" function
+                       (:suite 
+                          ( ("QObject" code nil (reparse-symbol indented_block_body) [358 380])
+                            ("self" variable nil (reparse-symbol indented_block_body) [390 429])
+                            ("self" code nil (reparse-symbol indented_block_body) [438 457]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [343 347]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [330 458])
+                    ("requestStationsInfo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [488 492]))                          )
+                        (reparse-symbol indented_block_body) [464 541])
+                    ("requestDetections" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [569 573]))                          )
+                        (reparse-symbol indented_block_body) [547 620])
+                    ("didFindStation" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [645 649])
+                            ("station" variable nil (reparse-symbol function_parameters) [651 658]))                          )
+                        (reparse-symbol indented_block_body) [626 710])
+                    ("simulateDidCalculateDevicePosition" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [755 759]))                          )
+                        (reparse-symbol indented_block_body) [716 972]))                  
+                :type "class")
+                nil [81 972]))          
+      :file "controllers.py"
+      :pointmax 977
+      :fsize 976
+      :lastmodtime '(21250 15587 185798 815000)
+      :unmatched-syntax nil)
+    (semanticdb-table "qt.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("" code nil nil [28 116])
+            ("" code nil nil [142 161])
+            ("" code nil nil [189 203]))          
+      :file "qt.py"
+      :pointmax 207
+      :fsize 206
+      :lastmodtime '(21250 15587 185798 815000)
+      :unmatched-syntax nil)
+    (semanticdb-table "mqttclient.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("ak" include nil nil [2 11])
+            ("qt" include nil nil [12 21])
+            ("json" include nil nil [22 33])
+            ("mosquitto" include nil nil [34 50])
+            ("datetime" include nil nil [51 66])
+            ("MQTTClient" type
+               (:superclasses ("qt.QThread")
+                :members 
+                  ( ("BrokerHost" variable nil (reparse-symbol indented_block_body) [104 133])
+                    ("BrokerPort" variable nil (reparse-symbol indented_block_body) [138 155])
+                    ("DataTopic" variable nil (reparse-symbol indented_block_body) [160 189])
+                    ("StationsInfoTopic" variable nil (reparse-symbol indented_block_body) [194 231])
+                    ("Handshake" variable nil (reparse-symbol indented_block_body) [236 259])
+                    ("__init__" function
+                       (:suite 
+                          ( ("qt" code nil (reparse-symbol indented_block_body) [303 328])
+                            ("self" variable nil (reparse-symbol indented_block_body) [338 363])
+                            ("self" variable nil (reparse-symbol indented_block_body) [373 424])
+                            ("self" code nil (reparse-symbol indented_block_body) [433 480])
+                            ("self" variable nil (reparse-symbol indented_block_body) [490 529])
+                            ("self" variable nil (reparse-symbol indented_block_body) [538 577])
+                            ("self" variable nil (reparse-symbol indented_block_body) [586 625])
+                            ("self" variable nil (reparse-symbol indented_block_body) [634 677])
+                            ("self" variable nil (reparse-symbol indented_block_body) [687 809])
+                            ("self" variable nil (reparse-symbol indented_block_body) [819 844])
+                            ("self" variable nil (reparse-symbol indented_block_body) [853 875])
+                            ("self" variable nil (reparse-symbol indented_block_body) [884 929])
+                            ("self" variable nil (reparse-symbol indented_block_body) [938 981]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [278 282])
+                            ("delegate" variable nil (reparse-symbol function_parameters) [284 292]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [265 982])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [996 1000]))                          )
+                        (reparse-symbol indented_block_body) [988 1563])
+                    ("ensureConnected" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1589 1593]))                          )
+                        (reparse-symbol indented_block_body) [1569 1777])
+                    ("subscribeToStationsInfo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1811 1815]))                          )
+                        (reparse-symbol indented_block_body) [1783 2034])
+                    ("subscribeToDetections" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2066 2070]))                          )
+                        (reparse-symbol indented_block_body) [2040 2284])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2299 2303]))                          )
+                        (reparse-symbol indented_block_body) [2290 2396])
+                    ("onConnect" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2416 2420])
+                            ("mosq" variable nil (reparse-symbol function_parameters) [2422 2426])
+                            ("obj" variable nil (reparse-symbol function_parameters) [2428 2431])
+                            ("rc" variable nil (reparse-symbol function_parameters) [2433 2435]))                          )
+                        (reparse-symbol indented_block_body) [2402 2502])
+                    ("onMessage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2522 2526])
+                            ("mosq" variable nil (reparse-symbol function_parameters) [2528 2532])
+                            ("obj" variable nil (reparse-symbol function_parameters) [2534 2537])
+                            ("msg" variable nil (reparse-symbol function_parameters) [2539 2542]))                          )
+                        (reparse-symbol indented_block_body) [2508 2885])
+                    ("onPublish" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2905 2909])
+                            ("mosq" variable nil (reparse-symbol function_parameters) [2911 2915])
+                            ("obj" variable nil (reparse-symbol function_parameters) [2917 2920])
+                            ("mid" variable nil (reparse-symbol function_parameters) [2922 2925]))                          )
+                        (reparse-symbol indented_block_body) [2891 2958])
+                    ("onSubscribe" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2980 2984])
+                            ("mosq" variable nil (reparse-symbol function_parameters) [2986 2990])
+                            ("obj" variable nil (reparse-symbol function_parameters) [2992 2995])
+                            ("mid" variable nil (reparse-symbol function_parameters) [2997 3000])
+                            ("grantedQos" variable nil (reparse-symbol function_parameters) [3002 3012]))                          )
+                        (reparse-symbol indented_block_body) [2964 3047])
+                    ("processDetectionMessage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3082 3086])
+                            ("msg" variable nil (reparse-symbol function_parameters) [3088 3091]))                          )
+                        (reparse-symbol indented_block_body) [3054 3184])
+                    ("processStationsMessage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3217 3221])
+                            ("msg" variable nil (reparse-symbol function_parameters) [3223 3226]))                          )
+                        (reparse-symbol indented_block_body) [3190 3502]))                  
+                :type "class")
+                nil [69 3502]))          
+      :file "mqttclient.py"
+      :pointmax 3504
+      :fsize 3503
+      :lastmodtime '(21254 575 531878 101000)
+      :unmatched-syntax nil))
+  :file "!home!jqcorreia!code!trilatutil!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

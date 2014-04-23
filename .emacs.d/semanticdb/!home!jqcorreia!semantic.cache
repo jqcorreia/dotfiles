@@ -1,0 +1,41 @@
+;; Object jqcorreia/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "jqcorreia/"
+  :tables
+  (list
+    (semanticdb-table ".emacs"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("setq" code nil nil [1 32])
+            ("add-to-list" code nil nil [34 95])
+            ("add-to-list" code nil nil [97 135])
+            ("package" include nil nil [137 155])
+            ("setq" code nil nil [156 377])
+            ("global-linum-mode" code nil nil [379 398])
+            ("add-hook" code nil nil [399 449])
+            ("add-hook" code nil nil [452 500])
+            ("add-hook" code nil nil [501 541])
+            ("add-hook" code nil nil [543 590])
+            ("my-after-init-hook" function nil nil [592 954])
+            ("custom-set-variables" code nil nil [956 1376])
+            ("custom-set-faces" code nil nil [1377 1616])
+            ("global-set-key" code nil nil [1618 1673])
+            ("put" code nil nil [1674 1708])
+            ("setq-default" code nil nil [1710 1741])
+            ("show-paren-mode" code nil nil [1742 1761])
+            ("global-set-key" code nil nil [1792 1837])
+            ("global-set-key" code nil nil [1838 1887])
+            ("add-hook" code nil nil [1940 2033])
+            ("add-hook" code nil nil [2035 2126])
+            ("add-hook" code nil nil [2128 2217])
+            ("comment-or-uncomment-region-or-line" function (:user-visible-flag t) nil [2219 2601])
+            ("global-set-key" code nil nil [2603 2670])
+            (".emacs" package nil nil [2674 2691]))          
+      :file ".emacs"
+      :pointmax 2715
+      :fsize 2714
+      :lastmodtime '(21283 6048 977673 203000)
+      :unmatched-syntax nil))
+  :file "!home!jqcorreia!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

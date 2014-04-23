@@ -1,0 +1,33 @@
+;; Object stats_tree/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "stats_tree/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)")) nil [939 969])
+            ("Makefile.common" include nil nil [970 994])
+            ("AM_CFLAGS" variable (:default-value ("-Werror")) nil [1022 1042])
+            ("plugindir" variable (:default-value ("@plugindir@")) nil [1049 1073])
+            ("plugin_LTLIBRARIES" variable (:default-value ("stats_tree.la")) nil [1074 1109])
+            ("stats_tree_la_SOURCES" variable (:default-value ("$(TAP_SRC)" "$(TAP_INCLUDES)")) nil [1109 1160])
+            ("stats_tree_la_LDFLAGS" variable (:default-value ("-module" "-avoid-version")) nil [1160 1207])
+            ("stats_tree_la_LIBADD" variable (:default-value ("@PLUGIN_LIBS@")) nil [1207 1244])
+            ("LIBS" variable nil nil [1402 1409])
+            ("CLEANFILES" variable (:default-value ("stats_tree" "*~")) nil [1410 1443])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in" "plugin.c")) nil [1444 1494])
+            ("EXTRA_DIST" variable (:default-value ("Makefile.common" "Makefile.nmake" "moduleinfo.nmake" "plugin.rc.in" "CMakeLists.txt")) nil [1495 1602])
+            ("checkapi" function nil nil [1603 1712]))          
+      :file "Makefile.am"
+      :pointmax 1712
+      :fsize 1711
+      :lastmodtime '(20873 33376 0 0)
+      :unmatched-syntax '((shell-command 1614 . 1711) (bol 1613 . 1613)))
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 1220
+      :lastmodtime '(20430 13517 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!plugins!stats_tree!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

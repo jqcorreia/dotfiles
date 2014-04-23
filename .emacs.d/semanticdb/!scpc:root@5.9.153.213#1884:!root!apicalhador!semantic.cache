@@ -1,0 +1,534 @@
+;; Object apicalhador/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "apicalhador/"
+  :tables
+  (list
+    (semanticdb-table "replayer.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("ujson" include nil nil [2 14])
+            ("collections" include nil nil [15 50])
+            ("utils" include nil nil [51 81])
+            ("sys" include nil nil [82 92])
+            ("zmq" include nil nil [93 103])
+            ("comm" include nil nil [104 139])
+            ("sys" include nil nil [140 150])
+            ("settings" include nil nil [151 166])
+            ("pycassa" include nil nil [167 181])
+            ("mac_antid_map" variable nil nil [193 556])
+            ("month_days" variable nil nil [888 1063])
+            ("getDaysOfMonth" function (:arguments 
+              ( ("month" variable nil (reparse-symbol function_parameters) [1152 1157])
+                ("year" variable nil (reparse-symbol function_parameters) [1159 1163]))              ) nil [1133 1278])
+            ("\"\"\"
+ # Message format to send through ZMQ
+
+{
+    \"antena_id\": str,
+    \"detection_time\": int,
+    \"data\": [\"device_id\": str, \"rssi\": [int]]
+}
+\"\"\"" code nil nil [1280 1425])
+            ("pool" variable nil nil [1426 1513])
+            ("pool" variable nil nil [1514 1534])
+            ("month" variable nil nil [1535 1544])
+            ("year" variable nil nil [1545 1556])
+            ("context" variable nil nil [1557 1580])
+            ("socket" variable nil nil [1581 1614])
+            ("send_command" function (:arguments 
+              ( ("socket" variable nil (reparse-symbol function_parameters) [1634 1640])
+                ("cmd" variable nil (reparse-symbol function_parameters) [1642 1645]))              ) nil [1617 1701])
+            ("build_detection" function (:arguments 
+              ( ("d" variable nil (reparse-symbol function_parameters) [1723 1724]))              ) nil [1703 1908])
+            ("main" function nil nil [1911 3768])
+            ("if" code nil nil [3851 3889]))          
+      :file "replayer.py"
+      :pointmax 4891
+      :fsize 4890
+      :lastmodtime '(21277 63508)
+      :unmatched-syntax '((INDENT_BLOCK 3111 . 3259) (NEWLINE 3110 . 3111) (COLON 3109 . 3110) (TRY 2828 . 2831) (AS 3105 . 3107)))
+    (semanticdb-table "utils.py"
+      :file "utils.py"
+      :fsize 1199
+      :lastmodtime '(21277 11637))
+    (semanticdb-table "comm.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("msgpack" include nil nil [2 16])
+            ("pack_msg" function (:arguments 
+              ( ("msg" variable nil (reparse-symbol function_parameters) [32 35]))              ) nil [19 107])
+            ("unpack_msg" function (:arguments 
+              ( ("msg" variable nil (reparse-symbol function_parameters) [124 127]))              ) nil [109 220])
+            ("Commands" type
+               (:members 
+                  ( ("REG" variable nil (reparse-symbol indented_block_body) [242 249])
+                    ("LOC" variable nil (reparse-symbol indented_block_body) [254 261])
+                    ("locate" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [295 298]))                          )
+                        (reparse-symbol indented_block_body) [267 327])
+                    ("register" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [362 365])
+                            ("detection" variable nil (reparse-symbol function_parameters) [367 376]))                          )
+                        (reparse-symbol indented_block_body) [332 415]))                  
+                :type "class")
+                nil [222 415])
+            ("test_pack_and_unpack_msg" function nil nil [419 786]))          
+      :file "comm.py"
+      :pointmax 787
+      :fsize 786
+      :lastmodtime '(21277 11637)
+      :unmatched-syntax nil)
+    (semanticdb-table "settings.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("socket" include nil nil [2 15])
+            ("HOSTNAME" variable nil nil [16 47])
+            ("CLIENT_ID" variable nil nil [49 70])
+            ("CLIENT_MALL_ID" variable nil nil [71 90])
+            ("MQTT_HOST" variable nil nil [92 117])
+            ("MQTT_PORT" variable nil nil [118 134])
+            ("MQTT_USER" variable nil nil [135 157])
+            ("MQTT_PASS" variable nil nil [158 176])
+            ("WEBSOCKET_PORT" variable nil nil [178 199])
+            ("CASSANDRA_KEYSPACE" variable nil nil [201 234])
+            ("CASSANDRA_HOSTLIST" variable nil nil [235 283])
+            ("REPLAY_PUBLISHER_ADDRESS" variable nil nil [338 387])
+            ("PYTHON27" variable nil nil [389 411]))          
+      :file "settings.py"
+      :pointmax 413
+      :fsize 412
+      :lastmodtime '(21277 40144)
+      :unmatched-syntax nil)
+    (semanticdb-table "wifiradar.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("ak" include nil nil [3 12])
+            ("zmq" include nil nil [13 23])
+            ("os" include nil nil [24 33])
+            ("threading" include nil nil [34 50])
+            ("subprocess" include nil nil [51 68])
+            ("settings" include nil nil [69 84])
+            ("positioning" include nil nil [85 126])
+            ("collections" include nil nil [127 162])
+            ("publisher" include nil nil [163 194])
+            ("comm" include nil nil [196 243])
+            ("WiFiRadar" type
+               (:documentation "
+    WiFiRadar processes the detections in an isolated environment and meditates
+    the calculation of the positions of the captured devices.
+
+    The positioning is performed by the positioning engine that is
+    initialized as a deamon and runs in the background.
+    "
+                :superclasses ("threading.Thread")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("threading" code nil (reparse-symbol indented_block_body) [597 628])
+                            ("self" variable nil (reparse-symbol indented_block_body) [638 661])
+                            ("self" code nil (reparse-symbol indented_block_body) [671 687])
+                            ("self" variable nil (reparse-symbol indented_block_body) [697 743])
+                            ("self" variable nil (reparse-symbol indented_block_body) [752 824]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [582 586]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [569 825])
+                    ("_init_zmq" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [845 849]))                          )
+                        (reparse-symbol indented_block_body) [831 1140])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1154 1158]))                          
+                        :documentation "
+        The main detection loop of the WiFiRadar. Starts the positioning engine,
+        waits for the detections from the antenas and passes the detections to
+        the positioning engine.
+        ")
+                        (reparse-symbol indented_block_body) [1146 2812])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2827 2831]))                          )
+                        (reparse-symbol indented_block_body) [2818 2937])
+                    ("join" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2952 2956]))                          )
+                        (reparse-symbol indented_block_body) [2943 3053])
+                    ("register_observer" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3081 3085])
+                            ("name" variable nil (reparse-symbol function_parameters) [3087 3091])
+                            ("queue" variable nil (reparse-symbol function_parameters) [3093 3098])
+                            ("vars" variable nil (reparse-symbol function_parameters) [3100 3104])
+                            ("msgbuilder" variable nil (reparse-symbol function_parameters) [3106 3116]))                          )
+                        (reparse-symbol indented_block_body) [3059 3192]))                  
+                :type "class")
+                nil [247 3192]))          
+      :file "wifiradar.py"
+      :pointmax 3194
+      :fsize 3048
+      :lastmodtime '(21277 49256)
+      :unmatched-syntax nil)
+    (semanticdb-table "positioning.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [26 36])
+            ("time" include nil nil [37 48])
+            ("collections" include nil nil [49 84])
+            ("itertools" include nil nil [85 108])
+            ("queue" include nil nil [109 132])
+            ("threading" include nil nil [133 168])
+            ("ak" include nil nil [170 179])
+            ("ak" include nil nil [180 226])
+            ("settings" include nil nil [228 243])
+            ("wps" include nil nil [244 254])
+            ("collapse" include nil nil [255 281])
+            ("clear" function
+               (:decorators 
+                  ( ("multimethod" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("list" variable nil (reparse-symbol function_parameters) [310 314]))                  )
+                nil [284 331])
+            ("clear" function
+               (:decorators 
+                  ( ("multimethod" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("dict" variable nil (reparse-symbol function_parameters) [359 363]))                  )
+                nil [333 380])
+            ("partition" function (:arguments 
+              ( ("pred" variable nil (reparse-symbol function_parameters) [395 399])
+                ("iterable" variable nil (reparse-symbol function_parameters) [401 409]))              ) nil [381 635])
+            ("device_debugger" function (:arguments 
+              ( ("dev" variable nil (reparse-symbol function_parameters) [658 661]))              ) nil [638 853])
+            ("antena_from_detection" function (:arguments 
+              ( ("raw_det" variable nil (reparse-symbol function_parameters) [881 888]))              ) nil [855 1069])
+            ("pairwise" function (:arguments 
+              ( ("iterable" variable nil (reparse-symbol function_parameters) [1084 1092]))              ) nil [1071 1202])
+            ("grouper" function (:arguments 
+              ( ("n" variable nil (reparse-symbol function_parameters) [1215 1216])
+                ("iterable" variable nil (reparse-symbol function_parameters) [1218 1226])
+                ("fillvalue" variable nil (reparse-symbol function_parameters) [1228 1237]))              ) nil [1203 1377])
+            ("last" function (:arguments 
+              ( ("L" variable nil (reparse-symbol function_parameters) [1388 1389]))              ) nil [1379 1409])
+            ("group_times_by_delta" function (:arguments 
+              ( ("T" variable nil (reparse-symbol function_parameters) [1437 1438])
+                ("d" variable nil (reparse-symbol function_parameters) [1440 1441]))              ) nil [1412 1657])
+            ("ak" code nil nil [1659 1701])
+            ("ak" code nil nil [1702 1756])
+            ("ak" code nil nil [1757 1804])
+            ("ak" code nil nil [1805 1839])
+            ("PositioningEngine" type
+               (:documentation "
+    The positioning engine calculates the positions of the caputred devices.
+    "
+                :superclasses ("Thread")
+                :members 
+                  ( ("SYNC_DELTA" variable nil (reparse-symbol indented_block_body) [1972 1986])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [2020 2038])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2048 2070])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2079 2103])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2113 2141])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2150 2212])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2222 2309])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2319 2371]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2005 2009]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1992 2372])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2386 2390]))                          )
+                        (reparse-symbol indented_block_body) [2378 2666])
+                    ("locate_devices" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2691 2695]))                          )
+                        (reparse-symbol indented_block_body) [2672 3146])
+                    ("_locate_devices_in_registry" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3184 3188])
+                            ("reg" variable nil (reparse-symbol function_parameters) [3190 3193])
+                            ("detection_time" variable nil (reparse-symbol function_parameters) [3195 3209]))                          )
+                        (reparse-symbol indented_block_body) [3152 3648])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3663 3667]))                          )
+                        (reparse-symbol indented_block_body) [3654 3745])
+                    ("_cleanup_device_registry" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3780 3784]))                          )
+                        (reparse-symbol indented_block_body) [3751 4065])
+                    ("register_antena_detection" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4101 4105])
+                            ("raw_det" variable nil (reparse-symbol function_parameters) [4107 4114]))                          )
+                        (reparse-symbol indented_block_body) [4071 4223])
+                    ("process_antena_detection" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4258 4262])
+                            ("raw_det" variable nil (reparse-symbol function_parameters) [4264 4271]))                          )
+                        (reparse-symbol indented_block_body) [4229 4676])
+                    ("_register_device_detection" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4713 4717])
+                            ("ant" variable nil (reparse-symbol function_parameters) [4719 4722])
+                            ("dev" variable nil (reparse-symbol function_parameters) [4724 4727])
+                            ("rssi" variable nil (reparse-symbol function_parameters) [4729 4733]))                          )
+                        (reparse-symbol indented_block_body) [4682 4910])
+                    ("_register_position_for_device" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4950 4954])
+                            ("p" variable nil (reparse-symbol function_parameters) [4956 4957])
+                            ("dev" variable nil (reparse-symbol function_parameters) [4959 4962])
+                            ("detection_time" variable nil (reparse-symbol function_parameters) [4964 4978]))                          )
+                        (reparse-symbol indented_block_body) [4916 5186]))                  
+                :type "class")
+                nil [1841 5186]))          
+      :file "positioning.py"
+      :pointmax 5188
+      :fsize 5991
+      :lastmodtime '(21277 63440)
+      :unmatched-syntax '((INDENT_BLOCK 4572 . 4619) (NEWLINE 4571 . 4572) (COLON 4570 . 4571) (TRY 4472 . 4475) (AS 4566 . 4568) (NAME 356 . 357) (COLON 357 . 358) (NAME 307 . 308) (COLON 308 . 309) (NAME 307 . 308) (COLON 308 . 309) (NAME 356 . 357) (COLON 357 . 358) (NAME 307 . 308) (COLON 308 . 309)))
+    (semanticdb-table "publisher.py"
+      :file "publisher.py"
+      :fsize 999
+      :lastmodtime '(21277 11637))
+    (semanticdb-table "wps.py"
+      :file "wps.py"
+      :fsize 4776
+      :lastmodtime '(21277 11637))
+    (semanticdb-table "collapse.py"
+      :file "collapse.py"
+      :fsize 2037
+      :lastmodtime '(21277 11637))
+    (semanticdb-table "aroundspaces.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("queue" include nil nil [2 14])
+            ("ak" include nil nil [16 25])
+            ("queue2zmq" include nil nil [26 42])
+            ("settings" include nil nil [43 58])
+            ("store_api" include nil nil [59 75])
+            ("wifiradar" include nil nil [76 107])
+            ("main" function nil nil [111 708])
+            ("if" code nil nil [710 748]))          
+      :file "aroundspaces.py"
+      :pointmax 749
+      :fsize 749
+      :lastmodtime '(21277 45631)
+      :unmatched-syntax nil)
+    (semanticdb-table "queue2zmq.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("datetime" include nil nil [25 40])
+            ("queue" include nil nil [41 53])
+            ("signal" include nil nil [54 67])
+            ("threading" include nil nil [68 84])
+            ("time" include nil nil [85 107])
+            ("subprocess" include nil nil [109 126])
+            ("os" include nil nil [127 136])
+            ("ak" include nil nil [137 146])
+            ("zmq" include nil nil [147 157])
+            ("settings" include nil nil [159 174])
+            ("utils" include nil nil [175 187])
+            ("comm" include nil nil [188 225])
+            ("msg_builder" function (:arguments 
+              ( ("device_mac" variable nil (reparse-symbol function_parameters) [244 254])
+                ("position" variable nil (reparse-symbol function_parameters) [256 264])
+                ("calculation_time" variable nil (reparse-symbol function_parameters) [266 282]))              ) nil [228 582])
+            ("Queue2ZMQ" type
+               (:superclasses ("threading.Thread")
+                :members 
+                  ( ("CASSANDRA_SCRIPT" variable nil (reparse-symbol indented_block_body) [624 658])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [708 726])
+                            ("self" variable nil (reparse-symbol indented_block_body) [736 758])
+                            ("self" variable nil (reparse-symbol indented_block_body) [767 785])
+                            ("self" variable nil (reparse-symbol indented_block_body) [794 813])
+                            ("self" code nil (reparse-symbol indented_block_body) [823 842])
+                            ("self" code nil (reparse-symbol indented_block_body) [851 870]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [677 681])
+                            ("antinfo" variable nil (reparse-symbol function_parameters) [683 690])
+                            ("queue" variable nil (reparse-symbol function_parameters) [692 697]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [664 871])
+                    ("_init_socket" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [894 898]))                          )
+                        (reparse-symbol indented_block_body) [877 1056])
+                    ("_init_server" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1079 1083]))                          )
+                        (reparse-symbol indented_block_body) [1062 1223])
+                    ("_halt_server" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1246 1250]))                          )
+                        (reparse-symbol indented_block_body) [1229 1300])
+                    ("send_quit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1320 1324]))                          )
+                        (reparse-symbol indented_block_body) [1306 1412])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1426 1430]))                          )
+                        (reparse-symbol indented_block_body) [1418 2008]))                  
+                :type "class")
+                nil [584 2008]))          
+      :file "queue2zmq.py"
+      :pointmax 2009
+      :fsize 1959
+      :lastmodtime '(21277 45631)
+      :unmatched-syntax '((INDENT_BLOCK 1608 . 1668) (NEWLINE 1607 . 1608) (IF 1572 . 1574) (STRING_LITERAL 1587 . 1606) (COLON 1606 . 1607)))
+    (semanticdb-table "store_api.py"
+      :file "store_api.py"
+      :fsize 6757
+      :lastmodtime '(21277 45631))
+    (semanticdb-table "cassandra2.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("datetime" include nil nil [25 40])
+            ("Queue" include nil nil [41 53])
+            ("signal" include nil nil [54 67])
+            ("threading" include nil nil [68 84])
+            ("logging" include nil nil [85 99])
+            ("ast" include nil nil [100 110])
+            ("pycassa" include nil nil [112 126])
+            ("pytz" include nil nil [127 138])
+            ("zmq" include nil nil [139 149])
+            ("utils" include nil nil [151 163])
+            ("settings" include nil nil [164 179])
+            ("time" include nil nil [181 203])
+            ("datetime" include nil nil [204 233])
+            ("threading" include nil nil [234 261])
+            ("pycassa.pool" include nil nil [263 302])
+            ("pycassa.columnfamily" include nil nil [303 348])
+            ("utils" include nil nil [350 379])
+            ("comm" include nil nil [380 417])
+            ("numpy" include nil nil [418 442])
+            ("lisboa" variable nil nil [444 483])
+            ("brasil" variable nil nil [484 527])
+            ("usa" variable nil nil [528 561])
+            ("utc" variable nil nil [562 576])
+            ("logging" code nil nil [578 618])
+            ("Cassandra2" type
+               (:members 
+                  ( ("instance" variable nil (reparse-symbol indented_block_body) [645 660])
+                    ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [708 909])
+                            ("self" variable nil (reparse-symbol indented_block_body) [918 961])
+                            ("self" variable nil (reparse-symbol indented_block_body) [970 1018])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1036 1058])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1068 1088])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1097 1121])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1139 1163])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1172 1193])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1202 1222])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1232 1260])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1269 1312])
+                            ("self" code nil (reparse-symbol indented_block_body) [1321 1375])
+                            ("self" code nil (reparse-symbol indented_block_body) [1417 1431])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1440 1459]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [679 683])
+                            ("_debug" variable nil (reparse-symbol function_parameters) [685 691]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [666 1460])
+                    ("send_quit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1479 1483]))                          )
+                        (reparse-symbol indented_block_body) [1465 1515])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1528 1532]))                          )
+                        (reparse-symbol indented_block_body) [1520 5733])
+                    ("insertLocalizationPendingOperations" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5778 5782]))                          )
+                        (reparse-symbol indented_block_body) [5738 6742])
+                    ("insertLocalization" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6770 6774])
+                            ("date" variable nil (reparse-symbol function_parameters) [6776 6780])
+                            ("client" variable nil (reparse-symbol function_parameters) [6782 6788]))                          )
+                        (reparse-symbol indented_block_body) [6747 8013])
+                    ("connect" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8030 8034]))                          )
+                        (reparse-symbol indented_block_body) [8018 8732])
+                    ("insert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8748 8752])
+                            ("columnfamily" variable nil (reparse-symbol function_parameters) [8754 8766])
+                            ("rowkey" variable nil (reparse-symbol function_parameters) [8768 8774])
+                            ("data" variable nil (reparse-symbol function_parameters) [8776 8780]))                          )
+                        (reparse-symbol indented_block_body) [8737 9719])
+                    ("batchInsert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9945 9949])
+                            ("columnfamily" variable nil (reparse-symbol function_parameters) [9951 9963])
+                            ("data" variable nil (reparse-symbol function_parameters) [9965 9969]))                          )
+                        (reparse-symbol indented_block_body) [9929 10889])
+                    ("disconnect" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11167 11171]))                          )
+                        (reparse-symbol indented_block_body) [11152 11289])
+                    ("__insertOfflineData" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11318 11322]))                          )
+                        (reparse-symbol indented_block_body) [11294 12106]))                  
+                :type "class")
+                nil [620 12106])
+            ("signal_handler" function (:arguments 
+              ( ("signal" variable nil (reparse-symbol function_parameters) [12127 12133])
+                ("frame" variable nil (reparse-symbol function_parameters) [12135 12140]))              ) nil [12108 12222])
+            ("if" code nil nil [12224 12381]))          
+      :file "cassandra2.py"
+      :pointmax 12382
+      :fsize 12321
+      :lastmodtime '(21277 49295)
+      :unmatched-syntax nil))
+  :file "!scpc:root@5.9.153.213#1884:!root!apicalhador!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

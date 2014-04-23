@@ -1,0 +1,51 @@
+;; Object .emacs.d/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file ".emacs.d/"
+  :tables
+  (list
+    (semanticdb-table "ede-projects.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "ede-projects.el"
+      :pointmax 86
+      :fsize 85
+      :lastmodtime '(21283 6781 627701 109000)
+      :unmatched-syntax nil)
+    (semanticdb-table "cedet.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("setq" code nil nil [345 422])
+            ("load-file" code nil nil [425 483])
+            ("add-to-list" code nil nil [484 543])
+            ("add-to-list" code nil nil [591 666])
+            ("add-to-list" code nil nil [667 737])
+            ("add-to-list" code nil nil [738 815])
+            ("add-to-list" code nil nil [816 889])
+            ("add-to-list" code nil nil [890 958])
+            ("add-to-list" code nil nil [959 1036])
+            ("add-to-list" code nil nil [1037 1107])
+            ("semantic-mode" code nil nil [1131 1148])
+            ("eassist" include nil nil [1175 1193])
+            ("alexott/cedet-hook" function nil nil [1222 1719])
+            ("add-hook" code nil nil [1720 1770])
+            ("add-hook" code nil nil [1771 1817])
+            ("add-hook" code nil nil [1818 1866])
+            ("add-hook" code nil nil [1867 1919])
+            ("add-hook" code nil nil [1920 1968])
+            ("alexott/c-mode-cedet-hook" function nil nil [1971 2200])
+            ("add-hook" code nil nil [2201 2258])
+            ("semanticdb-enable-gnu-global-databases" code nil nil [2261 2311])
+            ("semanticdb-enable-gnu-global-databases" code nil nil [2312 2364])
+            ("when" code nil nil [2367 2451])
+            ("global-srecode-minor-mode" code nil nil [2465 2494])
+            ("global-ede-mode" code nil nil [2504 2523])
+            ("ede-enable-generic-projects" code nil nil [2524 2553])
+            ("cedet-java" include nil nil [2576 2597]))          
+      :file "cedet.el"
+      :pointmax 2639
+      :fsize 2638
+      :lastmodtime '(21234 16425 163769 944000)
+      :unmatched-syntax nil))
+  :file "!home!jqcorreia!.emacs.d!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

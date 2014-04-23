@@ -1,0 +1,606 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "linux.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("sys/socket.h" include (:system-flag t) nil [863 886])
+            ("sys/ioctl.h" include (:system-flag t) nil [887 909])
+            ("sys/types.h" include (:system-flag t) nil [910 932])
+            ("sys/wait.h" include (:system-flag t) nil [933 954])
+            ("sys/time.h" include (:system-flag t) nil [955 976])
+            ("sys/stat.h" include (:system-flag t) nil [977 998])
+            ("netpacket/packet.h" include (:system-flag t) nil [999 1028])
+            ("linux/if_ether.h" include (:system-flag t) nil [1029 1056])
+            ("linux/if.h" include (:system-flag t) nil [1057 1078])
+            ("linux/wireless.h" include (:system-flag t) nil [1079 1106])
+            ("netinet/in.h" include (:system-flag t) nil [1107 1130])
+            ("linux/if_tun.h" include (:system-flag t) nil [1131 1156])
+            ("stdio.h" include (:system-flag t) nil [1157 1175])
+            ("stdlib.h" include (:system-flag t) nil [1176 1195])
+            ("string.h" include (:system-flag t) nil [1196 1215])
+            ("unistd.h" include (:system-flag t) nil [1216 1235])
+            ("fcntl.h" include (:system-flag t) nil [1236 1254])
+            ("errno.h" include (:system-flag t) nil [1255 1273])
+            ("dirent.h" include (:system-flag t) nil [1274 1293])
+            ("sys/utsname.h" include (:system-flag t) nil [1294 1318])
+            ("net/if_arp.h" include (:system-flag t) nil [1319 1342])
+            ("radiotap/radiotap-parser.h" include nil nil [1590 1627])
+            ("radiotap/ieee80211_radiotap.h" include nil nil [1944 1984])
+            ("osdep.h" include nil nil [1985 2003])
+            ("pcap.h" include nil nil [2004 2021])
+            ("crctable_osdep.h" include nil nil [2022 2049])
+            ("common.h" include nil nil [2050 2069])
+            ("byteorder.h" include nil nil [2070 2092])
+            ("uchar" variable (:constant-flag t) nil [2191 2196])
+            ("DRIVER_TYPE" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("DT_NULL" variable
+                             (:constant-flag t
+                              :default-value (2245 2246)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2235 2246])
+                          ("DT_WLANNG" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2256 2266])
+                          ("DT_HOSTAP" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2275 2285])
+                          ("DT_MADWIFI" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2294 2305])
+                          ("DT_MADWIFING" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2314 2327])
+                          ("DT_BCM43XX" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2336 2347])
+                          ("DT_ORINOCO" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2356 2367])
+                          ("DT_ZD1211RW" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2376 2388])
+                          ("DT_ACX" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2397 2404])
+                          ("DT_MAC80211_RT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2413 2428])
+                          ("DT_AT76USB" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2437 2448])
+                          ("DT_IPW2200" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2457 2470]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [2212 2483])
+            ("szaDriverTypes" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+        [DT_NULL] = \"Unknown\",
+        [DT_WLANNG] = \"Wlan-NG\",
+        [DT_HOSTAP] = \"HostAP\",
+        [DT_MADWIFI] = \"Madwifi\",
+        [DT_MADWIFING] = \"Madwifi-NG\",
+        [DT_BCM43XX] = \"BCM43xx\",
+        [DT_ORINOCO] = \"Orinoco\",
+        [DT_ZD1211RW] = \"ZD1211RW\",
+        [DT_ACX] = \"ACX\",
+        [DT_MAC80211_RT] = \"Mac80211-Radiotap\",
+        [DT_AT76USB] = \"Atmel 76_usb\",
+        [DT_IPW2200] = \"ipw2200\"
+}"
+                :type "char")
+                nil [2485 2947])
+            ("priv_linux" type
+               (:members 
+                  ( ("fd_in" variable (:type "int") (reparse-symbol classsubparts) [3061 3084])
+                    ("arptype_in" variable (:type "int") (reparse-symbol classsubparts) [3061 3084])
+                    ("fd_out" variable (:type "int") (reparse-symbol classsubparts) [3089 3113])
+                    ("arptype_out" variable (:type "int") (reparse-symbol classsubparts) [3089 3113])
+                    ("fd_main" variable (:type "int") (reparse-symbol classsubparts) [3118 3130])
+                    ("fd_rtc" variable (:type "int") (reparse-symbol classsubparts) [3135 3146])
+                    ("drivertype" variable (:type ("DRIVER_TYPE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3152 3175])
+                    ("f_cap_in" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3234 3249])
+                    ("pfh_in" variable (:type ("pcap_file_header" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3255 3286])
+                    ("sysfs_inject" variable (:type "int") (reparse-symbol classsubparts) [3292 3309])
+                    ("channel" variable (:type "int") (reparse-symbol classsubparts) [3314 3326])
+                    ("freq" variable (:type "int") (reparse-symbol classsubparts) [3331 3340])
+                    ("rate" variable (:type "int") (reparse-symbol classsubparts) [3345 3354])
+                    ("tx_power" variable (:type "int") (reparse-symbol classsubparts) [3359 3372])
+                    ("wlanctlng" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3377 3393])
+                    ("iwpriv" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3418 3431])
+                    ("iwconfig" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3436 3451])
+                    ("ifconfig" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3456 3471])
+                    ("wl" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3476 3485])
+                    ("main_if" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3490 3504])
+                    ("pl_mac" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [3509 3533])
+                    ("inject_wlanng" variable (:type "int") (reparse-symbol classsubparts) [3538 3556]))                  
+                :type "struct")
+                nil [3037 3559])
+            ("ETH_P_80211_RAW" variable (:constant-flag t) nil [3593 3608])
+            ("ARPHRD_IEEE80211" variable (:constant-flag t) nil [3628 3644])
+            ("ARPHRD_IEEE80211_PRISM" variable (:constant-flag t) nil [3664 3686])
+            ("ARPHRD_IEEE80211_FULL" variable (:constant-flag t) nil [3700 3721])
+            ("NULL_MAC" variable (:constant-flag t) nil [3754 3762])
+            ("calc_crc_osdep" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [3835 3855])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [3856 3864]))                  
+                :type "unsigned long")
+                nil [3805 4026])
+            ("check_crc_buf_osdep" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [4094 4113])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [4114 4123]))                  
+                :type "int")
+                nil [4069 4432])
+            ("is_ndiswrapper" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("iface" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4500 4519])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4520 4538]))                  
+                :type "int")
+                nil [4474 4829])
+            ("searchInside" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("dir" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4890 4907])
+                    ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4908 4930]))                  
+                :type "char")
+                nil [4863 6235])
+            ("wiToolsPath" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("tool" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6312 6330]))                  
+                :type "char")
+                nil [6286 6885])
+            ("linux_get_channel" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("wi" variable
+                       (:pointer 1
+                        :type ("wif" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9152 9167]))                  
+                :type "int")
+                nil [9123 9899])
+            ("linux_get_freq" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("wi" variable
+                       (:pointer 1
+                        :type ("wif" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9927 9942]))                  
+                :type "int")
+                nil [9901 10681])
+            ("linux_set_rate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("wi" variable
+                       (:pointer 1
+                        :type ("wif" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10709 10724])
+                    ("rate" variable (:type "int") (reparse-symbol arg-sub-list) [10725 10734]))                  
+                :type "int")
+                nil [10683 12637])
+            ("linux_get_rate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("wi" variable
+                       (:pointer 1
+                        :type ("wif" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12665 12680]))                  
+                :type "int")
+                nil [12639 13147])
+            ("linux_set_mtu" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("wi" variable
+                       (:pointer 1
+                        :type ("wif" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13174 13189])
+                    ("mtu" variable (:type "int") (reparse-symbol arg-sub-list) [13190 13198]))                  
+                :type "int")
+                nil [13149 13625])
+            ("linux_get_mtu" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("wi" variable
+                       (:pointer 1
+                        :type ("wif" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13652 13667]))                  
+                :type "int")
+                nil [13627 14081])
+            ("linux_read" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("wi" variable
+                       (:pointer 1
+                        :type ("wif" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14105 14120])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [14121 14140])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [14141 14151])
+                    ("ri" variable
+                       (:pointer 1
+                        :type ("rx_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14160 14179]))                  
+                :type "int")
+                nil [14083 19689])
+            ("linux_write" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("wi" variable
+                       (:pointer 1
+                        :type ("wif" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19714 19729])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [19730 19749])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [19750 19760])
+                    ("ti" variable
+                       (:pointer 1
+                        :type ("tx_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19785 19804]))                  
+                :type "int")
+                nil [19691 22973])
+            ("linux_set_channel" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("wi" variable
+                       (:pointer 1
+                        :type ("wif" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26183 26198])
+                    ("channel" variable (:type "int") (reparse-symbol arg-sub-list) [26199 26211]))                  
+                :type "int")
+                nil [26154 28404])
+            ("ieee80211_channel_to_frequency" function
+               (:arguments 
+                  ( ("chan" variable (:type "int") (reparse-symbol arg-sub-list) [28441 28450]))                  
+                :type "int")
+                nil [28406 28647])
+            ("linux_set_freq" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("wi" variable
+                       (:pointer 1
+                        :type ("wif" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28675 28690])
+                    ("freq" variable (:type "int") (reparse-symbol arg-sub-list) [28691 28700]))                  
+                :type "int")
+                nil [28649 29895])
+            ("opensysfs" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("priv_linux" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29918 29941])
+                    ("iface" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29942 29954])
+                    ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [29955 29962]))                  
+                :type "int")
+                nil [29897 30390])
+            ("linux_get_monitor" function
+               (:arguments 
+                  ( ("wi" variable
+                       (:pointer 1
+                        :type ("wif" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30414 30429]))                  
+                :type "int")
+                nil [30392 31836])
+            ("set_monitor" function
+               (:arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("priv_linux" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31855 31878])
+                    ("iface" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [31879 31891])
+                    ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [31892 31900]))                  
+                :type "int")
+                nil [31838 35248])
+            ("openraw" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("priv_linux" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35270 35293])
+                    ("iface" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35294 35306])
+                    ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [35307 35314])
+                    ("arptype" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [35315 35328])
+                    ("mac" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [35334 35345]))                  
+                :type "int")
+                nil [35251 41207])
+            ("do_linux_open" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("wi" variable
+                       (:pointer 1
+                        :type ("wif" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41324 41339])
+                    ("iface" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [41340 41352]))                  
+                :type "int")
+                nil [41299 54791])
+            ("do_free" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("wi" variable
+                       (:pointer 1
+                        :type ("wif" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [54813 54828]))                  
+                :type "void")
+                nil [54793 55218])
+            ("linux_close" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("wi" variable
+                       (:pointer 1
+                        :type ("wif" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [55244 55259]))                  
+                :type "void")
+                nil [55220 55431])
+            ("linux_fd" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("wi" variable
+                       (:pointer 1
+                        :type ("wif" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [55690 55705]))                  
+                :type "int")
+                nil [55670 55767])
+            ("linux_get_mac" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("wi" variable
+                       (:pointer 1
+                        :type ("wif" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [55794 55809])
+                    ("mac" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [55810 55829]))                  
+                :type "int")
+                nil [55769 56613])
+            ("linux_set_mac" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("wi" variable
+                       (:pointer 1
+                        :type ("wif" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [56640 56655])
+                    ("mac" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [56656 56675]))                  
+                :type "int")
+                nil [56615 57729])
+            ("linux_open" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("iface" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [57761 57773]))                  
+                :type ("wif" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [57731 58821])
+            ("wi_open_osdep" function
+               (:pointer 1
+                :arguments 
+                  ( ("iface" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [58849 58861]))                  
+                :type ("wif" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [58823 58899])
+            ("get_battery_state" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [58923 58928]))                  
+                :type "int")
+                nil [58901 63679]))          
+      :file "linux.c"
+      :pointmax 63680
+      :fsize 63679
+      :lastmodtime '(21271 3166 206895 264000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ARPHRD_IEEE80211_FULL" . ((number "803" 3724 . 3727)))
+          ("ARPHRD_IEEE80211_PRISM" . ((number "802" 3688 . 3691)))
+          ("NULL_MAC" . ((string "\"\\x00\\x00\\x00\\x00\\x00\\x00\"" 3770 . 3796)))
+          ("uchar" . ((UNSIGNED "unsigned" 2197 . 2205) (CHAR "char" 2206 . 2210)))
+          ("ARPHRD_IEEE80211" . ((number "801" 3652 . 3655)))
+          ("ETH_P_80211_RAW" . ((number "25" 3609 . 3611)))
+          )
+)
+    (semanticdb-table "common.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [845 864])
+            ("stdio.h" include (:system-flag t) nil [865 883])
+            ("common.h" include nil nil [884 903])
+            ("getFrequencyFromChannel" function
+               (:arguments 
+                  ( ("channel" variable (:type "int") (reparse-symbol arg-sub-list) [994 1006]))                  
+                :type "int")
+                nil [966 2490])
+            ("getChannelFromFrequency" function
+               (:arguments 
+                  ( ("frequency" variable (:type "int") (reparse-symbol arg-sub-list) [2578 2592]))                  
+                :type "int")
+                nil [2550 2818]))          
+      :file "common.c"
+      :pointmax 2819
+      :fsize 2818
+      :lastmodtime '(21271 3166 206895 264000)
+      :unmatched-syntax nil))
+  :file "!home!jqcorreia!code!chop!lib!aircrack-osdep!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

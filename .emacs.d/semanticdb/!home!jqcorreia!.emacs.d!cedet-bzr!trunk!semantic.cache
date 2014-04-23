@@ -1,0 +1,20 @@
+;; Object trunk/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "trunk/"
+  :tables
+  (list
+    (semanticdb-table "cedet-remove-builtin.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("cedet-remove-builtin-package-list" variable (:default-value (quote (eieio semantic srecode ede data-debug))) nil [907 1109])
+            ("cedet-remove-builtin" function (:user-visible-flag t) nil [1111 2452])
+            ("cedet-remove-builtin" code nil nil [2454 2476])
+            ("cedet-remove-builtin" package nil nil [2478 2509]))          
+      :file "cedet-remove-builtin.el"
+      :pointmax 2549
+      :fsize 2548
+      :lastmodtime '(20632 11216 0 0)
+      :unmatched-syntax nil))
+  :file "!home!jqcorreia!.emacs.d!cedet-bzr!trunk!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

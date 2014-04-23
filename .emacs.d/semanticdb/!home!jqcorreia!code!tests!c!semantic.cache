@@ -1,0 +1,141 @@
+;; Object c/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "c/"
+  :tables
+  (list
+    (semanticdb-table "endian.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("main" function (:type "int") nil [42 209]))          
+      :file "endian.c"
+      :pointmax 210
+      :fsize 209
+      :lastmodtime '(21235 37232 600586 416000)
+      :unmatched-syntax '((symbol 209 . 210)))
+    (semanticdb-table "matrix.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("main" function (:type "int") nil [41 168]))          
+      :file "matrix.c"
+      :pointmax 169
+      :fsize 168
+      :lastmodtime '(21241 4973 344334 308000)
+      :unmatched-syntax nil)
+    (semanticdb-table "configgen.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("json/json.h" include (:system-flag t) nil [20 42])
+            ("unistd.h" include (:system-flag t) nil [43 62])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [73 82])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [83 96]))                  
+                :type "int")
+                nil [64 365]))          
+      :file "configgen.c"
+      :pointmax 366
+      :fsize 365
+      :lastmodtime '(21242 26817 415748 115000)
+      :unmatched-syntax nil)
+    (semanticdb-table "config.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "config.json"
+      :pointmax 509
+      :fsize 508
+      :lastmodtime '(21242 27064 869090 872000)
+      :unmatched-syntax nil)
+    (semanticdb-table "struct.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("foo" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("a" variable (:type "int") (reparse-symbol classsubparts) [43 49])
+                          ("b" variable (:type "int") (reparse-symbol classsubparts) [54 60])
+                          ("fu" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :type "int")
+                              (reparse-symbol classsubparts) [65 77]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [22 84])
+            ("func" function (:type "int") nil [87 116])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [127 136])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [137 150]))                  
+                :type "int")
+                nil [118 262]))          
+      :file "struct.c"
+      :pointmax 263
+      :fsize 262
+      :lastmodtime '(21243 33113 72162 946000)
+      :unmatched-syntax nil)
+    (semanticdb-table "fork.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("unistd.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("errno.h" include (:system-flag t) nil [60 78])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [89 98])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [99 112]))                  
+                :type "int")
+                nil [80 824]))          
+      :file "fork.c"
+      :pointmax 825
+      :fsize 824
+      :lastmodtime '(21244 61121 462392 473000)
+      :unmatched-syntax nil)
+    (semanticdb-table "offchan.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("netlink/genl/genl.h" include (:system-flag t) nil [1 31])
+            ("netlink/genl/family.h" include (:system-flag t) nil [32 64])
+            ("netlink/genl/ctrl.h" include (:system-flag t) nil [65 95])
+            ("netlink/msg.h" include (:system-flag t) nil [96 120])
+            ("netlink/attr.h" include (:system-flag t) nil [121 146])
+            ("nl80211.h" include (:system-flag t) nil [148 168])
+            ("main" function (:type "int") nil [170 261]))          
+      :file "offchan.c"
+      :pointmax 262
+      :fsize 261
+      :lastmodtime '(21259 23994 959774 552000)
+      :unmatched-syntax '((symbol 11 . 13) (punctuation 10 . 11) (symbol 2 . 9) (punctuation 1 . 2)))
+    (semanticdb-table "math.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("math.h" include (:system-flag t) nil [20 37])
+            ("main" function (:type "int") nil [39 83]))          
+      :file "math.c"
+      :pointmax 84
+      :fsize 83
+      :lastmodtime '(21272 25617 949488 650000)
+      :unmatched-syntax nil))
+  :file "!home!jqcorreia!code!tests!c!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

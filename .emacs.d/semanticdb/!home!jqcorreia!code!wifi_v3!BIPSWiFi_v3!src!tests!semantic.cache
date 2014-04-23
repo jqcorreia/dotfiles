@@ -1,0 +1,57 @@
+;; Object tests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tests/"
+  :tables
+  (list
+    (semanticdb-table "pcaptest.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("pcap.h" include (:system-flag t) nil [81 98])
+            ("stdio.h" include (:system-flag t) nil [99 117])
+            ("net/ethernet.h" include (:system-flag t) nil [118 143])
+            ("string.h" include (:system-flag t) nil [144 163])
+            ("handle" variable
+               (:pointer 1
+                :type ("pcap_t" type (:type "class") nil nil))
+                nil [165 180])
+            ("callback" variable (:type "int") nil [182 195])
+            ("dispatchCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("user" variable
+                       (:pointer 1
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [226 239])
+                    ("h" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("pcap_pkthdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [240 268])
+                    ("sp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [269 286]))                  
+                :type "void")
+                nil [197 443])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [454 463])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [464 477]))                  
+                :type "int")
+                nil [445 1079]))          
+      :file "pcaptest.c"
+      :pointmax 1080
+      :fsize 1079
+      :lastmodtime '(21234 17170 593798 335000)
+      :unmatched-syntax nil))
+  :file "!home!jqcorreia!code!wifi_v3!BIPSWiFi_v3!src!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

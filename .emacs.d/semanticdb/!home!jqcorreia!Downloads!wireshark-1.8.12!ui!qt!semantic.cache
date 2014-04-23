@@ -1,0 +1,46 @@
+;; Object qt/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "qt/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("Makefile.common" include nil nil [949 973])
+            ("../../Makefile.am.inc" include nil nil [973 1003])
+            ("AM_CLEAN_CFLAGS" variable (:default-value ("-Werror")) nil [1031 1057])
+            ("noinst_LIBRARIES" variable (:default-value ("libqtui.a")) nil [1064 1093])
+            ("CLEANFILES" variable (:default-value ("libqtui.a" "*~")) nil [1094 1127])
+            ("DISTCLEANFILES" variable (:default-value ("$(GENERATED_NODIST_FILES)")) nil [1128 1174])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("$(GENERATED_FILES)" "$(GENERATED_NODIST_FILES)" "Makefile.in")) nil [1175 1265])
+            ("RUNLEX" variable (:default-value ("$(top_srcdir)/tools/runlex.sh")) nil [1266 1303])
+            ("libqtui_a_SOURCES" variable (:default-value ("$(WIRESHARK_QT_SRC)" "$(WIRESHARK_TAP_SRC)" "$(GENERATED_C_FILES)" "$(GENERATED_CPP_FILES)" "$(noinst_HEADERS)" "$(GENERATED_HEADER_FILES)")) nil [1304 1471])
+            ("nodist_libqtui_a_SOURCES" variable (:default-value ("$(GENERATED_NODIST_C_FILES)" "$(GENERATED_NODIST_CPP_FILES)" "$(GENERATED_NODIST_HEADER_FILES)")) nil [1472 1599])
+            ("libqtui_a_CFLAGS" variable (:default-value ("$(AM_CLEAN_CFLAGS)")) nil [1600 1638])
+            ("libqtui_a_DEPENDENCIES" variable nil nil [1639 1664])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)" "-I$(top_srcdir)/wiretap" "$(LIBGCRYPT_CFLAGS)" "$(LIBGNUTLS_CFLAGS)" "$(PORTAUDIO_INCLUDES)")) nil [1682 1798])
+            ("SUFFIXES" variable (:default-value (".moc.cpp" ".qrc" ".rcc.cpp")) nil [1923 1957])
+            (".h.moc.cpp" function nil nil [1958 1984])
+            (".qrc.rcc.cpp" function nil nil [1985 2038])
+            ("main_window.h" function (:arguments ("ui_main_window.h")) nil [2039 2071])
+            ("ui_main_window.h" function (:arguments ("main_window.ui")) nil [2072 2119])
+            ("doxygen" function nil nil [2120 2129])
+            ("checkapi" function (:arguments ("checkapi-base" "checkapi-todo")) nil [2192 2230])
+            ("checkapi-base" function nil nil [2231 2384])
+            ("checkapi-todo" function nil nil [2385 2546])
+            ("expert_indicators.h" function nil nil [2547 2808])
+            ("network_icons.h" function nil nil [2809 3076])
+            ("remote_icons.h" function nil nil [3077 3328])
+            ("EXTRA_DIST" variable (:default-value ("$(GENERATOR_FILES)" "$(QRC_IMAGES)" "CMakeLists.txt" "doxygen.cfg.in" "main.cpp" "Makefile.common" "Makefile_custom.common" "main_window.ui" "display_filter_16.svg" "gpl-template.txt")) nil [3383 3606]))          
+      :file "Makefile.am"
+      :pointmax 3606
+      :fsize 3605
+      :lastmodtime '(20443 32321 0 0)
+      :unmatched-syntax '((ENDIF 2169 . 2174) (bol 2169 . 2169) (shell-command 2146 . 2168) (bol 2145 . 2145)))
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 4405
+      :lastmodtime '(20443 32321 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!ui!qt!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

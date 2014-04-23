@@ -1,0 +1,35 @@
+;; Object ui/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ui/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("Makefile.common" include nil nil [977 1001])
+            ("../Makefile.am.inc" include nil nil [1001 1028])
+            ("AM_CLEAN_CFLAGS" variable (:default-value ("-Werror")) nil [1056 1082])
+            ("noinst_LIBRARIES" variable (:default-value ("libui.a")) nil [1089 1116])
+            ("CLEANFILES" variable (:default-value ("libui.a" "*~")) nil [1117 1148])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("$(GENERATED_FILES)" "Makefile.in")) nil [1149 1209])
+            ("libui_a_SOURCES" variable (:default-value ("$(WIRESHARK_UI_SRC)" "$(noinst_HEADERS)" "$(GENERATED_HEADER_FILES)" "$(GENERATED_C_FILES)")) nil [1278 1393])
+            ("libui_a_CFLAGS" variable (:default-value ("$(AM_CLEAN_CFLAGS)")) nil [1394 1430])
+            ("libui_a_DEPENDENCIES" variable nil nil [1431 1454])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)" "-I$(top_srcdir)/wiretap" "$(LIBGCRYPT_CFLAGS)" "$(LIBGNUTLS_CFLAGS)" "$(PORTAUDIO_INCLUDES)")) nil [1472 1588])
+            ("doxygen" function nil nil [1590 1599])
+            ("checkapi" function (:arguments ("checkapi-base" "checkapi-todo")) nil [1662 1700])
+            ("checkapi-base" function nil nil [1701 1795])
+            ("checkapi-todo" function nil nil [1796 1898])
+            ("EXTRA_DIST" variable (:default-value ("$(GENERATOR_FILES)" "doxygen.cfg.in" "Makefile.common" "Makefile.nmake")) nil [1899 1994]))          
+      :file "Makefile.am"
+      :pointmax 1994
+      :fsize 1993
+      :lastmodtime '(20430 13515 0 0)
+      :unmatched-syntax '((ENDIF 1639 . 1644) (bol 1639 . 1639) (shell-command 1616 . 1638) (bol 1615 . 1615)))
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 1607
+      :lastmodtime '(20430 13515 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!ui!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

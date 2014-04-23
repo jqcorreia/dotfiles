@@ -1,0 +1,18 @@
+;; Object nsis/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "nsis/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in")) nil [58 96])
+            ("EXTRA_DIST" variable (:default-value ("wireshark.nsi" "uninstall.nsi" "common.nsh" "GetWindowsVersion.nsh" "servicelib.nsh" "VersionCompare.nsh" "AdditionalTasksPage.ini" "WinPcapPage.ini" "WinPcap_4_1_3.exe" "Makefile.nmake" "Custom.nmake" "custom_plugins.txt" "x64.nsh")) nil [97 357]))          
+      :file "Makefile.am"
+      :pointmax 357
+      :fsize 356
+      :lastmodtime '(20798 9139 0 0)
+      :unmatched-syntax nil))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!packaging!nsis!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

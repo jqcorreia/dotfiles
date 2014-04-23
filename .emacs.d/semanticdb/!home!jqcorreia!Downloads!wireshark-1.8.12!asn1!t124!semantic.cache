@@ -1,0 +1,24 @@
+;; Object t124/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "t124/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("../Makefile.preinc" include nil nil [877 904])
+            ("Makefile.common" include nil nil [904 928])
+            ("../Makefile.inc" include nil nil [928 952])
+            ("MCS-PROTOCOL.asn" function (:arguments ("../t125/MCS-PROTOCOL.asn")) nil [953 1016]))          
+      :file "Makefile.am"
+      :pointmax 1016
+      :fsize 1015
+      :lastmodtime '(20430 13512 0 0)
+      :unmatched-syntax '((shell-command 997 . 1015) (bol 996 . 996)))
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 1338
+      :lastmodtime '(20430 13512 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!asn1!t124!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

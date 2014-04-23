@@ -1,0 +1,41 @@
+;; Object mate/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mate/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("$(top_srcdir)/Makefile.am.inc" include nil nil [933 971])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)")) nil [972 1002])
+            ("Makefile.common" include nil nil [1003 1027])
+            ("plugindir" variable (:default-value ("@plugindir@")) nil [1028 1052])
+            ("plugin_LTLIBRARIES" variable (:default-value ("mate.la")) nil [1053 1082])
+            ("mate_la_SOURCES" variable (:default-value ("plugin.c" "moduleinfo.h" "$(DISSECTOR_SRC)" "$(DISSECTOR_SUPPORT_SRC)" "$(DISSECTOR_INCLUDES)")) nil [1083 1202])
+            ("mate_la_LDFLAGS" variable (:default-value ("-module" "-avoid-version")) nil [1203 1244])
+            ("mate_la_LIBADD" variable (:default-value ("@PLUGIN_LIBS@")) nil [1244 1275])
+            ("LIBS" variable nil nil [1433 1440])
+            ("plugin.c" function (:arguments ("$(DISSECTOR_SRC)" "Makefile.common" "$(top_srcdir)/tools/make-dissector-reg" "$(top_srcdir)/tools/make-dissector-reg.py")) nil [2960 3420])
+            ("CLEANFILES" variable (:default-value ("mate" "*~")) nil [4138 4165])
+            ("DISTCLEANFILES" variable (:default-value ("mate_grammar.out" "mate_grammar.c" "mate_grammar.h")) nil [4166 4240])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in" "mate_parser.c" "mate_parser_lex.h" "plugin.c")) nil [4241 4331])
+            ("EXTRA_DIST" variable (:default-value ("mate_grammar.lemon" "mate_parser.l" "Makefile.nmake" "Makefile.common" "moduleinfo.nmake" "plugin.rc.in" "CMakeLists.txt")) nil [4332 4479])
+            ("RUNLEX" variable (:default-value ("$(top_srcdir)/tools/runlex.sh")) nil [4480 4519])
+            ("LEMON" variable (:default-value ("$(top_builddir)/tools/lemon")) nil [4520 4556])
+            ("mate_parser_lex.h" function (:arguments ("mate_parser.c")) nil [4557 4591])
+            ("mate_parser.lo" function (:arguments ("mate_grammar.h")) nil [4592 4624])
+            ("mate_grammar.h" function (:arguments ("mate_grammar.c")) nil [4625 4657])
+            ("mate_grammar.c" function (:arguments ("mate_grammar.lemon" "mate.h" "mate_util.h" "$(LEMON)/lemon$(EXEEXT)")) nil [4657 4863])
+            ("checkapi" function nil nil [4864 4985]))          
+      :file "Makefile.am"
+      :pointmax 4985
+      :fsize 4984
+      :lastmodtime '(20873 33376 0 0)
+      :unmatched-syntax '((shell-command 4875 . 4984) (bol 4874 . 4874)))
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 1563
+      :lastmodtime '(20430 13517 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!plugins!mate!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

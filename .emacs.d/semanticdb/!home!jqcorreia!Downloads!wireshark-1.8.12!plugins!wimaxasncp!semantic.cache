@@ -1,0 +1,38 @@
+;; Object wimaxasncp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "wimaxasncp/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("$(top_srcdir)/Makefile.am.inc" include nil nil [941 979])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)" "-I$(includedir)")) nil [980 1026])
+            ("Makefile.common" include nil nil [1027 1051])
+            ("plugindir" variable (:default-value ("@plugindir@")) nil [1108 1132])
+            ("plugin_LTLIBRARIES" variable (:default-value ("wimaxasncp.la")) nil [1133 1168])
+            ("wimaxasncp_la_SOURCES" variable (:default-value ("plugin.c" "moduleinfo.h" "$(DISSECTOR_SRC)" "$(DISSECTOR_SUPPORT_SRC)" "$(DISSECTOR_INCLUDES)")) nil [1168 1293])
+            ("wimaxasncp_la_LDFLAGS" variable (:default-value ("-module" "-avoid-version")) nil [1293 1340])
+            ("wimaxasncp_la_LIBADD" variable (:default-value ("@PLUGIN_LIBS@")) nil [1340 1377])
+            ("LIBS" variable nil nil [1535 1542])
+            ("plugin.c" function (:arguments ("$(DISSECTOR_SRC)" "Makefile.common" "$(top_srcdir)/tools/make-dissector-reg" "$(top_srcdir)/tools/make-dissector-reg.py")) nil [3062 3522])
+            ("CLEANFILES" variable (:default-value ("wimaxasncp" "*~")) nil [4240 4273])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in" "wimaxasncp_dict.c" "wimaxasncp_dict_lex.h" "plugin.c")) nil [4274 4380])
+            ("EXTRA_DIST" variable (:default-value ("wimaxasncp_dict.l" "Makefile.common" "Makefile.nmake" "moduleinfo.nmake" "plugin.rc.in" "CMakeLists.txt")) nil [4381 4509])
+            ("RUNLEX" variable (:default-value ("$(top_srcdir)/tools/runlex.sh")) nil [4510 4549])
+            ("wimaxasncp_dict_lex.h" function (:arguments ("wimaxasncp_dict.c")) nil [4550 4591])
+            ("wimaxasncp_dict.c" function (:arguments ("wimaxasncp_dict.h")) nil [4592 4629])
+            ("wimaxasncpdir" variable (:default-value ("$(pkgdatadir)/wimaxasncp")) nil [4730 4771])
+            ("checkapi" function nil nil [4773 4894]))          
+      :file "Makefile.am"
+      :pointmax 4894
+      :fsize 4893
+      :lastmodtime '(20873 33376 0 0)
+      :unmatched-syntax '((shell-command 4784 . 4893) (bol 4783 . 4783)))
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 1505
+      :lastmodtime '(20430 13517 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!plugins!wimaxasncp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

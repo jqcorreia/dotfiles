@@ -1,0 +1,34 @@
+;; Object opcua/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "opcua/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)" "-I$(includedir)")) nil [965 1011])
+            ("Makefile.common" include nil nil [1012 1036])
+            ("AM_CFLAGS" variable (:default-value ("-Werror")) nil [1064 1084])
+            ("plugindir" variable (:default-value ("@plugindir@")) nil [1091 1115])
+            ("plugin_LTLIBRARIES" variable (:default-value ("opcua.la")) nil [1116 1146])
+            ("opcua_la_SOURCES" variable (:default-value ("plugin.c" "moduleinfo.h" "$(DISSECTOR_SRC)" "$(DISSECTOR_SUPPORT_SRC)" "$(DISSECTOR_INCLUDES)")) nil [1146 1266])
+            ("opcua_la_LDFLAGS" variable (:default-value ("-module" "-avoid-version")) nil [1266 1308])
+            ("opcua_la_LIBADD" variable (:default-value ("@PLUGIN_LIBS@")) nil [1308 1340])
+            ("LIBS" variable nil nil [1498 1505])
+            ("plugin.c" function (:arguments ("$(DISSECTOR_SRC)" "Makefile.common" "$(top_srcdir)/tools/make-dissector-reg" "$(top_srcdir)/tools/make-dissector-reg.py")) nil [3025 3485])
+            ("CLEANFILES" variable (:default-value ("opcua" "*~")) nil [4203 4231])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in" "plugin.c")) nil [4232 4282])
+            ("EXTRA_DIST" variable (:default-value ("Makefile.common" "Makefile.nmake" "moduleinfo.nmake" "plugin.rc.in" "README" "CMakeLists.txt")) nil [4283 4402])
+            ("checkapi" function nil nil [4403 4524]))          
+      :file "Makefile.am"
+      :pointmax 4524
+      :fsize 4523
+      :lastmodtime '(20873 33376 0 0)
+      :unmatched-syntax '((shell-command 4414 . 4523) (bol 4413 . 4413)))
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 1837
+      :lastmodtime '(20430 13517 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!plugins!opcua!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

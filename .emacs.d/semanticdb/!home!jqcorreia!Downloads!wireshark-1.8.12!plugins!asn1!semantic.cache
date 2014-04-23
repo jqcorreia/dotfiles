@@ -1,0 +1,33 @@
+;; Object asn1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "asn1/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)" "-I$(includedir)")) nil [924 970])
+            ("Makefile.common" include nil nil [971 995])
+            ("AM_CFLAGS" variable (:default-value ("-Werror")) nil [1023 1043])
+            ("plugin_LTLIBRARIES" variable (:default-value ("asn1.la")) nil [1050 1079])
+            ("asn1_la_SOURCES" variable (:default-value ("plugin.c" "moduleinfo.h" "$(DISSECTOR_SRC)" "$(DISSECTOR_SUPPORT_SRC)" "$(DISSECTOR_INCLUDES)")) nil [1079 1198])
+            ("asn1_la_LDFLAGS" variable (:default-value ("-module" "-avoid-version")) nil [1198 1239])
+            ("asn1_la_LIBADD" variable (:default-value ("@PLUGIN_LIBS@")) nil [1239 1270])
+            ("LIBS" variable nil nil [1428 1435])
+            ("plugin.c" function (:arguments ("$(DISSECTOR_SRC)" "Makefile.common" "$(top_srcdir)/tools/make-dissector-reg" "$(top_srcdir)/tools/make-dissector-reg.py")) nil [2955 3415])
+            ("CLEANFILES" variable (:default-value ("asn1" "*~")) nil [4133 4160])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in" "plugin.c")) nil [4161 4211])
+            ("EXTRA_DIST" variable (:default-value ("Makefile.common" "Makefile.nmake" "moduleinfo.nmake" "plugin.rc.in" "CMakeLists.txt")) nil [4212 4319])
+            ("checkapi" function nil nil [4320 4441]))          
+      :file "Makefile.am"
+      :pointmax 4441
+      :fsize 4440
+      :lastmodtime '(20873 33376 0 0)
+      :unmatched-syntax '((shell-command 4331 . 4440) (bol 4330 . 4330)))
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 1436
+      :lastmodtime '(20430 13517 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!plugins!asn1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

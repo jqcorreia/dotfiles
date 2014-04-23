@@ -1,0 +1,19 @@
+;; Object pycassa-port/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pycassa-port/"
+  :tables
+  (list
+    (semanticdb-table "test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("pycassa" include nil nil [1 15])
+            ("pool" variable nil nil [17 104])
+            ("cf" variable nil nil [105 148]))          
+      :file "test.py"
+      :pointmax 150
+      :fsize 149
+      :lastmodtime '(21279 123 841489 513000)
+      :unmatched-syntax nil))
+  :file "!home!jqcorreia!code!pycassa-port!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

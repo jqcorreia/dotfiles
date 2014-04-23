@@ -1,0 +1,41 @@
+;; Object dfilter/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dfilter/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("../../Makefile.am.inc" include nil nil [898 928])
+            ("AM_NON_GENERATED_CFLAGS" variable (:default-value ("-Werror")) nil [956 990])
+            ("Makefile.common" include nil nil [997 1021])
+            ("noinst_LTLIBRARIES" variable (:default-value ("libdfilter_generated.la")) nil [1022 1081])
+            ("CLEANFILES" variable (:default-value ("libdfilter.a" "libdfilter.la" "libdfilter_generated.a" "libdfilter_generated.la" "*~")) nil [1082 1190])
+            ("DISTCLEANFILES" variable (:default-value ("grammar.out" "grammar.c" "grammar.h")) nil [1191 1249])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in" "scanner.c" "scanner_lex.h")) nil [1250 1318])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(srcdir)/../.." "-I$(srcdir)/.." "-I$(srcdir)/$(LEMON)")) nil [1319 1387])
+            ("libdfilter_la_SOURCES" variable (:default-value ("$(NONGENERATED_C_FILES)" "$(NONGENERATED_HEADER_FILES)")) nil [1669 1746])
+            ("libdfilter_la_CFLAGS" variable (:default-value ("$(AM_NON_GENERATED_CFLAGS)")) nil [1746 1796])
+            ("libdfilter_generated_la_SOURCES" variable (:default-value ("$(GENERATED_C_FILES)" "$(GENERATED_HEADER_FILES)")) nil [1797 1884])
+            ("libdfilter_la_LIBADD" variable (:default-value ("libdfilter_generated.la")) nil [1885 1932])
+            ("libdfilter_la_DEPENDENCIES" variable (:default-value ("libdfilter_generated.la")) nil [1932 1985])
+            ("EXTRA_DIST" variable (:default-value ("$(GENERATOR_FILES)" "Makefile.common" "Makefile.nmake")) nil [1986 2061])
+            ("RUNLEX" variable (:default-value ("$(top_srcdir)/tools/runlex.sh")) nil [2062 2099])
+            ("scanner_lex.h" function (:arguments ("scanner.c")) nil [2100 2126])
+            ("scanner.lo" function (:arguments ("grammar.h")) nil [2126 2148])
+            ("LEMON" variable (:default-value ("../../tools/lemon")) nil [2149 2173])
+            ("grammar.h" function (:arguments ("grammar.c")) nil [2174 2196])
+            ("grammar.c" function (:arguments ("$(LEMON)/lemon$(EXEEXT)" "$(srcdir)/$(LEMON)/lempar.c" "$(srcdir)/grammar.lemon")) nil [2196 2406])
+            ("checkapi" function nil nil [2407 2523]))          
+      :file "Makefile.am"
+      :pointmax 2523
+      :fsize 2522
+      :lastmodtime '(20873 33377 0 0)
+      :unmatched-syntax '((shell-command 2418 . 2522) (bol 2417 . 2417)))
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 2270
+      :lastmodtime '(20430 13518 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!epan!dfilter!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

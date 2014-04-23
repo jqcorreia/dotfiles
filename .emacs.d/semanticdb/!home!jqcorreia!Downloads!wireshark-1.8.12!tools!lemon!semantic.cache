@@ -1,0 +1,22 @@
+;; Object lemon/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lemon/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("AM_CFLAGS" variable (:default-value ("-Werror")) nil [1181 1201])
+            ("noinst_PROGRAMS" variable (:default-value ("lemon")) nil [1208 1232])
+            ("CLEANFILES" variable (:default-value ("*~")) nil [1233 1252])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in")) nil [1253 1291])
+            ("lemon" function (:arguments ("lemon.c")) nil [1292 1392])
+            ("EXTRA_DIST" variable (:default-value ("cppmagic.h" "lemon.html" "lemonflex-head.inc" "lemonflex-tail.inc" "lempar.c" "Makefile.nmake" "README" "CMakeLists.txt")) nil [1393 1542]))          
+      :file "Makefile.am"
+      :pointmax 1543
+      :fsize 1542
+      :lastmodtime '(20430 13504 0 0)
+      :unmatched-syntax nil))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!tools!lemon!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

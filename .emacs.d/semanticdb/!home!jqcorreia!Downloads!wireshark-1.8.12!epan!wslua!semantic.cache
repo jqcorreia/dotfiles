@@ -1,0 +1,39 @@
+;; Object wslua/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "wslua/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("AM_CFLAGS" variable (:default-value ("-Werror")) nil [921 941])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)" "@LUA_INCLUDES@")) nil [948 993])
+            ("noinst_LTLIBRARIES" variable (:default-value ("libwslua.la")) nil [994 1027])
+            ("wslua_modules" variable (:default-value ("$(srcdir)/lua_bitop.c" "$(srcdir)/wslua_tvb.c" "$(srcdir)/wslua_proto.c" "$(srcdir)/wslua_tree.c" "$(srcdir)/wslua_pinfo.c" "$(srcdir)/wslua_listener.c" "$(srcdir)/wslua_gui.c" "$(srcdir)/wslua_util.c" "$(srcdir)/wslua_field.c" "$(srcdir)/wslua_dumper.c")) nil [1028 1311])
+            ("libwslua_la_SOURCES" variable (:default-value ("$(wslua_modules)" "taps_wslua.c" "register_wslua.c" "init_wslua.c" "wslua.h")) nil [1312 1417])
+            ("libwslua_la_LIBADD" variable (:default-value ("@LUA_LIBS@")) nil [1418 1450])
+            ("BUILT_SOURCES" variable (:default-value ("taps_wslua.c" "register_wslua.c" "declare_wslua.h")) nil [1451 1522])
+            ("dist_pkgdata_DATA" variable (:default-value ("console.lua" "dtd_gen.lua")) nil [1523 1573])
+            ("nodist_pkgdata_DATA" variable (:default-value ("init.lua")) nil [1574 1608])
+            ("CLEANFILES" variable (:default-value ("*~")) nil [1609 1628])
+            ("DISTCLEANFILES" variable (:default-value ("$(BUILT_SOURCES)" "taps.txt" "wslua_register.h" "init.lua")) nil [1629 1710])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in" "register_wslua.c" "declare_wslua.h")) nil [1711 1788])
+            ("EXTRA_DIST" variable (:default-value ("declare_wslua.h" "register_wslua.c" "taps" "make-reg.pl" "template-init.lua" "make-init-lua.pl" "make-taps.pl" "Makefile.nmake" "CMakeLists.txt")) nil [1789 1963])
+            ("taps_used" variable (:default-value ("../dissectors/packet-http.h" "../dissectors/packet-ip.h" "../dissectors/packet-udp.h" "../dissectors/packet-h225.h" "../dissectors/packet-ieee80211.h")) nil [1964 2133])
+            ("taps" function (:arguments ("$(taps_used)")) nil [2134 2165])
+            ("taps_wslua.c" function (:arguments ("make-taps.pl" "taps")) nil [2166 2257])
+            ("taps.txt" function (:arguments ("taps_wslua.c")) nil [2258 2281])
+            ("wslua.h" function (:arguments ("declare_wslua.h")) nil [2282 2307])
+            ("register_wslua.c" function (:arguments ("declare_wslua.h")) nil [2308 2342])
+            ("declare_wslua.h" function (:arguments ("make-reg.pl" "$(wslua_modules)" "taps_wslua.c")) nil [2343 2451])
+            ("dummy" function nil nil [2452 2472])
+            ("init.lua" function (:arguments ("template-init.lua" "make-init-lua.pl" "../ftypes/ftypes.h" "../../wiretap/wtap.h" "../proto.h" "../../stat_menu.h")) nil [2473 2677])
+            ("checkapi" function nil nil [2678 2946]))          
+      :file "Makefile.am"
+      :pointmax 2946
+      :fsize 2945
+      :lastmodtime '(20873 33377 0 0)
+      :unmatched-syntax '((shell-command 2689 . 2945) (bol 2688 . 2688))))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!epan!wslua!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

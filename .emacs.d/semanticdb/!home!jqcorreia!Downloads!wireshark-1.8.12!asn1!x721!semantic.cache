@@ -1,0 +1,22 @@
+;; Object x721/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "x721/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("../Makefile.preinc" include nil nil [876 903])
+            ("Makefile.common" include nil nil [903 927]))          
+      :file "Makefile.am"
+      :pointmax 1000
+      :fsize 999
+      :lastmodtime '(20430 13512 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 1080
+      :lastmodtime '(20430 13512 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!asn1!x721!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

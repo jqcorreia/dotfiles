@@ -1,0 +1,34 @@
+;; Object wimax/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "wimax/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)" "-I$(includedir)")) nil [934 980])
+            ("Makefile.common" include nil nil [981 1005])
+            ("AM_CFLAGS" variable (:default-value ("-Werror")) nil [1033 1053])
+            ("plugindir" variable (:default-value ("@plugindir@")) nil [1060 1084])
+            ("plugin_LTLIBRARIES" variable (:default-value ("wimax.la")) nil [1085 1115])
+            ("wimax_la_SOURCES" variable (:default-value ("plugin.c" "moduleinfo.h" "$(DISSECTOR_SRC)" "$(DISSECTOR_SUPPORT_SRC)" "$(DISSECTOR_INCLUDES)")) nil [1115 1235])
+            ("wimax_la_LDFLAGS" variable (:default-value ("-module" "-avoid-version")) nil [1235 1277])
+            ("wimax_la_LIBADD" variable (:default-value ("@PLUGIN_LIBS@")) nil [1277 1309])
+            ("LIBS" variable nil nil [1467 1474])
+            ("plugin.c" function (:arguments ("$(DISSECTOR_SRC)" "Makefile.common" "$(top_srcdir)/tools/make-dissector-reg" "$(top_srcdir)/tools/make-dissector-reg.py")) nil [2994 3454])
+            ("CLEANFILES" variable (:default-value ("wimax" "*~")) nil [4172 4200])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in" "plugin.c")) nil [4201 4251])
+            ("EXTRA_DIST" variable (:default-value ("Makefile.common" "Makefile.nmake" "moduleinfo.nmake" "plugin.rc.in" "CMakeLists.txt")) nil [4252 4359])
+            ("checkapi" function nil nil [4360 4515]))          
+      :file "Makefile.am"
+      :pointmax 4515
+      :fsize 4514
+      :lastmodtime '(20873 33376 0 0)
+      :unmatched-syntax '((shell-command 4371 . 4514) (bol 4370 . 4370)))
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 2268
+      :lastmodtime '(20430 13517 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!plugins!wimax!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

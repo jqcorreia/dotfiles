@@ -1,0 +1,30 @@
+;; Object ftypes/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ftypes/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("AM_CFLAGS" variable (:default-value ("-Werror")) nil [916 936])
+            ("Makefile.common" include nil nil [943 967])
+            ("noinst_LTLIBRARIES" variable (:default-value ("libftypes.la")) nil [968 1002])
+            ("CLEANFILES" variable (:default-value ("libftypes.a" "libftypes.la" "*~")) nil [1003 1053])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in")) nil [1054 1092])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(srcdir)/../.." "-I$(srcdir)/..")) nil [1093 1140])
+            ("libftypes_la_SOURCES" variable (:default-value ("$(NONGENERATED_C_FILES)" "$(NONGENERATED_HEADER_FILES)")) nil [1141 1217])
+            ("libftypes_la_LIBADD" variable (:default-value ("@GLIB_LIBS@")) nil [1218 1252])
+            ("EXTRA_DIST" variable (:default-value ("Makefile.common" "Makefile.nmake")) nil [1253 1304])
+            ("checkapi" function nil nil [1305 1398]))          
+      :file "Makefile.am"
+      :pointmax 1398
+      :fsize 1397
+      :lastmodtime '(20873 33378 0 0)
+      :unmatched-syntax '((shell-command 1316 . 1397) (bol 1315 . 1315)))
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 1685
+      :lastmodtime '(20430 13518 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!epan!ftypes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,30 @@
+;; Object crypt/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "crypt/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)")) nil [936 966])
+            ("Makefile.common" include nil nil [967 991])
+            ("AM_CFLAGS" variable (:default-value ("-Werror")) nil [1019 1039])
+            ("noinst_LTLIBRARIES" variable (:default-value ("libairpdcap.la")) nil [1046 1082])
+            ("CLEANFILES" variable (:default-value ("libairpdcap.a" "libairpdcap.la" "*~")) nil [1083 1137])
+            ("DISTCLEANFILES" variable nil nil [1138 1155])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in")) nil [1156 1194])
+            ("libairpdcap_la_SOURCES" variable (:default-value ("$(LIBAIRPDCAP_SRC)" "$(LIBAIRPDCAP_INCLUDES)")) nil [1195 1269])
+            ("EXTRA_DIST" variable (:default-value ("Makefile.common" "Makefile.nmake")) nil [1270 1321])
+            ("checkapi" function nil nil [1322 1409]))          
+      :file "Makefile.am"
+      :pointmax 1409
+      :fsize 1408
+      :lastmodtime '(20873 33378 0 0)
+      :unmatched-syntax '((shell-command 1333 . 1408) (bol 1332 . 1332)))
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 1491
+      :lastmodtime '(20430 13520 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!epan!crypt!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

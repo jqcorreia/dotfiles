@@ -1,0 +1,2346 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables
+  (list
+    (semanticdb-table "mosquitto.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_MOSQUITTO_H_" variable (:constant-flag t) nil [1828 1841])
+            ("mosquitto_topic_matches_sub" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("sub" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [51774 51790])
+                    ("topic" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [51791 51809])
+                    ("result" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [51810 51823]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [51742 51824])
+            ("mosquitto_sub_topic_tokens_free" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("topics" variable
+                       (:pointer 3
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [51083 51098])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [51099 51109]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [51047 51110])
+            ("mosquitto_sub_topic_tokenise" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("subtopic" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [50600 50621])
+                    ("topics" variable
+                       (:pointer 3
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [50622 50637])
+                    ("count" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [50638 50649]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [50567 50650])
+            ("mosquitto_connack_string" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("connack_code" variable (:type "int") (reparse-symbol arg-sub-list) [49396 49413]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [49359 49414])
+            ("mosquitto_strerror" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("mosq_errno" variable (:type "int") (reparse-symbol arg-sub-list) [49082 49097]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [49051 49098])
+            ("mosquitto_user_data_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [48571 48594])
+                    ("obj" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [48595 48605]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [48542 48606])
+            ("mosquitto_message_retry_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47883 47906])
+                    ("message_retry" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [47907 47934]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [47850 47935])
+            ("mosquitto_max_inflight_messages_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47399 47422])
+                    ("max_inflight_messages" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [47423 47458]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [47359 47459])
+            ("mosquitto_reconnect_delay_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [46340 46363])
+                    ("reconnect_delay" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [46364 46393])
+                    ("reconnect_delay_max" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [46394 46427])
+                    ("reconnect_exponential_backoff" variable (:type "bool") (reparse-symbol arg-sub-list) [46428 46463]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [46306 46464])
+            ("mosquitto_log_callback_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [44918 44941])
+                    ("on_log" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("mosquitto" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [44957 44976])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [44977 44984])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [44985 44989])
+                            ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [44990 45003]))                          
+                        :type "void")
+                        nil nil))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [44886 45005])
+            ("mosquitto_unsubscribe_callback_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [44084 44107])
+                    ("on_unsubscribe" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("mosquitto" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [44131 44150])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [44151 44158])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [44159 44163]))                          
+                        :type "void")
+                        nil nil))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [44044 44165])
+            ("mosquitto_subscribe_callback_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43367 43390])
+                    ("on_subscribe" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("mosquitto" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [43412 43431])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [43432 43439])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [43440 43444])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [43445 43449])
+                            ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [43450 43462]))                          
+                        :type "void")
+                        nil nil))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [43329 43464])
+            ("mosquitto_message_callback_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [42405 42428])
+                    ("on_message" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("mosquitto" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [42448 42467])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [42468 42475])
+                            ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("mosquitto_message" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [42476 42509]))                          
+                        :type "void")
+                        nil nil))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [42369 42511])
+            ("mosquitto_publish_callback_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41496 41519])
+                    ("on_publish" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("mosquitto" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [41539 41558])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [41559 41566])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [41567 41571]))                          
+                        :type "void")
+                        nil nil))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [41460 41573])
+            ("mosquitto_disconnect_callback_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [40788 40811])
+                    ("on_disconnect" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("mosquitto" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [40834 40853])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [40854 40861])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [40862 40866]))                          
+                        :type "void")
+                        nil nil))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [40749 40868])
+            ("mosquitto_connect_callback_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [39913 39936])
+                    ("on_connect" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("mosquitto" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [39956 39975])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [39976 39983])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [39984 39988]))                          
+                        :type "void")
+                        nil nil))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [39877 39990])
+            ("mosquitto_tls_psk_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [38996 39019])
+                    ("psk" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39020 39036])
+                    ("identity" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39037 39058])
+                    ("ciphers" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39059 39079]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [38970 39080])
+            ("mosquitto_tls_opts_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [37996 38019])
+                    ("cert_reqs" variable (:type "int") (reparse-symbol arg-sub-list) [38020 38034])
+                    ("tls_version" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38035 38059])
+                    ("ciphers" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38060 38080]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [37969 38081])
+            ("mosquitto_tls_insecure_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36350 36373])
+                    ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [36374 36385]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [36319 36386])
+            ("mosquitto_tls_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35140 35163])
+                    ("cafile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35166 35185])
+                    ("capath" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35186 35205])
+                    ("certfile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35208 35229])
+                    ("keyfile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35230 35250])
+                    ("pw_callback" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("buf" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [35272 35282])
+                            ("size" variable (:type "int") (reparse-symbol arg-sub-list) [35283 35292])
+                            ("rwflag" variable (:type "int") (reparse-symbol arg-sub-list) [35293 35304])
+                            ("userdata" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [35305 35320]))                          
+                        :type "int")
+                        nil nil))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [35118 35322])
+            ("mosquitto_want_write" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32766 32789]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [32740 32790])
+            ("mosquitto_loop_misc" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32446 32469]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [32422 32470])
+            ("mosquitto_loop_write" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31647 31670])
+                    ("max_packets" variable (:type "int") (reparse-symbol arg-sub-list) [31671 31687]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [31622 31688])
+            ("mosquitto_loop_read" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30436 30459])
+                    ("max_packets" variable (:type "int") (reparse-symbol arg-sub-list) [30460 30476]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [30412 30477])
+            ("mosquitto_socket" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29268 29291]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [29247 29292])
+            ("mosquitto_loop_stop" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28892 28915])
+                    ("force" variable (:type "bool") (reparse-symbol arg-sub-list) [28916 28927]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [28868 28928])
+            ("mosquitto_loop_start" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28018 28041]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [27993 28042])
+            ("mosquitto_loop_forever" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27324 27347])
+                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [27348 27360])
+                    ("max_packets" variable (:type "int") (reparse-symbol arg-sub-list) [27361 27377]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [27297 27378])
+            ("mosquitto_loop" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25805 25828])
+                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [25829 25841])
+                    ("max_packets" variable (:type "int") (reparse-symbol arg-sub-list) [25842 25858]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [25786 25859])
+            ("mosquitto_message_free" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("message" variable
+                       (:pointer 2
+                        :type ("mosquitto_message" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23692 23727]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23664 23728])
+            ("mosquitto_message_copy" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type ("mosquitto_message" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23361 23391])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mosquitto_message" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23392 23428]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23334 23429])
+            ("mosquitto_unsubscribe" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22710 22733])
+                    ("mid" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [22734 22743])
+                    ("sub" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22744 22760]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [22684 22761])
+            ("mosquitto_subscribe" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21956 21979])
+                    ("mid" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [21980 21989])
+                    ("sub" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21990 22006])
+                    ("qos" variable (:type "int") (reparse-symbol arg-sub-list) [22007 22015]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [21932 22016])
+            ("mosquitto_publish" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21096 21119])
+                    ("mid" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [21120 21129])
+                    ("topic" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21130 21148])
+                    ("payloadlen" variable (:type "int") (reparse-symbol arg-sub-list) [21149 21164])
+                    ("payload" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [21165 21185])
+                    ("qos" variable (:type "int") (reparse-symbol arg-sub-list) [21186 21194])
+                    ("retain" variable (:type "bool") (reparse-symbol arg-sub-list) [21195 21207]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [21074 21208])
+            ("mosquitto_disconnect" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19505 19528]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [19480 19529])
+            ("mosquitto_reconnect_async" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19131 19154]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [19101 19155])
+            ("mosquitto_reconnect" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18015 18038]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17991 18039])
+            ("mosquitto_connect_bind_async" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16890 16913])
+                    ("host" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16914 16931])
+                    ("port" variable (:type "int") (reparse-symbol arg-sub-list) [16932 16941])
+                    ("keepalive" variable (:type "int") (reparse-symbol arg-sub-list) [16942 16956])
+                    ("bind_address" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16957 16982]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16857 16983])
+            ("mosquitto_connect_async" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15228 15251])
+                    ("host" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15252 15269])
+                    ("port" variable (:type "int") (reparse-symbol arg-sub-list) [15270 15279])
+                    ("keepalive" variable (:type "int") (reparse-symbol arg-sub-list) [15280 15294]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15200 15295])
+            ("mosquitto_connect_bind" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13828 13851])
+                    ("host" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13852 13869])
+                    ("port" variable (:type "int") (reparse-symbol arg-sub-list) [13870 13879])
+                    ("keepalive" variable (:type "int") (reparse-symbol arg-sub-list) [13880 13894])
+                    ("bind_address" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13895 13920]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13801 13921])
+            ("mosquitto_connect" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12475 12498])
+                    ("host" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12499 12516])
+                    ("port" variable (:type "int") (reparse-symbol arg-sub-list) [12517 12526])
+                    ("keepalive" variable (:type "int") (reparse-symbol arg-sub-list) [12527 12541]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12453 12542])
+            ("mosquitto_username_pw_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11407 11430])
+                    ("username" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11431 11452])
+                    ("password" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11453 11474]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11377 11475])
+            ("mosquitto_will_clear" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10451 10474]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10426 10475])
+            ("mosquitto_will_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9995 10018])
+                    ("topic" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10019 10037])
+                    ("payloadlen" variable (:type "int") (reparse-symbol arg-sub-list) [10038 10053])
+                    ("payload" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10054 10074])
+                    ("qos" variable (:type "int") (reparse-symbol arg-sub-list) [10075 10083])
+                    ("retain" variable (:type "bool") (reparse-symbol arg-sub-list) [10084 10096]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9972 10097])
+            ("mosquitto_reinitialise" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8907 8930])
+                    ("id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8931 8946])
+                    ("clean_session" variable (:type "bool") (reparse-symbol arg-sub-list) [8947 8966])
+                    ("obj" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8967 8977]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8880 8978])
+            ("mosquitto_destroy" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7640 7663]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7617 7664])
+            ("mosquitto_new" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("mosquitto" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7317 7332])
+                    ("clean_session" variable (:type "bool") (reparse-symbol arg-sub-list) [7333 7352])
+                    ("obj" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7353 7363]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7285 7364])
+            ("mosquitto_lib_cleanup" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5924 5929]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5898 5930])
+            ("mosquitto_lib_init" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5664 5669]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5641 5670])
+            ("mosquitto_lib_version" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("major" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5373 5384])
+                    ("minor" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5385 5396])
+                    ("revision" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5397 5411]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5347 5412])
+            ("mosquitto" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :prototype t)
+                (reparse-symbol extern-c-contents) [3421 3438])
+            ("mosquitto_message" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mid" variable (:type "int") (reparse-symbol classsubparts) [3337 3345])
+                    ("topic" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3347 3359])
+                    ("payload" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [3361 3375])
+                    ("payloadlen" variable (:type "int") (reparse-symbol classsubparts) [3377 3392])
+                    ("qos" variable (:type "int") (reparse-symbol classsubparts) [3394 3402])
+                    ("retain" variable (:type "bool") (reparse-symbol classsubparts) [3404 3416]))                  )
+                (reparse-symbol extern-c-contents) [3310 3419])
+            ("MOSQ_MQTT_ID_MAX_LENGTH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3282 3305])
+            ("mosq_err_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("MOSQ_ERR_CONN_PENDING" variable
+                       (:constant-flag t
+                        :default-value (2810 2812)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2786 2812])
+                    ("MOSQ_ERR_SUCCESS" variable
+                       (:constant-flag t
+                        :default-value (2834 2835)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2815 2835])
+                    ("MOSQ_ERR_NOMEM" variable
+                       (:constant-flag t
+                        :default-value (2855 2856)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2838 2856])
+                    ("MOSQ_ERR_PROTOCOL" variable
+                       (:constant-flag t
+                        :default-value (2879 2880)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2859 2880])
+                    ("MOSQ_ERR_INVAL" variable
+                       (:constant-flag t
+                        :default-value (2900 2901)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2883 2901])
+                    ("MOSQ_ERR_NO_CONN" variable
+                       (:constant-flag t
+                        :default-value (2923 2924)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2904 2924])
+                    ("MOSQ_ERR_CONN_REFUSED" variable
+                       (:constant-flag t
+                        :default-value (2951 2952)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2927 2952])
+                    ("MOSQ_ERR_NOT_FOUND" variable
+                       (:constant-flag t
+                        :default-value (2976 2977)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2955 2977])
+                    ("MOSQ_ERR_CONN_LOST" variable
+                       (:constant-flag t
+                        :default-value (3001 3002)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2980 3002])
+                    ("MOSQ_ERR_TLS" variable
+                       (:constant-flag t
+                        :default-value (3020 3021)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3005 3021])
+                    ("MOSQ_ERR_PAYLOAD_SIZE" variable
+                       (:constant-flag t
+                        :default-value (3048 3049)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3024 3049])
+                    ("MOSQ_ERR_NOT_SUPPORTED" variable
+                       (:constant-flag t
+                        :default-value (3077 3079)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3052 3079])
+                    ("MOSQ_ERR_AUTH" variable
+                       (:constant-flag t
+                        :default-value (3098 3100)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3082 3100])
+                    ("MOSQ_ERR_ACL_DENIED" variable
+                       (:constant-flag t
+                        :default-value (3125 3127)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3103 3127])
+                    ("MOSQ_ERR_UNKNOWN" variable
+                       (:constant-flag t
+                        :default-value (3149 3151)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3130 3151])
+                    ("MOSQ_ERR_ERRNO" variable
+                       (:constant-flag t
+                        :default-value (3171 3173)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3154 3173])
+                    ("MOSQ_ERR_EAI" variable
+                       (:constant-flag t
+                        :default-value (3191 3193)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3176 3193]))                  )
+                (reparse-symbol extern-c-contents) [2767 3196])
+            ("MOSQ_LOG_ALL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2727 2739])
+            ("MOSQ_LOG_UNSUBSCRIBE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2693 2713])
+            ("MOSQ_LOG_SUBSCRIBE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2661 2679])
+            ("MOSQ_LOG_DEBUG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2633 2647])
+            ("MOSQ_LOG_ERR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2607 2619])
+            ("MOSQ_LOG_WARNING" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2577 2593])
+            ("MOSQ_LOG_NOTICE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2548 2563])
+            ("MOSQ_LOG_INFO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2521 2534])
+            ("MOSQ_LOG_NONE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2494 2507])
+            ("LIBMOSQUITTO_VERSION_NUMBER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2366 2393])
+            ("LIBMOSQUITTO_REVISION" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2334 2355])
+            ("LIBMOSQUITTO_MINOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2305 2323])
+            ("LIBMOSQUITTO_MAJOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2276 2294])
+            ("libmosq_EXPORT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2082 2096])
+            ("mosquitto_topic_matches_sub" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("sub" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [51774 51790])
+                    ("topic" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [51791 51809])
+                    ("result" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [51810 51823]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [51742 51824])
+            ("mosquitto_sub_topic_tokens_free" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("topics" variable
+                       (:pointer 3
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [51083 51098])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [51099 51109]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [51047 51110])
+            ("mosquitto_sub_topic_tokenise" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("subtopic" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [50600 50621])
+                    ("topics" variable
+                       (:pointer 3
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [50622 50637])
+                    ("count" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [50638 50649]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [50567 50650])
+            ("mosquitto_connack_string" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("connack_code" variable (:type "int") (reparse-symbol arg-sub-list) [49396 49413]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [49359 49414])
+            ("mosquitto_strerror" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("mosq_errno" variable (:type "int") (reparse-symbol arg-sub-list) [49082 49097]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [49051 49098])
+            ("mosquitto_user_data_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [48571 48594])
+                    ("obj" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [48595 48605]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [48542 48606])
+            ("mosquitto_message_retry_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47883 47906])
+                    ("message_retry" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [47907 47934]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [47850 47935])
+            ("mosquitto_max_inflight_messages_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47399 47422])
+                    ("max_inflight_messages" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [47423 47458]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [47359 47459])
+            ("mosquitto_reconnect_delay_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [46340 46363])
+                    ("reconnect_delay" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [46364 46393])
+                    ("reconnect_delay_max" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [46394 46427])
+                    ("reconnect_exponential_backoff" variable (:type "bool") (reparse-symbol arg-sub-list) [46428 46463]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [46306 46464])
+            ("mosquitto_log_callback_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [44918 44941])
+                    ("on_log" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("mosquitto" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [44956 44975])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [44976 44983])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [44984 44988])
+                            ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [44989 45002]))                          
+                        :type "void")
+                        nil nil))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [44886 45005])
+            ("mosquitto_unsubscribe_callback_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [44084 44107])
+                    ("on_unsubscribe" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("mosquitto" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [44130 44149])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [44150 44157])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [44158 44162]))                          
+                        :type "void")
+                        nil nil))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [44044 44165])
+            ("mosquitto_subscribe_callback_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43367 43390])
+                    ("on_subscribe" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("mosquitto" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [43411 43430])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [43431 43438])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [43439 43443])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [43444 43448])
+                            ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [43449 43461]))                          
+                        :type "void")
+                        nil nil))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [43329 43464])
+            ("mosquitto_message_callback_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [42405 42428])
+                    ("on_message" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("mosquitto" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [42447 42466])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [42467 42474])
+                            ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("mosquitto_message" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [42475 42508]))                          
+                        :type "void")
+                        nil nil))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [42369 42511])
+            ("mosquitto_publish_callback_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41496 41519])
+                    ("on_publish" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("mosquitto" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [41538 41557])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [41558 41565])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [41566 41570]))                          
+                        :type "void")
+                        nil nil))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [41460 41573])
+            ("mosquitto_disconnect_callback_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [40788 40811])
+                    ("on_disconnect" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("mosquitto" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [40833 40852])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [40853 40860])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [40861 40865]))                          
+                        :type "void")
+                        nil nil))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [40749 40868])
+            ("mosquitto_connect_callback_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [39913 39936])
+                    ("on_connect" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("mosquitto" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [39955 39974])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [39975 39982])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [39983 39987]))                          
+                        :type "void")
+                        nil nil))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [39877 39990])
+            ("mosquitto_tls_psk_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [38996 39019])
+                    ("psk" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39020 39036])
+                    ("identity" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39037 39058])
+                    ("ciphers" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39059 39079]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [38970 39080])
+            ("mosquitto_tls_opts_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [37996 38019])
+                    ("cert_reqs" variable (:type "int") (reparse-symbol arg-sub-list) [38020 38034])
+                    ("tls_version" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38035 38059])
+                    ("ciphers" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38060 38080]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [37969 38081])
+            ("mosquitto_tls_insecure_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36350 36373])
+                    ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [36374 36385]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [36319 36386])
+            ("mosquitto_tls_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35140 35163])
+                    ("cafile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35166 35185])
+                    ("capath" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35186 35205])
+                    ("certfile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35208 35229])
+                    ("keyfile" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35230 35250])
+                    ("pw_callback" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("buf" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [35271 35281])
+                            ("size" variable (:type "int") (reparse-symbol arg-sub-list) [35282 35291])
+                            ("rwflag" variable (:type "int") (reparse-symbol arg-sub-list) [35292 35303])
+                            ("userdata" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [35304 35319]))                          
+                        :type "int")
+                        nil nil))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [35118 35322])
+            ("mosquitto_want_write" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32766 32789]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [32740 32790])
+            ("mosquitto_loop_misc" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32446 32469]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [32422 32470])
+            ("mosquitto_loop_write" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31647 31670])
+                    ("max_packets" variable (:type "int") (reparse-symbol arg-sub-list) [31671 31687]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [31622 31688])
+            ("mosquitto_loop_read" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30436 30459])
+                    ("max_packets" variable (:type "int") (reparse-symbol arg-sub-list) [30460 30476]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [30412 30477])
+            ("mosquitto_socket" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29268 29291]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [29247 29292])
+            ("mosquitto_loop_stop" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28892 28915])
+                    ("force" variable (:type "bool") (reparse-symbol arg-sub-list) [28916 28927]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [28868 28928])
+            ("mosquitto_loop_start" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28018 28041]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [27993 28042])
+            ("mosquitto_loop_forever" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27324 27347])
+                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [27348 27360])
+                    ("max_packets" variable (:type "int") (reparse-symbol arg-sub-list) [27361 27377]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [27297 27378])
+            ("mosquitto_loop" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25805 25828])
+                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [25829 25841])
+                    ("max_packets" variable (:type "int") (reparse-symbol arg-sub-list) [25842 25858]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [25786 25859])
+            ("mosquitto_message_free" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("message" variable
+                       (:pointer 2
+                        :type ("mosquitto_message" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23692 23727]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23664 23728])
+            ("mosquitto_message_copy" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type ("mosquitto_message" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23361 23391])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mosquitto_message" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23392 23428]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23334 23429])
+            ("mosquitto_unsubscribe" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22710 22733])
+                    ("mid" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [22734 22743])
+                    ("sub" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22744 22760]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [22684 22761])
+            ("mosquitto_subscribe" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21956 21979])
+                    ("mid" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [21980 21989])
+                    ("sub" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21990 22006])
+                    ("qos" variable (:type "int") (reparse-symbol arg-sub-list) [22007 22015]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [21932 22016])
+            ("mosquitto_publish" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21096 21119])
+                    ("mid" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [21120 21129])
+                    ("topic" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21130 21148])
+                    ("payloadlen" variable (:type "int") (reparse-symbol arg-sub-list) [21149 21164])
+                    ("payload" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [21165 21185])
+                    ("qos" variable (:type "int") (reparse-symbol arg-sub-list) [21186 21194])
+                    ("retain" variable (:type "bool") (reparse-symbol arg-sub-list) [21195 21207]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [21074 21208])
+            ("mosquitto_disconnect" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19505 19528]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [19480 19529])
+            ("mosquitto_reconnect_async" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19131 19154]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [19101 19155])
+            ("mosquitto_reconnect" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18015 18038]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17991 18039])
+            ("mosquitto_connect_bind_async" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16890 16913])
+                    ("host" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16914 16931])
+                    ("port" variable (:type "int") (reparse-symbol arg-sub-list) [16932 16941])
+                    ("keepalive" variable (:type "int") (reparse-symbol arg-sub-list) [16942 16956])
+                    ("bind_address" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16957 16982]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16857 16983])
+            ("mosquitto_connect_async" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15228 15251])
+                    ("host" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15252 15269])
+                    ("port" variable (:type "int") (reparse-symbol arg-sub-list) [15270 15279])
+                    ("keepalive" variable (:type "int") (reparse-symbol arg-sub-list) [15280 15294]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15200 15295])
+            ("mosquitto_connect_bind" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13828 13851])
+                    ("host" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13852 13869])
+                    ("port" variable (:type "int") (reparse-symbol arg-sub-list) [13870 13879])
+                    ("keepalive" variable (:type "int") (reparse-symbol arg-sub-list) [13880 13894])
+                    ("bind_address" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13895 13920]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13801 13921])
+            ("mosquitto_connect" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12475 12498])
+                    ("host" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12499 12516])
+                    ("port" variable (:type "int") (reparse-symbol arg-sub-list) [12517 12526])
+                    ("keepalive" variable (:type "int") (reparse-symbol arg-sub-list) [12527 12541]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12453 12542])
+            ("mosquitto_username_pw_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11407 11430])
+                    ("username" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11431 11452])
+                    ("password" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11453 11474]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11377 11475])
+            ("mosquitto_will_clear" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10451 10474]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10426 10475])
+            ("mosquitto_will_set" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9995 10018])
+                    ("topic" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10019 10037])
+                    ("payloadlen" variable (:type "int") (reparse-symbol arg-sub-list) [10038 10053])
+                    ("payload" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10054 10074])
+                    ("qos" variable (:type "int") (reparse-symbol arg-sub-list) [10075 10083])
+                    ("retain" variable (:type "bool") (reparse-symbol arg-sub-list) [10084 10096]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9972 10097])
+            ("mosquitto_reinitialise" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8907 8930])
+                    ("id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8931 8946])
+                    ("clean_session" variable (:type "bool") (reparse-symbol arg-sub-list) [8947 8966])
+                    ("obj" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8967 8977]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8880 8978])
+            ("mosquitto_destroy" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mosq" variable
+                       (:pointer 1
+                        :type ("mosquitto" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7640 7663]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7617 7664])
+            ("mosquitto_new" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("mosquitto" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7317 7332])
+                    ("clean_session" variable (:type "bool") (reparse-symbol arg-sub-list) [7333 7352])
+                    ("obj" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7353 7363]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7285 7364])
+            ("mosquitto_lib_cleanup" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5924 5929]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5898 5930])
+            ("mosquitto_lib_init" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5664 5669]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5641 5670])
+            ("mosquitto_lib_version" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("major" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5373 5384])
+                    ("minor" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5385 5396])
+                    ("revision" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5397 5411]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5347 5412])
+            ("mosquitto" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :prototype t)
+                (reparse-symbol extern-c-contents) [3421 3438])
+            ("mosquitto_message" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mid" variable (:type "int") (reparse-symbol classsubparts) [3337 3345])
+                    ("topic" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3347 3359])
+                    ("payload" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [3361 3375])
+                    ("payloadlen" variable (:type "int") (reparse-symbol classsubparts) [3377 3392])
+                    ("qos" variable (:type "int") (reparse-symbol classsubparts) [3394 3402])
+                    ("retain" variable (:type "bool") (reparse-symbol classsubparts) [3404 3416]))                  )
+                (reparse-symbol extern-c-contents) [3310 3419])
+            ("MOSQ_MQTT_ID_MAX_LENGTH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3282 3305])
+            ("mosq_err_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("MOSQ_ERR_CONN_PENDING" variable
+                       (:constant-flag t
+                        :default-value (2810 2812)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2786 2812])
+                    ("MOSQ_ERR_SUCCESS" variable
+                       (:constant-flag t
+                        :default-value (2834 2835)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2815 2835])
+                    ("MOSQ_ERR_NOMEM" variable
+                       (:constant-flag t
+                        :default-value (2855 2856)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2838 2856])
+                    ("MOSQ_ERR_PROTOCOL" variable
+                       (:constant-flag t
+                        :default-value (2879 2880)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2859 2880])
+                    ("MOSQ_ERR_INVAL" variable
+                       (:constant-flag t
+                        :default-value (2900 2901)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2883 2901])
+                    ("MOSQ_ERR_NO_CONN" variable
+                       (:constant-flag t
+                        :default-value (2923 2924)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2904 2924])
+                    ("MOSQ_ERR_CONN_REFUSED" variable
+                       (:constant-flag t
+                        :default-value (2951 2952)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2927 2952])
+                    ("MOSQ_ERR_NOT_FOUND" variable
+                       (:constant-flag t
+                        :default-value (2976 2977)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2955 2977])
+                    ("MOSQ_ERR_CONN_LOST" variable
+                       (:constant-flag t
+                        :default-value (3001 3002)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2980 3002])
+                    ("MOSQ_ERR_TLS" variable
+                       (:constant-flag t
+                        :default-value (3020 3021)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3005 3021])
+                    ("MOSQ_ERR_PAYLOAD_SIZE" variable
+                       (:constant-flag t
+                        :default-value (3048 3049)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3024 3049])
+                    ("MOSQ_ERR_NOT_SUPPORTED" variable
+                       (:constant-flag t
+                        :default-value (3077 3079)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3052 3079])
+                    ("MOSQ_ERR_AUTH" variable
+                       (:constant-flag t
+                        :default-value (3098 3100)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3082 3100])
+                    ("MOSQ_ERR_ACL_DENIED" variable
+                       (:constant-flag t
+                        :default-value (3125 3127)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3103 3127])
+                    ("MOSQ_ERR_UNKNOWN" variable
+                       (:constant-flag t
+                        :default-value (3149 3151)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3130 3151])
+                    ("MOSQ_ERR_ERRNO" variable
+                       (:constant-flag t
+                        :default-value (3171 3173)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3154 3173])
+                    ("MOSQ_ERR_EAI" variable
+                       (:constant-flag t
+                        :default-value (3191 3193)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3176 3193]))                  )
+                (reparse-symbol extern-c-contents) [2767 3196])
+            ("MOSQ_LOG_ALL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2727 2739])
+            ("MOSQ_LOG_UNSUBSCRIBE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2693 2713])
+            ("MOSQ_LOG_SUBSCRIBE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2661 2679])
+            ("MOSQ_LOG_DEBUG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2633 2647])
+            ("MOSQ_LOG_ERR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2607 2619])
+            ("MOSQ_LOG_WARNING" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2577 2593])
+            ("MOSQ_LOG_NOTICE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2548 2563])
+            ("MOSQ_LOG_INFO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2521 2534])
+            ("MOSQ_LOG_NONE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2494 2507])
+            ("LIBMOSQUITTO_VERSION_NUMBER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2366 2393])
+            ("LIBMOSQUITTO_REVISION" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2334 2355])
+            ("LIBMOSQUITTO_MINOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2305 2323])
+            ("LIBMOSQUITTO_MAJOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2276 2294])
+            ("libmosq_EXPORT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2082 2096]))          
+      :file "mosquitto.h"
+      :pointmax 51862
+      :fsize 51860
+      :lastmodtime '(21280 26277 608315 68000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LIBMOSQUITTO_VERSION_NUMBER" . ((semantic-list "(LIBMOSQUITTO_MAJOR*1000000+LIBMOSQUITTO_MINOR*1000+LIBMOSQUITTO_REVISION)" 2394 . 2468)))
+          ("LIBMOSQUITTO_MINOR" . ((number "2" 2324 . 2325)))
+          ("MOSQ_LOG_NOTICE" . ((number "0x02" 2564 . 2568)))
+          ("MOSQ_LOG_ERR" . ((number "0x08" 2620 . 2624)))
+          ("MOSQ_LOG_DEBUG" . ((number "0x10" 2648 . 2652)))
+          ("MOSQ_LOG_SUBSCRIBE" . ((number "0x20" 2680 . 2684)))
+          ("MOSQ_LOG_INFO" . ((number "0x01" 2535 . 2539)))
+          ("MOSQ_LOG_WARNING" . ((number "0x04" 2594 . 2598)))
+          ("MOSQ_MQTT_ID_MAX_LENGTH" . ((number "23" 3306 . 3308)))
+          ("MOSQ_LOG_NONE" . ((number "0x00" 2508 . 2512)))
+          ("MOSQ_LOG_UNSUBSCRIBE" . ((number "0x40" 2714 . 2718)))
+          ("MOSQ_LOG_ALL" . ((number "0xFFFF" 2740 . 2746)))
+          ("LIBMOSQUITTO_MAJOR" . ((number "1" 2295 . 2296)))
+          ("LIBMOSQUITTO_REVISION" . ((number "0" 2356 . 2357)))
+          ("_MOSQUITTO_H_")
+          ("libmosq_EXPORT")
+          )
+))
+  :file "!home!jqcorreia!code!tests!d!mosquitto-1.2!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

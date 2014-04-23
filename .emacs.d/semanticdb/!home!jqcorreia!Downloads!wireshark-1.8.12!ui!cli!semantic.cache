@@ -1,0 +1,36 @@
+;; Object cli/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cli/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("Makefile.common" include nil nil [926 950])
+            ("../../Makefile.am.inc" include nil nil [950 980])
+            ("AM_CLEAN_CFLAGS" variable (:default-value ("-Werror")) nil [1008 1034])
+            ("noinst_LIBRARIES" variable (:default-value ("libcliui.a")) nil [1041 1071])
+            ("CLEANFILES" variable (:default-value ("libcliui.a" "*~")) nil [1072 1106])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("$(GENERATED_FILES)" "Makefile.in")) nil [1107 1167])
+            ("tshark-tap-register.c" function (:arguments ("$(TSHARK_TAP_SRC)" "$(top_srcdir)/tools/make-tapreg-dotc")) nil [1693 1896])
+            ("libcliui_a_SOURCES" variable (:default-value ("$(TSHARK_TAP_SRC)" "$(noinst_HEADERS)" "$(GENERATED_HEADER_FILES)" "$(GENERATED_C_FILES)")) nil [1965 2081])
+            ("libcliui_a_CFLAGS" variable (:default-value ("$(AM_CLEAN_CFLAGS)")) nil [2082 2121])
+            ("libcliui_a_DEPENDENCIES" variable nil nil [2122 2148])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)" "-I$(top_srcdir)/wiretap" "$(LIBGCRYPT_CFLAGS)" "$(LIBGNUTLS_CFLAGS)" "$(PORTAUDIO_INCLUDES)")) nil [2166 2282])
+            ("doxygen" function nil nil [2284 2293])
+            ("checkapi" function (:arguments ("checkapi-base" "checkapi-todo")) nil [2356 2394])
+            ("checkapi-base" function nil nil [2395 2490])
+            ("checkapi-todo" function nil nil [2491 2594])
+            ("EXTRA_DIST" variable (:default-value ("$(GENERATOR_FILES)" "Makefile.common" "Makefile.nmake")) nil [2595 2669]))          
+      :file "Makefile.am"
+      :pointmax 2669
+      :fsize 2668
+      :lastmodtime '(20430 13515 0 0)
+      :unmatched-syntax '((ENDIF 2333 . 2338) (bol 2333 . 2333) (shell-command 2310 . 2332) (bol 2309 . 2309)))
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 2177
+      :lastmodtime '(20430 13515 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!ui!cli!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

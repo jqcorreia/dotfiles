@@ -1,0 +1,67 @@
+;; Object scripts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scripts/"
+  :tables
+  (list
+    (semanticdb-table "migration.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("pytz" include nil nil [25 81])
+            ("pycassa" include nil nil [25 81])
+            ("hashlib" include nil nil [25 81])
+            ("time" include nil nil [25 81])
+            ("json" include nil nil [25 81])
+            ("sys" include nil nil [25 81])
+            ("argparse" include nil nil [25 81])
+            ("datetime" include nil nil [82 111])
+            ("pycassa" include nil nil [112 178])
+            ("example" variable nil nil [199 538])
+            ("parser" variable nil nil [540 745])
+            ("parser" code nil nil [746 880])
+            ("parser" code nil nil [881 1003])
+            ("parser" code nil nil [1004 1143])
+            ("parser" code nil nil [1144 1252])
+            ("parser" code nil nil [1253 1361])
+            ("parser" code nil nil [1362 1464])
+            ("parser" code nil nil [1465 1603])
+            ("parser" code nil nil [1604 1678])
+            ("args" variable nil nil [1679 1705])
+            ("print" code nil nil [1707 1740])
+            ("print" code nil nil [1741 1770])
+            ("print" code nil nil [1771 1806])
+            ("print" code nil nil [1807 1844])
+            ("print" code nil nil [1845 1882])
+            ("print" code nil nil [1883 1928])
+            ("print" code nil nil [1929 1990])
+            ("print" code nil nil [1991 2054])
+            ("print" code nil nil [2055 2138])
+            ("print" code nil nil [2139 2177])
+            ("print" code nil nil [2178 2213])
+            ("newHash" function (:arguments 
+              ( ("inputstring" variable nil (reparse-symbol function_parameters) [2227 2238]))              ) nil [2215 2290])
+            ("batchInsert" function (:arguments 
+              ( ("cfcap" variable nil (reparse-symbol function_parameters) [2307 2312])
+                ("cfdata" variable nil (reparse-symbol function_parameters) [2314 2320])
+                ("dictcaptures" variable nil (reparse-symbol function_parameters) [2322 2334])
+                ("date" variable nil (reparse-symbol function_parameters) [2336 2340]))              ) nil [2291 3335])
+            ("try" code nil nil [3359 3583])
+            ("try" code nil nil [3583 3751])
+            ("try" code nil nil [3751 4060])
+            ("try" code nil nil [4060 4242])
+            ("try" code nil nil [4242 4412])
+            ("mallid" variable nil nil [4412 4424])
+            ("num_of_days" variable nil nil [4426 4441])
+            ("totalnumofdays" variable nil nil [4442 4484])
+            ("print" code nil nil [4485 4573])
+            ("lasttime" variable nil nil [4574 4589])
+            ("for" code nil nil [4653 8117])
+            ("print" code nil nil [8118 8192])
+            ("args" code nil nil [8193 8272]))          
+      :file "migration.py"
+      :pointmax 8283
+      :fsize 8282
+      :lastmodtime '(21195 60150 70235 411000)
+      :unmatched-syntax nil))
+  :file "!home!jqcorreia!code!nodeserver!scripts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

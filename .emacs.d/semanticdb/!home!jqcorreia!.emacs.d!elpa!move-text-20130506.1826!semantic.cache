@@ -1,0 +1,27 @@
+;; Object move-text-20130506.1826/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "move-text-20130506.1826/"
+  :tables
+  (list
+    (semanticdb-table "move-text.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("move-text-internal" function (:arguments ("arg")) nil [1836 2834])
+            ("move-text-down" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [2851 3006])
+            ("move-text-up" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [3023 3178])
+            ("move-text-default-bindings" function nil nil [3195 3381])
+            ("move-text" package nil nil [3384 3404]))          
+      :file "move-text.el"
+      :pointmax 3433
+      :fsize 3432
+      :lastmodtime '(21271 23726 867678 365000)
+      :unmatched-syntax nil))
+  :file "!home!jqcorreia!.emacs.d!elpa!move-text-20130506.1826!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,18 @@
+;; Object pidl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pidl/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("EXTRA_DIST" variable (:default-value ("README" "IDL_LICENSE.txt" "atsvc.cnf" "atsvc.idl" "dfs.cnf" "dfs.idl" "dnsserver.cnf" "dnsserver.idl" "dssetup.idl" "efs.cnf" "efs.idl" "eventlog.cnf" "eventlog.idl" "frsrpc.cnf" "frsrpc.idl" "frstrans.cnf" "frstrans.idl" "idl_types.h" "initshutdown.idl" "lsa.cnf" "lsa.idl" "misc.idl" "samr.cnf" "samr.idl" "srvsvc.cnf" "srvsvc.idl" "winreg.cnf" "winreg.idl" "wkssvc.cnf" "wkssvc.idl" "wzcsvc.cnf" "wzcsvc.idl" "mapi/mapi.cnf" "mapi/mapi.idl" "mapi/Makefile" "mapi/mapicodes_enum.h" "mapi/mapitags_enum.h" "mapi/response.cnf.c" "mapi/request.cnf.c" "nspi/README" "nspi/README.ws" "nspi/mapicodes_enum.h" "nspi/mapitags_enum.h" "nspi/Makefile" "nspi/nspi.cnf" "nspi/nspi.idl" "rfr/Makefile" "rfr/mapicodes_enum.h" "rfr/rfr.cnf" "rfr/rfr.idl")) nil [959 1862])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in")) nil [1863 1909]))          
+      :file "Makefile.am"
+      :pointmax 1909
+      :fsize 1908
+      :lastmodtime '(20430 13533 0 0)
+      :unmatched-syntax nil))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!epan!dissectors!pidl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

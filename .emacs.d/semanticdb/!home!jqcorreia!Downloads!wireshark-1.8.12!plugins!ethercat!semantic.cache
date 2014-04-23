@@ -1,0 +1,34 @@
+;; Object ethercat/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ethercat/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)" "-I$(includedir)")) nil [927 973])
+            ("Makefile.common" include nil nil [974 998])
+            ("AM_CFLAGS" variable (:default-value ("-Werror")) nil [1026 1046])
+            ("plugindir" variable (:default-value ("@plugindir@")) nil [1053 1077])
+            ("plugin_LTLIBRARIES" variable (:default-value ("ethercat.la")) nil [1078 1111])
+            ("ethercat_la_SOURCES" variable (:default-value ("plugin.c" "moduleinfo.h" "$(DISSECTOR_SRC)" "$(DISSECTOR_SUPPORT_SRC)" "$(DISSECTOR_INCLUDES)")) nil [1111 1234])
+            ("ethercat_la_LDFLAGS" variable (:default-value ("-module" "-avoid-version")) nil [1234 1279])
+            ("ethercat_la_LIBADD" variable (:default-value ("@PLUGIN_LIBS@")) nil [1279 1314])
+            ("LIBS" variable nil nil [1472 1479])
+            ("plugin.c" function (:arguments ("$(DISSECTOR_SRC)" "Makefile.common" "$(top_srcdir)/tools/make-dissector-reg" "$(top_srcdir)/tools/make-dissector-reg.py")) nil [2999 3459])
+            ("CLEANFILES" variable (:default-value ("ethercat" "*~")) nil [4177 4208])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in" "plugin.c")) nil [4209 4259])
+            ("EXTRA_DIST" variable (:default-value ("Makefile.common" "Makefile.nmake" "moduleinfo.nmake" "plugin.rc.in" "CMakeLists.txt")) nil [4260 4367])
+            ("checkapi" function nil nil [4368 4489]))          
+      :file "Makefile.am"
+      :pointmax 4489
+      :fsize 4488
+      :lastmodtime '(20873 33377 0 0)
+      :unmatched-syntax '((shell-command 4379 . 4488) (bol 4378 . 4378)))
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 1479
+      :lastmodtime '(20430 13517 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!plugins!ethercat!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

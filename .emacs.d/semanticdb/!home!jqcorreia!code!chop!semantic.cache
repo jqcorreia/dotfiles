@@ -1,0 +1,43 @@
+;; Object chop/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "chop/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("PRODUCT" variable (:default-value ("chop")) nil [2 17])
+            ("MIPSCC" variable (:default-value ("mips-openwrt-linux-gcc")) nil [48 78])
+            ("CC" variable (:default-value ("$(MIPSCC)")) nil [78 93])
+            ("CFLAGS" variable (:default-value ("-Wall" "-O2" "-std=gnu99" "-D" "DEBUG=1")) nil [93 134])
+            ("LINKER" variable (:default-value ("$(CC)" "-o")) nil [135 153])
+            ("LFLAGS" variable (:default-value ("-Wall")) nil [153 168])
+            ("SRCDIR" variable (:default-value ("./src")) nil [192 207])
+            ("OBJDIR" variable (:default-value ("./obj")) nil [207 222])
+            ("BINDIR" variable (:default-value ("./bin")) nil [222 237])
+            ("LIBDIR" variable (:default-value ("./lib")) nil [237 252])
+            ("SOURCES" variable (:default-value ("$(wildcard $(SRCDIR)/*.c)")) nil [280 317])
+            ("HEADERS" variable (:default-value ("$(wildcard $(SRCDIR)/*.h)")) nil [317 354])
+            ("OBJECTS" variable (:default-value ("$(SOURCES:$(SRCDIR)/%.c=$(OBJDIR)/%.o)")) nil [354 404])
+            ("AIR_LIBNAME" variable (:default-value ("air")) nil [428 446])
+            ("AIR_INCDIR" variable (:default-value ("$(LIBDIR)/aircrack-osdep/include")) nil [446 492])
+            ("AIR_LIBDIR" variable (:default-value ("$(LIBDIR)/aircrack-osdep/lib")) nil [492 534])
+            ("AIR_CFLAGS" variable (:default-value ("-I$(AIR_INCDIR)")) nil [534 563])
+            ("AIR_LFLAGS" variable (:default-value ("-L$(AIR_LIBDIR)" "-l$(AIR_LIBNAME)")) nil [563 609])
+            ("DEP_CFLAGS" variable (:default-value ("$(AIR_CFLAGS)")) nil [610 637])
+            ("DEP_LFLAGS" variable (:default-value ("$(AIR_LFLAGS)" "-lnl-3" "-lnl-genl-3")) nil [637 683])
+            ("help" function nil nil [684 776])
+            ("build" function (:arguments ("env" "$(BINDIR)/$(PRODUCT)")) nil [777 854])
+            ("env" function nil nil [855 891])
+            ("$(OBJECTS)" function (:arguments ("$(OBJDIR)/%.o" ":" "$(SRCDIR)/%.c")) nil [893 1007])
+            ("$(BINDIR)" function (:arguments ("$(OBJECTS)")) nil [1008 1117])
+            ("run" function (:arguments ("build")) nil [1118 1151])
+            ("clean" function nil nil [1152 1218]))          
+      :file "Makefile"
+      :pointmax 1220
+      :fsize 1219
+      :lastmodtime '(21272 33918 363138 29000)
+      :unmatched-syntax nil))
+  :file "!home!jqcorreia!code!chop!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,46 @@
+;; Object gtk/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gtk/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("Makefile.common" include nil nil [951 975])
+            ("../../Makefile.am.inc" include nil nil [975 1005])
+            ("AM_CLEAN_CFLAGS" variable (:default-value ("-Werror")) nil [1033 1059])
+            ("noinst_LIBRARIES" variable (:default-value ("libgtkui.a")) nil [1066 1113])
+            ("CLEANFILES" variable (:default-value ("libgtkui.a" "libgtkui_dirty.a" "*~")) nil [1114 1168])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("$(GENERATED_FILES)" "Makefile.in")) nil [1169 1229])
+            ("RUNLEX" variable (:default-value ("$(top_srcdir)/tools/runlex.sh")) nil [1230 1267])
+            ("text_import_scanner_lex.h" function (:arguments ("text_import_scanner.c")) nil [1268 1317])
+            ("wireshark-tap-register.c" function (:arguments ("$(WIRESHARK_TAP_SRC)" "$(top_srcdir)/tools/make-tapreg-dotc")) nil [1849 2067])
+            ("WIRESHARK_CLEAN_LIBGTKUI_SRC" variable (:default-value ("$(WIRESHARK_GTK_SRC)" "$(WIRESHARK_TAP_SRC)" "$(GENERATED_C_FILES)")) nil [2068 2173])
+            ("libgtkui_a_SOURCES" variable (:default-value ("$(WIRESHARK_CLEAN_LIBGTKUI_SRC)" "$(noinst_HEADERS)" "$(GENERATED_HEADER_FILES)")) nil [2174 2280])
+            ("libgtkui_a_CFLAGS" variable (:default-value ("$(AM_CLEAN_CFLAGS)")) nil [2281 2320])
+            ("libgtkui_a_DEPENDENCIES" variable nil nil [2321 2347])
+            ("libgtkui_dirty_a_SOURCES" variable (:default-value ("$(DIRTY_GENERATED_C_FILES)")) nil [2348 2405])
+            ("libgtkui_dirty_a_DEPENDENCIES" variable nil nil [2406 2438])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)" "-I$(top_srcdir)/wiretap" "$(LIBGCRYPT_CFLAGS)" "$(LIBGNUTLS_CFLAGS)" "$(PORTAUDIO_INCLUDES)")) nil [2456 2572])
+            ("doxygen" function nil nil [2574 2583])
+            ("checkapi" function (:arguments ("checkapi-base" "checkapi-todo")) nil [2646 2684])
+            ("checkapi-base" function nil nil [2685 2828])
+            ("checkapi-todo" function nil nil [2829 2993])
+            ("expert_indicators.h" function nil nil [2994 3263])
+            ("capture_comment_icons.h" function nil nil [3264 3552])
+            ("network_icons.h" function nil nil [3553 3828])
+            ("remote_icons.h" function nil nil [3829 4088])
+            ("pipe_icon.h" function nil nil [4089 4277])
+            ("EXTRA_DIST" variable (:default-value ("$(GENERATOR_FILES)" "airpcap_dlg.c" "airpcap_gui_utils.c" "capture_if_details_dlg_win32.c" "capture_if_details_dlg_win32.h" "CMakeLists.txt" "doxygen.cfg.in" "libgtkui.vcproj" "main_airpcap_toolbar.c" "Makefile.common" "Makefile.nmake" "Makefile_custom.common")) nil [4278 4580]))          
+      :file "Makefile.am"
+      :pointmax 4580
+      :fsize 4579
+      :lastmodtime '(20430 13515 0 0)
+      :unmatched-syntax '((ENDIF 2623 . 2628) (bol 2623 . 2623) (shell-command 2600 . 2622) (bol 2599 . 2599)))
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 7550
+      :lastmodtime '(20430 34749 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!ui!gtk!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

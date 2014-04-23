@@ -1,0 +1,34 @@
+;; Object m2m/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "m2m/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)" "-I$(includedir)" "-I../wimax")) nil [922 979])
+            ("Makefile.common" include nil nil [980 1004])
+            ("AM_CFLAGS" variable (:default-value ("-Werror")) nil [1032 1052])
+            ("plugindir" variable (:default-value ("@plugindir@")) nil [1059 1083])
+            ("plugin_LTLIBRARIES" variable (:default-value ("m2m.la")) nil [1084 1112])
+            ("m2m_la_SOURCES" variable (:default-value ("plugin.c" "moduleinfo.h" "$(DISSECTOR_SRC)" "$(DISSECTOR_SUPPORT_SRC)" "$(DISSECTOR_INCLUDES)")) nil [1112 1230])
+            ("m2m_la_LDFLAGS" variable (:default-value ("-module" "-avoid-version")) nil [1230 1270])
+            ("m2m_la_LIBADD" variable (:default-value ("@PLUGIN_LIBS@")) nil [1270 1300])
+            ("LIBS" variable nil nil [1458 1465])
+            ("plugin.c" function (:arguments ("$(DISSECTOR_SRC)" "Makefile.common" "$(top_srcdir)/tools/make-dissector-reg" "$(top_srcdir)/tools/make-dissector-reg.py")) nil [2985 3445])
+            ("CLEANFILES" variable (:default-value ("m2m" "*~")) nil [4163 4189])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in" "plugin.c")) nil [4190 4240])
+            ("EXTRA_DIST" variable (:default-value ("Makefile.common" "Makefile.nmake" "moduleinfo.nmake" "plugin.rc.in" "CMakeLists.txt")) nil [4241 4348])
+            ("checkapi" function nil nil [4349 4470]))          
+      :file "Makefile.am"
+      :pointmax 4470
+      :fsize 4469
+      :lastmodtime '(20873 33377 0 0)
+      :unmatched-syntax '((shell-command 4360 . 4469) (bol 4359 . 4359)))
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 1427
+      :lastmodtime '(20430 13517 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!plugins!m2m!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,980 @@
+;; Object libpcap-1.3.0/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libpcap-1.3.0/"
+  :tables
+  (list
+    (semanticdb-table "pcap.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_U_" variable
+               (:default-value "\"@(#) $Header: /tcpdump/master/libpcap/pcap.c,v 1.128 2008-12-23 20:13:29 guy Exp $ (LBL)\""
+                :type "int")
+                nil [1895 1996])
+            ("sys/types.h" include (:system-flag t) nil [2257 2279])
+            ("stdio.h" include (:system-flag t) nil [2300 2318])
+            ("stdlib.h" include (:system-flag t) nil [2319 2338])
+            ("string.h" include (:system-flag t) nil [2339 2358])
+            ("unistd.h" include (:system-flag t) nil [2433 2452])
+            ("fcntl.h" include (:system-flag t) nil [2460 2478])
+            ("errno.h" include (:system-flag t) nil [2479 2497])
+            ("pcap-int.h" include nil nil [2595 2616])
+            ("pcap_not_initialized" function
+               (:arguments 
+                  ( ("pcap" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2712 2725]))                  
+                :type "int")
+                nil [2686 2801])
+            ("pcap_can_set_rfmon" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2936 2946]))                  
+                :type "int")
+                nil [2913 2984])
+            ("pcap_cant_set_rfmon" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3076 3089])
+                    ("" variable (:type ("_U_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3086 3090]))                  
+                :type "int")
+                nil [3045 3107])
+            ("pcap_list_tstamp_types" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3549 3559])
+                    ("tstamp_typesp" variable
+                       (:pointer 2
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3560 3580]))                  
+                :type "int")
+                nil [3522 4093])
+            ("pcap_free_tstamp_types" function
+               (:arguments 
+                  ( ("tstamp_type_list" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4708 4730]))                  
+                :type "void")
+                nil [4680 4759])
+            ("pcap_oneshot" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("user" variable
+                       (:pointer 1
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4974 4987])
+                    ("h" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("pcap_pkthdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4988 5016])
+                    ("pkt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5017 5035]))                  
+                :type "void")
+                nil [4949 5137])
+            ("pcap_next" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5164 5174])
+                    ("h" variable
+                       (:pointer 1
+                        :type ("pcap_pkthdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5175 5197]))                  
+                :type ("u_char" type (:type "class") nil nil))
+                nil [5139 5383])
+            ("pcap_next_ex" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5403 5413])
+                    ("pkt_header" variable
+                       (:pointer 2
+                        :type ("pcap_pkthdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5414 5446])
+                    ("pkt_data" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5451 5475]))                  
+                :type "int")
+                nil [5385 6626])
+            ("initialize_ops" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6655 6665]))                  
+                :type "void")
+                nil [6628 7833])
+            ("pcap_create_common" function
+               (:pointer 1
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7863 7882])
+                    ("ebuf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7883 7894]))                  
+                :type ("pcap_t" type (:type "class") nil nil))
+                nil [7835 8857])
+            ("pcap_check_activated" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8884 8894]))                  
+                :type "int")
+                nil [8859 9046])
+            ("pcap_set_snaplen" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9069 9079])
+                    ("snaplen" variable (:type "int") (reparse-symbol arg-sub-list) [9080 9092]))                  
+                :type "int")
+                nil [9048 9196])
+            ("pcap_set_promisc" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9219 9229])
+                    ("promisc" variable (:type "int") (reparse-symbol arg-sub-list) [9230 9242]))                  
+                :type "int")
+                nil [9198 9349])
+            ("pcap_set_rfmon" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9370 9380])
+                    ("rfmon" variable (:type "int") (reparse-symbol arg-sub-list) [9381 9391]))                  
+                :type "int")
+                nil [9351 9494])
+            ("pcap_set_timeout" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9517 9527])
+                    ("timeout_ms" variable (:type "int") (reparse-symbol arg-sub-list) [9528 9543]))                  
+                :type "int")
+                nil [9496 9652])
+            ("pcap_set_tstamp_type" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9679 9689])
+                    ("tstamp_type" variable (:type "int") (reparse-symbol arg-sub-list) [9690 9706]))                  
+                :type "int")
+                nil [9654 10347])
+            ("pcap_set_buffer_size" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10374 10384])
+                    ("buffer_size" variable (:type "int") (reparse-symbol arg-sub-list) [10385 10401]))                  
+                :type "int")
+                nil [10349 10516])
+            ("pcap_activate" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10536 10546]))                  
+                :type "int")
+                nil [10518 11426])
+            ("pcap_open_live" function
+               (:pointer 1
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11452 11471])
+                    ("snaplen" variable (:type "int") (reparse-symbol arg-sub-list) [11472 11484])
+                    ("promisc" variable (:type "int") (reparse-symbol arg-sub-list) [11485 11497])
+                    ("to_ms" variable (:type "int") (reparse-symbol arg-sub-list) [11498 11508])
+                    ("errbuf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11509 11522]))                  
+                :type ("pcap_t" type (:type "class") nil nil))
+                nil [11428 12878])
+            ("pcap_dispatch" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12898 12908])
+                    ("cnt" variable (:type "int") (reparse-symbol arg-sub-list) [12909 12917])
+                    ("callback" variable (:type ("pcap_handler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12918 12940])
+                    ("user" variable
+                       (:pointer 1
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12941 12954]))                  
+                :type "int")
+                nil [12880 13004])
+            ("pcap_read" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13055 13065])
+                    ("cnt" variable (:type "int") (reparse-symbol arg-sub-list) [13066 13074])
+                    ("callback" variable (:type ("pcap_handler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13075 13097])
+                    ("user" variable
+                       (:pointer 1
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13098 13111]))                  
+                :type "int")
+                nil [13041 13162])
+            ("pcap_loop" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13178 13188])
+                    ("cnt" variable (:type "int") (reparse-symbol arg-sub-list) [13189 13197])
+                    ("callback" variable (:type ("pcap_handler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13198 13220])
+                    ("user" variable
+                       (:pointer 1
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13221 13234]))                  
+                :type "int")
+                nil [13164 13679])
+            ("pcap_breakloop" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13782 13792]))                  
+                :type "void")
+                nil [13762 13816])
+            ("pcap_datalink" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13836 13846]))                  
+                :type "int")
+                nil [13818 13873])
+            ("pcap_datalink_ext" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13897 13907]))                  
+                :type "int")
+                nil [13875 13938])
+            ("pcap_list_datalinks" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13964 13974])
+                    ("dlt_buffer" variable
+                       (:pointer 2
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13975 13992]))                  
+                :type "int")
+                nil [13940 14802])
+            ("pcap_free_datalinks" function
+               (:arguments 
+                  ( ("dlt_list" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [15408 15422]))                  
+                :type "void")
+                nil [15383 15443])
+            ("pcap_set_datalink" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15467 15477])
+                    ("dlt" variable (:type "int") (reparse-symbol arg-sub-list) [15478 15486]))                  
+                :type "int")
+                nil [15445 17153])
+            ("charmap" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+	(u_char)'\\000', (u_char)'\\001', (u_char)'\\002', (u_char)'\\003',
+	(u_char)'\\004', (u_char)'\\005', (u_char)'\\006', (u_char)'\\007',
+	(u_char)'\\010', (u_char)'\\011', (u_char)'\\012', (u_char)'\\013',
+	(u_char)'\\014', (u_char)'\\015', (u_char)'\\016', (u_char)'\\017',
+	(u_char)'\\020', (u_char)'\\021', (u_char)'\\022', (u_char)'\\023',
+	(u_char)'\\024', (u_char)'\\025', (u_char)'\\026', (u_char)'\\027',
+	(u_char)'\\030', (u_char)'\\031', (u_char)'\\032', (u_char)'\\033',
+	(u_char)'\\034', (u_char)'\\035', (u_char)'\\036', (u_char)'\\037',
+	(u_char)'\\040', (u_char)'\\041', (u_char)'\\042', (u_char)'\\043',
+	(u_char)'\\044', (u_char)'\\045', (u_char)'\\046', (u_char)'\\047',
+	(u_char)'\\050', (u_char)'\\051', (u_char)'\\052', (u_char)'\\053',
+	(u_char)'\\054', (u_char)'\\055', (u_char)'\\056', (u_char)'\\057',
+	(u_char)'\\060', (u_char)'\\061', (u_char)'\\062', (u_char)'\\063',
+	(u_char)'\\064', (u_char)'\\065', (u_char)'\\066', (u_char)'\\067',
+	(u_char)'\\070', (u_char)'\\071', (u_char)'\\072', (u_char)'\\073',
+	(u_char)'\\074', (u_char)'\\075', (u_char)'\\076', (u_char)'\\077',
+	(u_char)'\\100', (u_char)'\\141', (u_char)'\\142', (u_char)'\\143',
+	(u_char)'\\144', (u_char)'\\145', (u_char)'\\146', (u_char)'\\147',
+	(u_char)'\\150', (u_char)'\\151', (u_char)'\\152', (u_char)'\\153',
+	(u_char)'\\154', (u_char)'\\155', (u_char)'\\156', (u_char)'\\157',
+	(u_char)'\\160', (u_char)'\\161', (u_char)'\\162', (u_char)'\\163',
+	(u_char)'\\164', (u_char)'\\165', (u_char)'\\166', (u_char)'\\167',
+	(u_char)'\\170', (u_char)'\\171', (u_char)'\\172', (u_char)'\\133',
+	(u_char)'\\134', (u_char)'\\135', (u_char)'\\136', (u_char)'\\137',
+	(u_char)'\\140', (u_char)'\\141', (u_char)'\\142', (u_char)'\\143',
+	(u_char)'\\144', (u_char)'\\145', (u_char)'\\146', (u_char)'\\147',
+	(u_char)'\\150', (u_char)'\\151', (u_char)'\\152', (u_char)'\\153',
+	(u_char)'\\154', (u_char)'\\155', (u_char)'\\156', (u_char)'\\157',
+	(u_char)'\\160', (u_char)'\\161', (u_char)'\\162', (u_char)'\\163',
+	(u_char)'\\164', (u_char)'\\165', (u_char)'\\166', (u_char)'\\167',
+	(u_char)'\\170', (u_char)'\\171', (u_char)'\\172', (u_char)'\\173',
+	(u_char)'\\174', (u_char)'\\175', (u_char)'\\176', (u_char)'\\177',
+	(u_char)'\\200', (u_char)'\\201', (u_char)'\\202', (u_char)'\\203',
+	(u_char)'\\204', (u_char)'\\205', (u_char)'\\206', (u_char)'\\207',
+	(u_char)'\\210', (u_char)'\\211', (u_char)'\\212', (u_char)'\\213',
+	(u_char)'\\214', (u_char)'\\215', (u_char)'\\216', (u_char)'\\217',
+	(u_char)'\\220', (u_char)'\\221', (u_char)'\\222', (u_char)'\\223',
+	(u_char)'\\224', (u_char)'\\225', (u_char)'\\226', (u_char)'\\227',
+	(u_char)'\\230', (u_char)'\\231', (u_char)'\\232', (u_char)'\\233',
+	(u_char)'\\234', (u_char)'\\235', (u_char)'\\236', (u_char)'\\237',
+	(u_char)'\\240', (u_char)'\\241', (u_char)'\\242', (u_char)'\\243',
+	(u_char)'\\244', (u_char)'\\245', (u_char)'\\246', (u_char)'\\247',
+	(u_char)'\\250', (u_char)'\\251', (u_char)'\\252', (u_char)'\\253',
+	(u_char)'\\254', (u_char)'\\255', (u_char)'\\256', (u_char)'\\257',
+	(u_char)'\\260', (u_char)'\\261', (u_char)'\\262', (u_char)'\\263',
+	(u_char)'\\264', (u_char)'\\265', (u_char)'\\266', (u_char)'\\267',
+	(u_char)'\\270', (u_char)'\\271', (u_char)'\\272', (u_char)'\\273',
+	(u_char)'\\274', (u_char)'\\275', (u_char)'\\276', (u_char)'\\277',
+	(u_char)'\\300', (u_char)'\\341', (u_char)'\\342', (u_char)'\\343',
+	(u_char)'\\344', (u_char)'\\345', (u_char)'\\346', (u_char)'\\347',
+	(u_char)'\\350', (u_char)'\\351', (u_char)'\\352', (u_char)'\\353',
+	(u_char)'\\354', (u_char)'\\355', (u_char)'\\356', (u_char)'\\357',
+	(u_char)'\\360', (u_char)'\\361', (u_char)'\\362', (u_char)'\\363',
+	(u_char)'\\364', (u_char)'\\365', (u_char)'\\366', (u_char)'\\367',
+	(u_char)'\\370', (u_char)'\\371', (u_char)'\\372', (u_char)'\\333',
+	(u_char)'\\334', (u_char)'\\335', (u_char)'\\336', (u_char)'\\337',
+	(u_char)'\\340', (u_char)'\\341', (u_char)'\\342', (u_char)'\\343',
+	(u_char)'\\344', (u_char)'\\345', (u_char)'\\346', (u_char)'\\347',
+	(u_char)'\\350', (u_char)'\\351', (u_char)'\\352', (u_char)'\\353',
+	(u_char)'\\354', (u_char)'\\355', (u_char)'\\356', (u_char)'\\357',
+	(u_char)'\\360', (u_char)'\\361', (u_char)'\\362', (u_char)'\\363',
+	(u_char)'\\364', (u_char)'\\365', (u_char)'\\366', (u_char)'\\367',
+	(u_char)'\\370', (u_char)'\\371', (u_char)'\\372', (u_char)'\\373',
+	(u_char)'\\374', (u_char)'\\375', (u_char)'\\376', (u_char)'\\377',
+}"
+                :type ("u_char" type (:type "class") nil nil))
+                nil [17334 21530])
+            ("pcap_strcasecmp" function
+               (:arguments 
+                  ( ("s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21552 21567])
+                    ("s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21568 21583]))                  
+                :type "int")
+                nil [21532 21789])
+            ("dlt_choice" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [21812 21829])
+                    ("description" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [21831 21855])
+                    ("dlt" variable (:type "int") (reparse-symbol classsubparts) [21857 21865]))                  
+                :type "struct")
+                nil [21791 21868])
+            ("DLT_CHOICE" variable (:constant-flag t) nil [21878 21888])
+            ("DLT_CHOICE_SENTINEL" variable (:constant-flag t) nil [21945 21964])
+            ("dlt_choices" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+	DLT_CHOICE(DLT_NULL, \"BSD loopback\"),
+	DLT_CHOICE(DLT_EN10MB, \"Ethernet\"),
+	DLT_CHOICE(DLT_IEEE802, \"Token ring\"),
+	DLT_CHOICE(DLT_ARCNET, \"BSD ARCNET\"),
+	DLT_CHOICE(DLT_SLIP, \"SLIP\"),
+	DLT_CHOICE(DLT_PPP, \"PPP\"),
+	DLT_CHOICE(DLT_FDDI, \"FDDI\"),
+	DLT_CHOICE(DLT_ATM_RFC1483, \"RFC 1483 LLC-encapsulated ATM\"),
+	DLT_CHOICE(DLT_RAW, \"Raw IP\"),
+	DLT_CHOICE(DLT_SLIP_BSDOS, \"BSD/OS SLIP\"),
+	DLT_CHOICE(DLT_PPP_BSDOS, \"BSD/OS PPP\"),
+	DLT_CHOICE(DLT_ATM_CLIP, \"Linux Classical IP-over-ATM\"),
+	DLT_CHOICE(DLT_PPP_SERIAL, \"PPP over serial\"),
+	DLT_CHOICE(DLT_PPP_ETHER, \"PPPoE\"),
+        DLT_CHOICE(DLT_SYMANTEC_FIREWALL, \"Symantec Firewall\"),
+	DLT_CHOICE(DLT_C_HDLC, \"Cisco HDLC\"),
+	DLT_CHOICE(DLT_IEEE802_11, \"802.11\"),
+	DLT_CHOICE(DLT_FRELAY, \"Frame Relay\"),
+	DLT_CHOICE(DLT_LOOP, \"OpenBSD loopback\"),
+	DLT_CHOICE(DLT_ENC, \"OpenBSD encapsulated IP\"),
+	DLT_CHOICE(DLT_LINUX_SLL, \"Linux cooked\"),
+	DLT_CHOICE(DLT_LTALK, \"Localtalk\"),
+	DLT_CHOICE(DLT_PFLOG, \"OpenBSD pflog file\"),
+	DLT_CHOICE(DLT_PFSYNC, \"Packet filter state syncing\"),
+	DLT_CHOICE(DLT_PRISM_HEADER, \"802.11 plus Prism header\"),
+	DLT_CHOICE(DLT_IP_OVER_FC, \"RFC 2625 IP-over-Fibre Channel\"),
+	DLT_CHOICE(DLT_SUNATM, \"Sun raw ATM\"),
+	DLT_CHOICE(DLT_IEEE802_11_RADIO, \"802.11 plus radiotap header\"),
+	DLT_CHOICE(DLT_ARCNET_LINUX, \"Linux ARCNET\"),
+        DLT_CHOICE(DLT_JUNIPER_MLPPP, \"Juniper Multi-Link PPP\"),
+	DLT_CHOICE(DLT_JUNIPER_MLFR, \"Juniper Multi-Link Frame Relay\"),
+        DLT_CHOICE(DLT_JUNIPER_ES, \"Juniper Encryption Services PIC\"),
+        DLT_CHOICE(DLT_JUNIPER_GGSN, \"Juniper GGSN PIC\"),
+	DLT_CHOICE(DLT_JUNIPER_MFR, \"Juniper FRF.16 Frame Relay\"),
+        DLT_CHOICE(DLT_JUNIPER_ATM2, \"Juniper ATM2 PIC\"),
+        DLT_CHOICE(DLT_JUNIPER_SERVICES, \"Juniper Advanced Services PIC\"),
+        DLT_CHOICE(DLT_JUNIPER_ATM1, \"Juniper ATM1 PIC\"),
+	DLT_CHOICE(DLT_APPLE_IP_OVER_IEEE1394, \"Apple IP-over-IEEE 1394\"),
+	DLT_CHOICE(DLT_MTP2_WITH_PHDR, \"SS7 MTP2 with Pseudo-header\"),
+	DLT_CHOICE(DLT_MTP2, \"SS7 MTP2\"),
+	DLT_CHOICE(DLT_MTP3, \"SS7 MTP3\"),
+	DLT_CHOICE(DLT_SCCP, \"SS7 SCCP\"),
+	DLT_CHOICE(DLT_DOCSIS, \"DOCSIS\"),
+	DLT_CHOICE(DLT_LINUX_IRDA, \"Linux IrDA\"),
+	DLT_CHOICE(DLT_IEEE802_11_RADIO_AVS, \"802.11 plus AVS radio information header\"),
+        DLT_CHOICE(DLT_JUNIPER_MONITOR, \"Juniper Passive Monitor PIC\"),
+	DLT_CHOICE(DLT_PPP_PPPD, \"PPP for pppd, with direction flag\"),
+	DLT_CHOICE(DLT_JUNIPER_PPPOE, \"Juniper PPPoE\"),
+	DLT_CHOICE(DLT_JUNIPER_PPPOE_ATM, \"Juniper PPPoE/ATM\"),
+	DLT_CHOICE(DLT_GPRS_LLC, \"GPRS LLC\"),
+	DLT_CHOICE(DLT_GPF_T, \"GPF-T\"),
+	DLT_CHOICE(DLT_GPF_F, \"GPF-F\"),
+	DLT_CHOICE(DLT_JUNIPER_PIC_PEER, \"Juniper PIC Peer\"),
+	DLT_CHOICE(DLT_ERF_ETH,	\"Ethernet with Endace ERF header\"),
+	DLT_CHOICE(DLT_ERF_POS, \"Packet-over-SONET with Endace ERF header\"),
+	DLT_CHOICE(DLT_LINUX_LAPD, \"Linux vISDN LAPD\"),
+	DLT_CHOICE(DLT_JUNIPER_ETHER, \"Juniper Ethernet\"),
+	DLT_CHOICE(DLT_JUNIPER_PPP, \"Juniper PPP\"),
+	DLT_CHOICE(DLT_JUNIPER_FRELAY, \"Juniper Frame Relay\"),
+	DLT_CHOICE(DLT_JUNIPER_CHDLC, \"Juniper C-HDLC\"),
+	DLT_CHOICE(DLT_MFR, \"FRF.16 Frame Relay\"),
+	DLT_CHOICE(DLT_JUNIPER_VP, \"Juniper Voice PIC\"),
+	DLT_CHOICE(DLT_A429, \"Arinc 429\"),
+	DLT_CHOICE(DLT_A653_ICM, \"Arinc 653 Interpartition Communication\"),
+	DLT_CHOICE(DLT_USB, \"USB\"),
+	DLT_CHOICE(DLT_BLUETOOTH_HCI_H4, \"Bluetooth HCI UART transport layer\"),
+	DLT_CHOICE(DLT_IEEE802_16_MAC_CPS, \"IEEE 802.16 MAC Common Part Sublayer\"),
+	DLT_CHOICE(DLT_USB_LINUX, \"USB with Linux header\"),
+	DLT_CHOICE(DLT_CAN20B, \"Controller Area Network (CAN) v. 2.0B\"),
+	DLT_CHOICE(DLT_IEEE802_15_4_LINUX, \"IEEE 802.15.4 with Linux padding\"),
+	DLT_CHOICE(DLT_PPI, \"Per-Packet Information\"),
+	DLT_CHOICE(DLT_IEEE802_16_MAC_CPS_RADIO, \"IEEE 802.16 MAC Common Part Sublayer plus radiotap header\"),
+	DLT_CHOICE(DLT_JUNIPER_ISM, \"Juniper Integrated Service Module\"),
+	DLT_CHOICE(DLT_IEEE802_15_4, \"IEEE 802.15.4 with FCS\"),
+	DLT_CHOICE(DLT_SITA, \"SITA pseudo-header\"),
+	DLT_CHOICE(DLT_ERF, \"Endace ERF header\"),
+	DLT_CHOICE(DLT_RAIF1, \"Ethernet with u10 Networks pseudo-header\"),
+	DLT_CHOICE(DLT_IPMB, \"IPMB\"),
+	DLT_CHOICE(DLT_JUNIPER_ST, \"Juniper Secure Tunnel\"),
+	DLT_CHOICE(DLT_BLUETOOTH_HCI_H4_WITH_PHDR, \"Bluetooth HCI UART transport layer plus pseudo-header\"),
+	DLT_CHOICE(DLT_AX25_KISS, \"AX.25 with KISS header\"),
+	DLT_CHOICE(DLT_IEEE802_15_4_NONASK_PHY, \"IEEE 802.15.4 with non-ASK PHY data\"),
+	DLT_CHOICE(DLT_MPLS, \"MPLS with label as link-layer header\"),
+	DLT_CHOICE(DLT_USB_LINUX_MMAPPED, \"USB with padded Linux header\"),
+	DLT_CHOICE(DLT_DECT, \"DECT\"),
+	DLT_CHOICE(DLT_AOS, \"AOS Space Data Link protocol\"),
+	DLT_CHOICE(DLT_WIHART, \"Wireless HART\"),
+	DLT_CHOICE(DLT_FC_2, \"Fibre Channel FC-2\"),
+	DLT_CHOICE(DLT_FC_2_WITH_FRAME_DELIMS, \"Fibre Channel FC-2 with frame delimiters\"),
+	DLT_CHOICE(DLT_IPNET, \"Solaris ipnet\"),
+	DLT_CHOICE(DLT_CAN_SOCKETCAN, \"CAN-bus with SocketCAN headers\"),
+	DLT_CHOICE(DLT_IPV4, \"Raw IPv4\"),
+	DLT_CHOICE(DLT_IPV6, \"Raw IPv6\"),
+	DLT_CHOICE(DLT_IEEE802_15_4_NOFCS, \"IEEE 802.15.4 without FCS\"),
+	DLT_CHOICE(DLT_JUNIPER_VS, \"Juniper Virtual Server\"),
+	DLT_CHOICE(DLT_JUNIPER_SRX_E2E, \"Juniper SRX E2E\"),
+	DLT_CHOICE(DLT_JUNIPER_FIBRECHANNEL, \"Juniper Fibre Channel\"),
+	DLT_CHOICE(DLT_DVB_CI, \"DVB-CI\"),
+	DLT_CHOICE(DLT_JUNIPER_ATM_CEMIC, \"Juniper ATM CEMIC\"),
+	DLT_CHOICE(DLT_NFLOG, \"Linux netfilter log messages\"),
+	DLT_CHOICE(DLT_NETANALYZER, \"Ethernet with Hilscher netANALYZER pseudo-header\"),
+	DLT_CHOICE(DLT_NETANALYZER_TRANSPARENT, \"Ethernet with Hilscher netANALYZER pseudo-header and with preamble and SFD\"),
+	DLT_CHOICE(DLT_IPOIB, \"RFC 4391 IP-over-Infiniband\"),
+	DLT_CHOICE_SENTINEL
+}"
+                :type ("dlt_choice" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [21984 27577])
+            ("pcap_datalink_name_to_val" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27609 27626]))                  
+                :type "int")
+                nil [27579 27819])
+            ("pcap_datalink_val_to_name" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("dlt" variable (:type "int") (reparse-symbol arg-sub-list) [27860 27868]))                  
+                :type "char")
+                nil [27821 28036])
+            ("pcap_datalink_val_to_description" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("dlt" variable (:type "int") (reparse-symbol arg-sub-list) [28084 28092]))                  
+                :type "char")
+                nil [28038 28246])
+            ("tstamp_type_choice" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [28277 28294])
+                    ("description" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [28296 28320])
+                    ("type" variable (:type "int") (reparse-symbol classsubparts) [28322 28331]))                  
+                :type "struct")
+                nil [28248 28334])
+            ("tstamp_type_choices" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+	{ \"host\", \"Host\", PCAP_TSTAMP_HOST },
+	{ \"host_lowprec\", \"Host, low precision\", PCAP_TSTAMP_HOST_LOWPREC },
+	{ \"host_hiprec\", \"Host, high precision\", PCAP_TSTAMP_HOST_HIPREC },
+	{ \"adapter\", \"Adapter\", PCAP_TSTAMP_ADAPTER },
+	{ \"adapter_unsynced\", \"Adapter, not synced with system time\", PCAP_TSTAMP_ADAPTER_UNSYNCED },
+	{ NULL, NULL, 0 }
+}"
+                :type ("tstamp_type_choice" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [28336 28737])
+            ("pcap_tstamp_type_name_to_val" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28772 28789]))                  
+                :type "int")
+                nil [28739 28988])
+            ("pcap_tstamp_type_val_to_name" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("tstamp_type" variable (:type "int") (reparse-symbol arg-sub-list) [29032 29048]))                  
+                :type "char")
+                nil [28990 29228])
+            ("pcap_tstamp_type_val_to_description" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("tstamp_type" variable (:type "int") (reparse-symbol arg-sub-list) [29279 29295]))                  
+                :type "char")
+                nil [29230 29482])
+            ("pcap_snapshot" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29502 29512]))                  
+                :type "int")
+                nil [29484 29539])
+            ("pcap_is_swapped" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29561 29571]))                  
+                :type "int")
+                nil [29541 29600])
+            ("pcap_major_version" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29625 29635]))                  
+                :type "int")
+                nil [29602 29670])
+            ("pcap_minor_version" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29695 29705]))                  
+                :type "int")
+                nil [29672 29740])
+            ("pcap_file" function
+               (:pointer 1
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29759 29769]))                  
+                :type ("FILE" type (:type "class") nil nil))
+                nil [29742 29796])
+            ("pcap_fileno" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29814 29824]))                  
+                :type "int")
+                nil [29798 29960])
+            ("pcap_get_selectable_fd" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30028 30038]))                  
+                :type "int")
+                nil [30001 30070])
+            ("pcap_perror" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30096 30106])
+                    ("prefix" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30107 30120]))                  
+                :type "void")
+                nil [30079 30173])
+            ("pcap_geterr" function
+               (:pointer 1
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30194 30204]))                  
+                :type "char")
+                nil [30175 30229])
+            ("pcap_getnonblock" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30252 30262])
+                    ("errbuf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30263 30276]))                  
+                :type "int")
+                nil [30231 30320])
+            ("pcap_getnonblock_fd" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30598 30608])
+                    ("errbuf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30609 30622]))                  
+                :type "int")
+                nil [30574 30863])
+            ("pcap_setnonblock" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30893 30903])
+                    ("nonblock" variable (:type "int") (reparse-symbol arg-sub-list) [30904 30917])
+                    ("errbuf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30918 30931]))                  
+                :type "int")
+                nil [30872 30985])
+            ("pcap_setnonblock_fd" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31289 31299])
+                    ("nonblock" variable (:type "int") (reparse-symbol arg-sub-list) [31300 31313])
+                    ("errbuf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [31314 31327]))                  
+                :type "int")
+                nil [31265 31739])
+            ("pcap_statustostr" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("errnum" variable (:type "int") (reparse-symbol arg-sub-list) [32621 32632]))                  
+                :type "char")
+                nil [32591 33970])
+            ("pcap_strerror" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("errnum" variable (:type "int") (reparse-symbol arg-sub-list) [34042 34053]))                  
+                :type "char")
+                nil [34015 34369])
+            ("pcap_setfilter" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34390 34400])
+                    ("fp" variable
+                       (:pointer 1
+                        :type ("bpf_program" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34401 34424]))                  
+                :type "int")
+                nil [34371 34462])
+            ("pcap_setdirection" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34707 34717])
+                    ("d" variable (:type ("pcap_direction_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34718 34737]))                  
+                :type "int")
+                nil [34685 34940])
+            ("pcap_stats" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34957 34967])
+                    ("ps" variable
+                       (:pointer 1
+                        :type ("pcap_stat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34968 34989]))                  
+                :type "int")
+                nil [34942 35023])
+            ("pcap_stats_dead" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35052 35062])
+                    ("ps" variable
+                       (:pointer 1
+                        :type ("pcap_stat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35063 35087])
+                    ("" variable (:type ("_U_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35084 35088]))                  
+                :type "int")
+                nil [35025 35211])
+            ("pcaps_to_close" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("pcap" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [36632 36667])
+            ("did_atexit" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [36772 36794])
+            ("pcap_close_all" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [36823 36828]))                  
+                :type "void")
+                nil [36796 36920])
+            ("pcap_do_addexit" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36942 36952]))                  
+                :type "int")
+                nil [36922 37295])
+            ("pcap_add_to_pcaps_to_close" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37329 37339]))                  
+                :type "void")
+                nil [37297 37394])
+            ("pcap_remove_from_pcaps_to_close" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37433 37443]))                  
+                :type "void")
+                nil [37396 37872])
+            ("pcap_cleanup_live_common" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37904 37914]))                  
+                :type "void")
+                nil [37874 38373])
+            ("pcap_cleanup_dead" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38405 38418])
+                    ("" variable (:type ("_U_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38415 38419]))                  
+                :type "void")
+                nil [38375 38445])
+            ("pcap_open_dead" function
+               (:pointer 1
+                :arguments 
+                  ( ("linktype" variable (:type "int") (reparse-symbol arg-sub-list) [38471 38484])
+                    ("snaplen" variable (:type "int") (reparse-symbol arg-sub-list) [38485 38497]))                  
+                :type ("pcap_t" type (:type "class") nil nil))
+                nil [38447 38885])
+            ("pcap_sendpacket" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39052 39062])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39063 39081])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [39082 39091]))                  
+                :type "int")
+                nil [39032 39162])
+            ("pcap_inject" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39305 39315])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [39316 39332])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39333 39345]))                  
+                :type "int")
+                nil [39289 39387])
+            ("pcap_close" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("pcap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39405 39415]))                  
+                :type "void")
+                nil [39389 39499])
+            ("pcap_offline_filter" function
+               (:arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("bpf_program" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [39812 39835])
+                    ("h" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("pcap_pkthdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [39836 39864])
+                    ("pkt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39869 39887]))                  
+                :type "int")
+                nil [39788 40027])
+            ("pcap_version_string" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"libpcap version 1.x.y\""
+                :type "char")
+                nil [40770 40836])
+            ("pcap_lib_version" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [43492 43497]))                  
+                :type "char")
+                nil [43462 43532]))          
+      :file "pcap.c"
+      :pointmax 43540
+      :fsize 43539
+      :lastmodtime '(21214 25063 681838 697000)
+      :unmatched-syntax '((semantic-list 1892 . 1894) (symbol 1887 . 1892) (CHAR 1882 . 1886) (CONST 1876 . 1881) (STATIC 1869 . 1875))
+      :lexical-table 
+        '(("DLT_CHOICE_SENTINEL" . ((semantic-list "{ NULL, NULL, 0 }" 21965 . 21982)))
+          ("DLT_CHOICE" (spp-arg-list ("code" "description") 21888 . 21907) . ((semantic-list "{ #code, description, code }" 21908 . 21936)))
+          )
+)
+    (semanticdb-table "pcap-int.h"
+      :file "pcap-int.h"
+      :fsize 15841
+      :lastmodtime '(20340 23612 0 0)))
+  :file "!home!jqcorreia!libpcap!libpcap-1.3.0!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

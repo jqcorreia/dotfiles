@@ -1,0 +1,24 @@
+;; Object codecs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "codecs/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("AM_CFLAGS" variable (:default-value ("-Werror")) nil [962 982])
+            ("noinst_LIBRARIES" variable (:default-value ("libcodec.a")) nil [989 1019])
+            ("CLEANFILES" variable (:default-value ("libcodec.a" "*~")) nil [1020 1065])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in")) nil [1066 1110])
+            ("libcodec_a_SOURCES" variable (:default-value ("G711a/G711adecode.c" "G711a/G711adecode.h" "G711a/G711atable.h" "G711u/G711udecode.c" "G711u/G711udecode.h" "G711u/G711utable.h")) nil [1111 1269])
+            ("libcodec_a_DEPENDENCIES" variable nil nil [1270 1297])
+            ("EXTRA_DIST" variable (:default-value ("Makefile.nmake" "CMakeLists.txt")) nil [1298 1360])
+            ("checkapi" function nil nil [1361 1479]))          
+      :file "Makefile.am"
+      :pointmax 1479
+      :fsize 1478
+      :lastmodtime '(20430 13542 0 0)
+      :unmatched-syntax '((shell-command 1373 . 1478) (bol 1372 . 1372))))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!codecs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

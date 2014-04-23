@@ -1,0 +1,32 @@
+;; Object wspython/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "wspython/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("AM_CFLAGS" variable (:default-value ("-Werror")) nil [916 936])
+            ("Makefile.common" include nil nil [943 967])
+            ("noinst_LTLIBRARIES" variable (:default-value ("libwspython.la")) nil [968 1004])
+            ("CLEANFILES" variable (:default-value ("libwspython.a" "libwspython.la" "*~")) nil [1005 1059])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in")) nil [1060 1098])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(srcdir)/../.." "-I$(srcdir)/..")) nil [1099 1146])
+            ("libwspython_la_SOURCES" variable (:default-value ("$(LIBWSPYTHON_SRC)" "$(LIBWSPYTHON_INCLUDES)")) nil [1147 1215])
+            ("libwspython_la_LIBADD" variable (:default-value ("@PY_LIBS@")) nil [1216 1250])
+            ("libwspython_la_CFLAGS" variable (:default-value ("@PY_CFLAGS@")) nil [1250 1286])
+            ("wspythondir" variable (:default-value ("@pythondir@")) nil [1287 1313])
+            ("wspython_DATA" variable (:default-value ("register-dissector.py" "wspy_dissector.py" "wspy_dissectors/homeplug.py.sample" "wspy_libws.py")) nil [1314 1435])
+            ("EXTRA_DIST" variable (:default-value ("Makefile.common" "Makefile.nmake" "$(wspython_DATA)" "CMakeLists.txt")) nil [1437 1533]))          
+      :file "Makefile.am"
+      :pointmax 1534
+      :fsize 1533
+      :lastmodtime '(20873 33378 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 1154
+      :lastmodtime '(20430 13540 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!epan!wspython!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

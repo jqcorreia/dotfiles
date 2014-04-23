@@ -1,0 +1,19 @@
+;; Object packaging/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "packaging/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("SUBDIRS" variable (:default-value ("macosx" "rpm" "svr4" "nsis")) nil [58 89])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in")) nil [90 128])
+            ("EXTRA_DIST" variable (:default-value ("Makefile.nmake" "macosx/Info.plist.in" "ws-manifest.pl" "portableapps/win32/Installer.nsi" "portableapps/win32/WiresharkPortable.tmpl" "portableapps/win32/WiresharkPortable.nsi" "portableapps/win32/appinfo.tmpl" "portableapps/win32/installer.ini" "portableapps/win32/Makefile.nmake" "portableapps/win32/makenmake.pl" "portableapps/win32/readme.txt" "u3/win32/README.txt" "u3/win32/Makefile.nmake" "u3/win32/makenmake.pl" "u3/win32/manifest.tmpl" "u3/win32/u3util.c" "u3/win32/u3util.exe.manifest" "u3/win32/wireshark.bat" "u3/tools/README.txt" "u3/tools/Makefile.nmake" "u3/tools/sysdep.c" "u3/tools/sysdep.h" "u3/tools/utest.c" "u3/tools/uuid.c" "u3/tools/uuid.h")) nil [129 862]))          
+      :file "Makefile.am"
+      :pointmax 863
+      :fsize 862
+      :lastmodtime '(20430 13541 0 0)
+      :unmatched-syntax nil))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!packaging!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,121 @@
+;; Object AntennaGUI/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AntennaGUI/"
+  :tables
+  (list
+    (semanticdb-table "AntennaTree.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("time" include nil nil [1 24])
+            ("ujson" include nil nil [1 24])
+            ("sys" include nil nil [1 24])
+            ("PyQt5.QtWidgets" include nil nil [26 82])
+            ("PyQt5.QtCore" include nil nil [83 137])
+            ("PyQt5.QtGui" include nil nil [138 176])
+            ("mosquitto" include nil nil [179 217])
+            ("__all__" variable nil nil [219 250])
+            ("AntennaTree" type
+               (:superclasses ("QTreeWidget")
+                :members 
+                  ( ("messageSignal" variable nil (reparse-symbol indented_block_body) [293 337])
+                    ("scripErrorSignal" variable nil (reparse-symbol indented_block_body) [342 373])
+                    ("script" variable nil (reparse-symbol indented_block_body) [378 389])
+                    ("brush" variable nil (reparse-symbol indented_block_body) [394 417])
+                    ("timer" variable nil (reparse-symbol indented_block_body) [427 443])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [477 495])
+                            ("self" code nil (reparse-symbol indented_block_body) [504 526])
+                            ("self" code nil (reparse-symbol indented_block_body) [535 582])
+                            ("self" code nil (reparse-symbol indented_block_body) [600 628])
+                            ("self" code nil (reparse-symbol indented_block_body) [637 684])
+                            ("self" code nil (reparse-symbol indented_block_body) [693 711]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [462 466]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [449 712])
+                    ("updateNodeTime" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [736 740]))                          )
+                        (reparse-symbol indented_block_body) [717 1210])
+                    ("messageHandler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1258 1262])
+                            ("msg" variable nil (reparse-symbol function_parameters) [1264 1267]))                          )
+                        (reparse-symbol indented_block_body) [1239 2354])
+                    ("addMessage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2390 2394])
+                            ("msg" variable nil (reparse-symbol function_parameters) [2396 2399]))                          )
+                        (reparse-symbol indented_block_body) [2375 2504])
+                    ("clear" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2527 2531]))                          )
+                        (reparse-symbol indented_block_body) [2517 2558])
+                    ("getRouterNode" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2597 2601])
+                            ("routerMac" variable nil (reparse-symbol function_parameters) [2603 2612]))                          )
+                        (reparse-symbol indented_block_body) [2579 2799])
+                    ("getDeviceNode" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2826 2830])
+                            ("routerMac" variable nil (reparse-symbol function_parameters) [2832 2841])
+                            ("deviceMac" variable nil (reparse-symbol function_parameters) [2843 2852]))                          )
+                        (reparse-symbol indented_block_body) [2808 3193]))                  
+                :type "class")
+                nil [252 3193])
+            ("DeviceNode" type
+               (:superclasses ("QTreeWidgetItem")
+                :members 
+                  ( ("nodeName" variable nil (reparse-symbol indented_block_body) [3233 3246])
+                    ("detections" variable nil (reparse-symbol indented_block_body) [3251 3266])
+                    ("timeSinceLastDetection" variable nil (reparse-symbol indented_block_body) [3271 3297])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [3079 3097])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3106 3126])
+                            ("self" code nil (reparse-symbol indented_block_body) [3135 3165]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3316 3320])
+                            ("name" variable nil (reparse-symbol function_parameters) [3322 3326]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3303 3424])
+                    ("setDetections" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3451 3455])
+                            ("detections" variable nil (reparse-symbol function_parameters) [3457 3467]))                          )
+                        (reparse-symbol indented_block_body) [3433 3583])
+                    ("update" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3599 3603]))                          )
+                        (reparse-symbol indented_block_body) [3588 3710]))                  
+                :type "class")
+                nil [3194 3710]))          
+      :file "AntennaTree.py"
+      :pointmax 3710
+      :fsize 3709
+      :lastmodtime '(21272 24853 342793 5000)
+      :unmatched-syntax nil)
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("AntennaGUI.AntennaTree" include nil nil [1 37]))          
+      :file "__init__.py"
+      :pointmax 39
+      :fsize 38
+      :lastmodtime '(21252 57299 955713 64000)
+      :unmatched-syntax '(($EOI 39 . 39) ($EOI 27 . 27))))
+  :file "!home!jqcorreia!code!py-bips-viewer!AntennaGUI!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

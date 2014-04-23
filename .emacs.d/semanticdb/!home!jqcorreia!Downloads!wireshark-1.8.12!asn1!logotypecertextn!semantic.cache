@@ -1,0 +1,23 @@
+;; Object logotypecertextn/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "logotypecertextn/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("../Makefile.preinc" include nil nil [876 903])
+            ("Makefile.common" include nil nil [903 927])
+            ("../Makefile.inc" include nil nil [927 951]))          
+      :file "Makefile.am"
+      :pointmax 952
+      :fsize 951
+      :lastmodtime '(20430 13512 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 1476
+      :lastmodtime '(20430 13512 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!asn1!logotypecertextn!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

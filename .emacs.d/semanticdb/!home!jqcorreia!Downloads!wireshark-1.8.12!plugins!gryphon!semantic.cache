@@ -1,0 +1,34 @@
+;; Object gryphon/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gryphon/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)" "-I$(includedir)")) nil [1002 1048])
+            ("Makefile.common" include nil nil [1049 1073])
+            ("AM_CFLAGS" variable (:default-value ("-Werror")) nil [1101 1121])
+            ("plugindir" variable (:default-value ("@plugindir@")) nil [1128 1152])
+            ("plugin_LTLIBRARIES" variable (:default-value ("gryphon.la")) nil [1153 1185])
+            ("gryphon_la_SOURCES" variable (:default-value ("plugin.c" "moduleinfo.h" "$(DISSECTOR_SRC)" "$(DISSECTOR_SUPPORT_SRC)" "$(DISSECTOR_INCLUDES)")) nil [1185 1307])
+            ("gryphon_la_LDFLAGS" variable (:default-value ("-module" "-avoid-version")) nil [1307 1351])
+            ("gryphon_la_LIBADD" variable (:default-value ("@PLUGIN_LIBS@")) nil [1351 1385])
+            ("LIBS" variable nil nil [1543 1550])
+            ("plugin.c" function (:arguments ("$(DISSECTOR_SRC)" "Makefile.common" "$(top_srcdir)/tools/make-dissector-reg" "$(top_srcdir)/tools/make-dissector-reg.py")) nil [3070 3530])
+            ("CLEANFILES" variable (:default-value ("gryphon" "*~")) nil [4248 4278])
+            ("MAINTAINERCLEANFILES" variable (:default-value ("Makefile.in" "plugin.c")) nil [4279 4329])
+            ("EXTRA_DIST" variable (:default-value ("Makefile.common" "Makefile.nmake" "moduleinfo.nmake" "plugin.rc.in" "CMakeLists.txt")) nil [4330 4437])
+            ("checkapi" function nil nil [4438 4559]))          
+      :file "Makefile.am"
+      :pointmax 4559
+      :fsize 4558
+      :lastmodtime '(20873 33376 0 0)
+      :unmatched-syntax '((shell-command 4449 . 4558) (bol 4448 . 4448)))
+    (semanticdb-table "Makefile.common"
+      :file "Makefile.common"
+      :fsize 1440
+      :lastmodtime '(20430 13517 0 0)))
+  :file "!home!jqcorreia!Downloads!wireshark-1.8.12!plugins!gryphon!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
